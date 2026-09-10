@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// Kinetic Obsidian Design System Color Tokens
+/// Kinetic Design System Color Tokens
 abstract class AppColors {
-  // Canvas & Surfaces
+  // --- OBSIDIAN THEME (DEFAULT) ---
   static const Color obsidianCore = Color(0xFF0A0A0B); // #0A0A0B Base Canvas
   static const Color background = Color(0xFF131314);
   static const Color carbonSurface1 = Color(0xFF141416); // Surface Layer 1 (Cards, Tiles)
@@ -25,6 +25,16 @@ abstract class AppColors {
   static const Color textPrimary = Color(0xFFF5F5F7); // Off-white headline/high legibility
   static const Color textSecondary = Color(0xFF8E8E93); // Slate / metadata / units
   static const Color textVariant = Color(0xFFC5C9AC);
+
+  // --- COOL THEME (BACKGROUND #CBCBCB, ACCENT #5A5A5A, TESTI #F2F2F2) ---
+  static const Color coolBackground = Color(0xFFCBCBCB);
+  static const Color coolSurface1 = Color(0xFFB8B8B8);
+  static const Color coolSurface2 = Color(0xFFAFAFAF);
+  static const Color coolAccent = Color(0xFF5A5A5A);
+  static const Color coolOnAccent = Color(0xFFF2F2F2);
+  static const Color coolTextPrimary = Color(0xFFF2F2F2);
+  static const Color coolTextDark = Color(0xFF2C2C2C);
+  static const Color coolHairline = Color(0xFF9E9E9E);
 
   // Status & Utility
   static const Color success = Color(0xFF30D158);

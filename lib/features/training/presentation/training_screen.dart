@@ -5,6 +5,7 @@ import '../../../core/theme/app_typography.dart';
 import '../../../core/components/action_pill.dart';
 import '../../../core/components/section_header.dart';
 import '../../../core/components/telemetry_tile.dart';
+import '../../../core/state/gym_state_providers.dart';
 import 'active_workout_focus_screen.dart';
 
 class TrainingScreen extends ConsumerWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 import '../data/content_loader.dart';
+import '../theme/app_theme.dart';
 import '../../features/dailies/models/daily_item.dart';
 import '../../features/courses/models/course_model.dart';
 import '../../features/training/models/training_models.dart';
@@ -293,3 +294,17 @@ final marketplaceProvider = Provider<List<MarketplaceProduct>>((ref) {
     ),
   ];
 });
+
+// --- THEME MODE PROVIDER ---
+class ThemeModeNotifier extends StateNotifier<AppThemeMode> {
+  ThemeModeNotifier() : super(AppThemeMode.obsidian);
+
+  void setTheme(AppThemeMode mode) {
+    state = mode;
+  }
+}
+
+final themeModeProvider = StateNotifierProvider<ThemeModeNotifier, AppThemeMode>((ref) {
+  return ThemeModeNotifier();
+});
+
