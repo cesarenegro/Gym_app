@@ -8,6 +8,7 @@ import '../../../core/components/section_header.dart';
 import '../../../core/state/gym_state_providers.dart';
 import '../../dailies/models/daily_item.dart';
 import '../../dailies/presentation/daily_immersive_viewer.dart';
+import '../../dailies/presentation/dailies_catalog_screen.dart';
 import '../../training/presentation/active_workout_focus_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -343,9 +344,7 @@ class HomeScreen extends ConsumerWidget {
               badgeText: '04 NUOVI',
               actionLabel: 'Tutti (${dailies.length})',
               onAction: () {
-                if (dailies.isNotEmpty) {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (_) => DailyImmersiveViewer(item: dailies.first)));
-                }
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => const DailiesCatalogScreen()));
               },
             ),
             SizedBox(

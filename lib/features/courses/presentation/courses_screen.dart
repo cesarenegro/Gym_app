@@ -189,10 +189,13 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Wrap(
+                  spacing: 12,
+                  runSpacing: 8,
+                  alignment: WrapAlignment.spaceBetween,
                   children: [
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         const Icon(Icons.schedule, size: 16, color: AppColors.textSecondary),
                         const SizedBox(width: 6),
@@ -200,6 +203,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                       ],
                     ),
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         const Icon(Icons.person_outline, size: 16, color: AppColors.textSecondary),
                         const SizedBox(width: 6),
@@ -207,6 +211,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                       ],
                     ),
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         const Icon(Icons.room_outlined, size: 16, color: AppColors.textSecondary),
                         const SizedBox(width: 6),
