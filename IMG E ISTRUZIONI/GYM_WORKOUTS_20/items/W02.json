@@ -1,0 +1,66 @@
+{
+  "id": "W02",
+  "title": "Gambe e glutei",
+  "card_text": "Controlla il movimento, senti ogni ripetizione.",
+  "category": "workout",
+  "level": "Intermedio",
+  "equipment": [
+    "Manubri",
+    "Tappetino",
+    "Supporto stabile"
+  ],
+  "duration_minutes_approx": 35,
+  "intensity_rpe": "5–6/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "lunge",
+      "name": "Affondo indietro",
+      "dose": "8 per lato",
+      "instructions": "Da eretto fai un passo indietro, piega entrambe le ginocchia quanto controlli e ritorna spingendo sul piede anteriore. Alterna le gambe.",
+      "easier_option": "Tieni una mano su un supporto e riduci la discesa.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "hinge",
+      "name": "Stacco rumeno con manubri",
+      "dose": "10 ripetizioni",
+      "instructions": "Ginocchia morbide e manubri vicini alle gambe. Spingi il bacino indietro mantenendo la schiena neutra; fermati prima di arrotondarla e torna in piedi.",
+      "easier_option": "Impara il movimento senza carico, con un bastone lungo la schiena.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "bridge",
+      "name": "Ponte glutei",
+      "dose": "12 ripetizioni",
+      "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+      "easier_option": "Riduci l’altezza del sollevamento.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "calf",
+      "name": "Sollevamento polpacci",
+      "dose": "15 ripetizioni",
+      "instructions": "Vicino a un supporto stabile, sali lentamente sulle punte e torna con i talloni a terra senza rimbalzare.",
+      "easier_option": "Appoggiati con entrambe le mani.",
+      "rest_after_seconds": 60
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W02.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "M09",
+  "title": "Polpette di tacchino al pomodoro",
+  "card_text": "Comfort food con una base di zucchine.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "25 min",
+  "ingredients": [
+    "150 g macinato di tacchino",
+    "10 g pangrattato",
+    "15 ml latte",
+    "150 g passata di pomodoro",
+    "250 g zucchine",
+    "5 g olio EVO",
+    "Basilico, pepe e sale a piacere"
+  ],
+  "steps": [
+    "Ammorbidisci il pangrattato nel latte e mescolalo con tacchino e pepe. Forma 5 piccole polpette.",
+    "Scalda metà olio e fai dorare le polpette per 3 minuti girandole.",
+    "Aggiungi la passata, copri e cuoci a fuoco basso circa 12–15 minuti, fino a 74 °C al cuore.",
+    "Ricava nastri dalle zucchine con un pelapatate; saltali 2–3 minuti con l’olio rimasto. Servi con polpette e basilico."
+  ],
+  "chef_tip": "Mantieni le zucchine appena croccanti.",
+  "allergens": [
+    "Glutine",
+    "Latte"
+  ],
+  "tags": [
+    "SLIM"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M09.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

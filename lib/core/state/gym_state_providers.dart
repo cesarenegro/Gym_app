@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
-import '../../features/dailies/data/dailies_library.dart';
+import '../data/content_loader.dart';
 import '../../features/dailies/models/daily_item.dart';
 import '../../features/courses/models/course_model.dart';
 import '../../features/training/models/training_models.dart';
@@ -8,77 +8,36 @@ import '../../features/nutrition/models/nutrition_models.dart';
 import '../../features/community/models/community_models.dart';
 import '../../features/marketplace/models/product_model.dart';
 
-// --- DAILIES PROVIDER ---
-final dailiesProvider = Provider<List<DailyItem>>((ref) {
-  return DailiesLibrary.preloadedDailies;
+// --- DAILIES NOTIFIER ---
+class DailiesNotifier extends StateNotifier<List<DailyItem>> {
+  DailiesNotifier() : super(ContentLoader.fallbackDailies) {
+    _init();
+  }
+
+  Future<void> _init() async {
+    final items = await ContentLoader.loadDailies();
+    if (items.isNotEmpty) {
+      state = items;
+    }
+  }
+}
+
+final dailiesProvider = StateNotifierProvider<DailiesNotifier, List<DailyItem>>((ref) {
+  return DailiesNotifier();
 });
 
 // --- COURSES NOTIFIER ---
 class CoursesNotifier extends StateNotifier<List<CourseSession>> {
-  CoursesNotifier() : super(_initialCourses);
+  CoursesNotifier() : super(ContentLoader.fallbackCourses) {
+    _init();
+  }
 
-  static final List<CourseSession> _initialCourses = [
-    CourseSession(
-      id: 'sess_1',
-      courseId: 'c_mobility',
-      courseName: 'Mobility & Joint Flow',
-      category: 'Mobilità',
-      trainerName: 'Sara V.',
-      room: 'Sala Studio 1',
-      startTime: DateTime.now().add(const Duration(hours: 2)),
-      durationMinutes: 45,
-      capacity: 14,
-      bookedCount: 8,
-      imageUrl: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop',
-      intensity: 'Bassa / Recupero',
-      description: 'Sessione di scarico articolare, flessibilità fasciale e decompressione della colonna.',
-    ),
-    CourseSession(
-      id: 'sess_2',
-      courseId: 'c_functional',
-      courseName: 'Functional Training Black',
-      category: 'Funzionale',
-      trainerName: 'Coach Andrea',
-      room: 'Arena Centrale',
-      startTime: DateTime.now().add(const Duration(hours: 4)),
-      durationMinutes: 50,
-      capacity: 16,
-      bookedCount: 15,
-      imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop',
-      intensity: 'Alta',
-      description: 'Lavoro ad alta potenza su circuiti metabolici, kettlebell, trazioni e slitte.',
-    ),
-    CourseSession(
-      id: 'sess_3',
-      courseId: 'c_boxing',
-      courseName: 'Boxing Conditioning',
-      category: 'Combat',
-      trainerName: 'Marco R.',
-      room: 'Ring & Bag Zone',
-      startTime: DateTime.now().add(const Duration(hours: 6)),
-      durationMinutes: 55,
-      capacity: 12,
-      bookedCount: 12, // Sold out for waitlist testing
-      imageUrl: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=800&auto=format&fit=crop',
-      intensity: 'Estrema',
-      description: 'Tecniche di striking su sacco pesante, footwork e condizionamento lattacido.',
-    ),
-    CourseSession(
-      id: 'sess_4',
-      courseId: 'c_pilates',
-      courseName: 'Reformer Pilates Dynamic',
-      category: 'Postura',
-      trainerName: 'Elena B.',
-      room: 'Studio Reformer',
-      startTime: DateTime.now().add(const Duration(days: 1, hours: 10)),
-      durationMinutes: 50,
-      capacity: 8,
-      bookedCount: 4,
-      imageUrl: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop',
-      intensity: 'Media',
-      description: 'Controllo motorio e rinforzo del core profondo con macchinario Reformer.',
-    ),
-  ];
+  Future<void> _init() async {
+    final items = await ContentLoader.loadCourses();
+    if (items.isNotEmpty) {
+      state = items;
+    }
+  }
 
   bool bookSession(String sessionId) {
     state = state.map((s) {
@@ -116,79 +75,40 @@ final coursesProvider = StateNotifierProvider<CoursesNotifier, List<CourseSessio
   return CoursesNotifier();
 });
 
-// --- TRAINING NOTIFIER ---
-class TrainingNotifier extends StateNotifier<WorkoutPlan> {
-  TrainingNotifier() : super(_initialPlan);
+// --- WORKOUTS LIST PROVIDER ---
+class WorkoutsNotifier extends StateNotifier<List<WorkoutPlan>> {
+  WorkoutsNotifier() : super(ContentLoader.fallbackWorkouts) {
+    _init();
+  }
 
-  static final WorkoutPlan _initialPlan = WorkoutPlan(
-    id: 'wp_today',
-    title: 'FORZA PARTE SUPERIORE',
-    phase: 'FASE II · IPERTROFIA',
-    splitName: 'Spinte & Trazioni Orizzontali',
-    durationMinutes: 48,
-    coachName: 'Coach Andrea',
-    scheduledDate: DateTime.now(),
-    exercises: [
-      WorkoutExercise(
-        id: 'ex_1',
-        name: 'Panca Piana con Bilanciere',
-        muscleGroup: 'Pettorali & Tricipiti',
-        targetSetsReps: '4 × 8 @ RPE 8.5',
-        previousBest: '70 kg × 8',
-        restSeconds: 120,
-        notes: 'Arco lombare compatto, fermo al petto di 1 secondo.',
-        sets: [
-          ExerciseSet(setNumber: 1, targetWeightKg: 70.0, targetReps: 8),
-          ExerciseSet(setNumber: 2, targetWeightKg: 72.5, targetReps: 8),
-          ExerciseSet(setNumber: 3, targetWeightKg: 72.5, targetReps: 8),
-          ExerciseSet(setNumber: 4, targetWeightKg: 75.0, targetReps: 6),
-        ],
-      ),
-      WorkoutExercise(
-        id: 'ex_2',
-        name: 'Rematore con Manubrio su Panca',
-        muscleGroup: 'Gran Dorsale',
-        targetSetsReps: '4 × 10',
-        previousBest: '32 kg × 10',
-        restSeconds: 90,
-        notes: 'Guida con il gomito verso l anca, nessun compenso con la schiena.',
-        sets: [
-          ExerciseSet(setNumber: 1, targetWeightKg: 30.0, targetReps: 10),
-          ExerciseSet(setNumber: 2, targetWeightKg: 32.0, targetReps: 10),
-          ExerciseSet(setNumber: 3, targetWeightKg: 32.0, targetReps: 10),
-          ExerciseSet(setNumber: 4, targetWeightKg: 34.0, targetReps: 8),
-        ],
-      ),
-      WorkoutExercise(
-        id: 'ex_3',
-        name: 'Military Press in Piedi',
-        muscleGroup: 'Deltoidi Anteriori & Core',
-        targetSetsReps: '3 × 8',
-        previousBest: '45 kg × 8',
-        restSeconds: 90,
-        notes: 'Glutei e addome serrati per evitare iperestensione lombare.',
-        sets: [
-          ExerciseSet(setNumber: 1, targetWeightKg: 42.5, targetReps: 8),
-          ExerciseSet(setNumber: 2, targetWeightKg: 45.0, targetReps: 8),
-          ExerciseSet(setNumber: 3, targetWeightKg: 45.0, targetReps: 8),
-        ],
-      ),
-      WorkoutExercise(
-        id: 'ex_4',
-        name: 'Dip alle Parallele Zavorrate',
-        muscleGroup: 'Tricipiti & Basso Petto',
-        targetSetsReps: '3 × 10',
-        previousBest: '+10 kg × 10',
-        restSeconds: 75,
-        notes: 'Busto leggermente inclinato in avanti, discesa controllata.',
-        sets: [
-          ExerciseSet(setNumber: 1, targetWeightKg: 0.0, targetReps: 10),
-          ExerciseSet(setNumber: 2, targetWeightKg: 10.0, targetReps: 10),
-          ExerciseSet(setNumber: 3, targetWeightKg: 10.0, targetReps: 8),
-        ],
-      ),
-    ],
-  );
+  Future<void> _init() async {
+    final items = await ContentLoader.loadWorkouts();
+    if (items.isNotEmpty) {
+      state = items;
+    }
+  }
+}
+
+final workoutsListProvider = StateNotifierProvider<WorkoutsNotifier, List<WorkoutPlan>>((ref) {
+  return WorkoutsNotifier();
+});
+
+// --- TRAINING NOTIFIER (Active Selected Workout) ---
+class TrainingNotifier extends StateNotifier<WorkoutPlan> {
+  TrainingNotifier() : super(ContentLoader.fallbackWorkouts.first) {
+    _init();
+  }
+
+  Future<void> _init() async {
+    final items = await ContentLoader.loadWorkouts();
+    if (items.isNotEmpty) {
+      state = items.first;
+    }
+  }
+
+  void selectWorkout(WorkoutPlan plan) {
+    state = plan;
+  }
 
   void toggleSetComplete(String exerciseId, int setIndex) {
     state = WorkoutPlan(
@@ -198,6 +118,16 @@ class TrainingNotifier extends StateNotifier<WorkoutPlan> {
       splitName: state.splitName,
       durationMinutes: state.durationMinutes,
       coachName: state.coachName,
+      imageUrl: state.imageUrl,
+      intensityRpe: state.intensityRpe,
+      format: state.format,
+      rounds: state.rounds,
+      equipment: state.equipment,
+      warmupMinutes: state.warmupMinutes,
+      warmupInstructions: state.warmupInstructions,
+      cooldownMinutes: state.cooldownMinutes,
+      cooldownInstructions: state.cooldownInstructions,
+      betweenRoundsRestSeconds: state.betweenRoundsRestSeconds,
       scheduledDate: state.scheduledDate,
       isCompleted: state.isCompleted,
       exercises: state.exercises.map((ex) {
@@ -217,6 +147,8 @@ class TrainingNotifier extends StateNotifier<WorkoutPlan> {
             previousBest: ex.previousBest,
             restSeconds: ex.restSeconds,
             notes: ex.notes,
+            instructions: ex.instructions,
+            easierOption: ex.easierOption,
             sets: updatedSets,
           );
         }
@@ -250,7 +182,7 @@ final nutritionProvider = Provider<DailyNutritionSummary>((ref) {
         proteinG: 42,
         carbsG: 65,
         fatG: 12,
-        foods: ['Porridge di avena (80g)', 'Albume pastorizzato (150g)', 'Frutti di bosco (50g)', 'Burro di arachidi 100% (15g)'],
+        foods: ['Pancake cacao e lamponi (M01)', 'Yogurt Greco 0% (100g)', 'Cacao amaro e lamponi freschi'],
         isCompleted: true,
         source: PlanSource.professionalAssigned,
       ),
@@ -262,32 +194,8 @@ final nutritionProvider = Provider<DailyNutritionSummary>((ref) {
         proteinG: 56,
         carbsG: 85,
         fatG: 22,
-        foods: ['Riso Basmati (100g)', 'Petto di pollo alla piastra (220g)', 'Zucchine e peperoni grigliati', 'Olio Extravergine (15g)'],
+        foods: ['Riso Basmati e pollo al vapore', 'Zucchine grigliate', 'Olio EV Extravergine'],
         isCompleted: true,
-        source: PlanSource.professionalAssigned,
-      ),
-      MealEntry(
-        id: 'm_3',
-        title: 'Spuntino Pomeridiano',
-        type: MealType.snack,
-        calories: 280,
-        proteinG: 25,
-        carbsG: 20,
-        fatG: 10,
-        foods: ['Yogurt Greco 0% (200g)', 'Noci dell Amazzonia (15g)', 'Cannella'],
-        isCompleted: true,
-        source: PlanSource.aiSuggested,
-      ),
-      MealEntry(
-        id: 'm_4',
-        title: 'Cena Ripristino Muscolare',
-        type: MealType.dinner,
-        calories: 670,
-        proteinG: 37,
-        carbsG: 70,
-        fatG: 26,
-        foods: ['Filetto di orata al forno (250g)', 'Patate al vapore (250g)', 'Insalata mista con pomodori'],
-        isCompleted: false,
         source: PlanSource.professionalAssigned,
       ),
     ],
@@ -305,7 +213,7 @@ class CommunityNotifier extends StateNotifier<List<CommunityPost>> {
       authorAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
       authorRole: 'Head Coach',
       content: 'Nuovo record stabilito ieri sera nella sessione Black Functional! 300 round complessivi chiusi dal gruppo delle 19:30. Ricordate: la costanza batte sempre l intensità occasionale.',
-      imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop',
+      imageUrl: 'assets/images/courses/C02.png',
       createdAt: DateTime.now().subtract(const Duration(hours: 2)),
       likesCount: 28,
       commentsCount: 6,
@@ -317,7 +225,7 @@ class CommunityNotifier extends StateNotifier<List<CommunityPost>> {
       authorName: 'Marco Rossi',
       authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
       authorRole: 'Membro Black',
-      content: 'Dopo 4 mesi di Fase II Ipertrofia, finalmente 140kg di stacco da terra puliti senza compensi. Grazie ai consigli di setup di @Coach Andrea!',
+      content: 'Dopo 4 mesi di Forza Total Body, finalmente 140kg di stacco da terra puliti senza compensi. Grazie ai consigli di setup di @Coach Andrea!',
       createdAt: DateTime.now().subtract(const Duration(hours: 5)),
       likesCount: 42,
       commentsCount: 9,
@@ -382,18 +290,6 @@ final marketplaceProvider = Provider<List<MarketplaceProduct>>((ref) {
       description: 'Felpa tecnica ad alta traspirabilità con cappuccio ergonomico, tasca termosaldata e logo serigrafato Volt.',
       condition: 'Nuovo da Magazzino Club',
       sizeOrVariant: 'Taglie disponibili: S, M, L, XL',
-    ),
-    MarketplaceProduct(
-      id: 'prod_3',
-      title: 'Cintura Sollevamento Cuoio 10mm',
-      category: 'Attrezzatura',
-      priceEur: 45.0,
-      sellerName: 'Davide B.',
-      sellerType: SellerType.member,
-      imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop',
-      description: 'Cintura da powerlifting in cuoio naturale rigido con fibbia a leva d acciaio inossidabile.',
-      condition: 'Ottimo stato',
-      sizeOrVariant: 'Taglia M (Girovita 75-90cm)',
     ),
   ];
 });

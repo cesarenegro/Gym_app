@@ -1,0 +1,45 @@
+{
+  "id": "M14",
+  "title": "Frittata spinaci e feta",
+  "card_text": "Morbida, saporita, pronta in padella.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "20 min",
+  "ingredients": [
+    "2 uova medie",
+    "100 g albume pastorizzato",
+    "100 g spinaci freschi",
+    "30 g feta",
+    "100 g pomodorini",
+    "5 g olio EVO",
+    "Pepe a piacere"
+  ],
+  "steps": [
+    "Lava gli spinaci e falli appassire 2–3 minuti in una padella piccola con olio.",
+    "Sbatti uova e albume, poi aggiungi feta sbriciolata e pepe.",
+    "Versa sugli spinaci, copri e cuoci a fuoco basso circa 8–10 minuti; gira aiutandoti con un piatto se necessario. Raggiungi 71 °C al centro.",
+    "Servi con pomodorini lavati e tagliati."
+  ],
+  "chef_tip": "Fiamma bassa: il fondo non brucia mentre il centro cuoce.",
+  "allergens": [
+    "Uova",
+    "Latte"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M14.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

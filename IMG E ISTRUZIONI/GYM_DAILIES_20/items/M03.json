@@ -1,0 +1,43 @@
+{
+  "id": "M03",
+  "title": "Overnight oats espresso",
+  "card_text": "La colazione si prepara mentre tu riposi.",
+  "category": "meal",
+  "meal_type": "Colazione",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "5 min + 8 ore in frigo",
+  "ingredients": [
+    "45 g fiocchi di avena",
+    "150 g yogurt greco bianco",
+    "60 ml latte",
+    "30 ml espresso freddo anche decaffeinato",
+    "3 g cacao amaro"
+  ],
+  "steps": [
+    "Mescola avena, latte, espresso freddo e 100 g di yogurt in un contenitore con coperchio.",
+    "Chiudi e lascia in frigorifero circa 8 ore.",
+    "Mescola; se serve aggiungi un cucchiaio d’acqua.",
+    "Completa con i 50 g di yogurt rimasti e cacao."
+  ],
+  "chef_tip": "Prepara la sera e consuma la mattina seguente.",
+  "allergens": [
+    "Latte",
+    "Avena: verificare glutine in etichetta"
+  ],
+  "tags": [
+    "POWER"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M03.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

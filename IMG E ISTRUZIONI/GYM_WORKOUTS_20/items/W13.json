@@ -1,0 +1,41 @@
+{
+  "id": "W13",
+  "title": "Run walk starter",
+  "card_text": "Alterna cammino e corsa senza inseguire il passo.",
+  "category": "workout",
+  "level": "Base già abituato a camminare",
+  "equipment": [
+    "Scarpe adatte",
+    "Percorso piano"
+  ],
+  "duration_minutes_approx": 30,
+  "intensity_rpe": "4–6/10",
+  "format": "Circuito controllato",
+  "rounds": 10,
+  "warmup": {
+    "minutes": 5,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "run_walk",
+      "name": "Intervallo corsa / cammino",
+      "dose": "1 minuto di corsa facile + 1 minuto di camminata",
+      "instructions": "Corri piano per 1 minuto con passo naturale; cammina per 1 minuto. Ripeti 10 volte, senza sprint e mantenendo una respirazione controllabile.",
+      "easier_option": "Sostituisci il minuto di corsa con camminata più vivace.",
+      "rest_after_seconds": 0
+    }
+  ],
+  "between_rounds_rest_seconds": 0,
+  "cooldown": {
+    "minutes": 5,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+  "image": "images/W13.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

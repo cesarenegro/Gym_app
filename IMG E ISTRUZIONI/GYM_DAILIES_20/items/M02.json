@@ -1,0 +1,43 @@
+{
+  "id": "M02",
+  "title": "Skyr mango e pistacchio",
+  "card_text": "Fresco, cremoso, con il crunch giusto.",
+  "category": "meal",
+  "meal_type": "Colazione / spuntino",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "5 min",
+  "ingredients": [
+    "200 g skyr bianco",
+    "120 g polpa di mango",
+    "10 g pistacchi non salati",
+    "20 g fiocchi di avena"
+  ],
+  "steps": [
+    "Versa lo skyr in una ciotola e lavoralo con il cucchiaio.",
+    "Taglia il mango a cubetti.",
+    "Trita grossolanamente i pistacchi.",
+    "Distribuisci mango, avena e pistacchi sullo skyr e servi."
+  ],
+  "chef_tip": "Usa mango maturo: non serve aggiungere sciroppi.",
+  "allergens": [
+    "Latte",
+    "Pistacchi",
+    "Avena: verificare glutine in etichetta"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M02.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

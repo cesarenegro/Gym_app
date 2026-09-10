@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "locale": "it-IT",
+  "items": [
+    {
+      "id": "C01",
+      "title": "Strength Foundations",
+      "card_text": "La forza comincia dalla tecnica.",
+      "description": "Un corso guidato per familiarizzare con squat, movimento dell’anca, spinte e tirate. Si lavora con carichi gestibili, pause chiare e attenzione alla qualità del gesto.",
+      "category": "course",
+      "level": "Base",
+      "duration_minutes": 45,
+      "equipment": [
+        "Manubri",
+        "Kettlebell",
+        "Panche",
+        "Tappetini"
+      ],
+      "objectives": [
+        "Imparare i movimenti fondamentali",
+        "Gestire un carico adatto",
+        "Costruire continuità"
+      ],
+      "lesson_structure": [
+        {
+          "name": "Preparazione",
+          "minutes": 8,
+          "description": "Mobilità dolce e attivazione generale."
+        },
+        {
+          "name": "Tecnica",
+          "minutes": 10,
+          "description": "Dimostrazione e prove di goblet squat e hip hinge senza fretta."
+        },
+        {
+          "name": "Circuito guidato",
+          "minutes": 22,
+          "description": "Squat, rematore e push-up inclinato; 3 giri da 8–10 ripetizioni, 45–60 secondi di recupero, con correzioni del trainer."
+        },
+        {
+          "name": "Chiusura",
+          "minutes": 5,
+          "description": "Camminata facile e riepilogo tecnico."
+        }
+      ],
+      "what_to_bring": [
+        "Abbigliamento sportivo comodo",
+        "Acqua",
+        "Asciugamano"
+      ],
+      "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+      "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+      "related_workout_ids": [
+        "W01",
+        "W07",
+        "W16"
+      ],
+      "instructor_id": null,
+      "schedule": null,
+      "capacity": null,
+      "location": null,
+      "price": null,
+      "booking_enabled": false,
+      "image": "images/C01.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri il corso",
+      "editorial_status": "Proposta di corso; calendario e staff non confermati"
+    },
+    {
+      "id": "C02",
+      "title": "Pilates Sculpt",
+      "card_text": "Controllo, respiro, precisione.",
+      "description": "Una lezione a terra centrata su controllo del tronco, mobilità e coordinazione. Sequenze accessibili, movimenti lenti e varianti per seguire il proprio livello.",
+      "category": "course",
+      "level": "Base / intermedio",
+      "duration_minutes": 45,
+      "equipment": [
+        "Tappetini",
+        "Miniband opzionali"
+      ],
+      "objectives": [
+        "Migliorare consapevolezza del movimento",
+        "Allenare il controllo del tronco",
+        "Coordinare respiro e gesto"
+      ],
+      "lesson_structure": [
+        {
+          "name": "Respiro e allineamento",
+          "minutes": 5,
+          "description": "Posizioni comode e respirazione naturale."
+        },
+        {
+          "name": "Mobilità",
+          "minutes": 8,
+          "description": "Mobilità della colonna e delle anche senza forzature."
+        },
+        {
+          "name": "Sequenza centrale",
+          "minutes": 25,
+          "description": "Toe tap, ponte glutei, bird dog e aperture sul fianco: 2–3 giri da 6–10 ripetizioni controllate, pause a necessità."
+        },
+        {
+          "name": "Distensione",
+          "minutes": 7,
+          "description": "Allungamenti dolci e chiusura tranquilla."
+        }
+      ],
+      "what_to_bring": [
+        "Abbigliamento sportivo comodo",
+        "Acqua",
+        "Asciugamano"
+      ],
+      "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+      "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+      "related_workout_ids": [
+        "W17",
+        "W04",
+        "W19"
+      ],
+      "instructor_id": null,
+      "schedule": null,
+      "capacity": null,
+      "location": null,
+      "price": null,
+      "booking_enabled": false,
+      "image": "images/C02.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri il corso",
+      "editorial_status": "Proposta di corso; calendario e staff non confermati"
+    },
+    {
+      "id": "C03",
+      "title": "Ride Studio",
+      "card_text": "Il tuo ritmo, una strada condivisa.",
+      "description": "Una sessione di cycling indoor con alternanza di tratti facili e moderati. La musica accompagna la lezione; resistenza e cadenza restano adattabili, senza obbligo di seguire il gruppo.",
+      "category": "course",
+      "level": "Base / intermedio",
+      "duration_minutes": 45,
+      "equipment": [
+        "Bike indoor"
+      ],
+      "objectives": [
+        "Allenare la continuità aerobica",
+        "Gestire lo sforzo percepito",
+        "Imparare a regolare il ritmo"
+      ],
+      "lesson_structure": [
+        {
+          "name": "Setup",
+          "minutes": 5,
+          "description": "Regolazione individuale della bike con l’istruttore."
+        },
+        {
+          "name": "Riscaldamento",
+          "minutes": 7,
+          "description": "Pedalata progressiva e confortevole."
+        },
+        {
+          "name": "Intervalli",
+          "minutes": 24,
+          "description": "6 cicli di 2 minuti moderati e 2 minuti facili, prevalentemente da seduti."
+        },
+        {
+          "name": "Defaticamento",
+          "minutes": 6,
+          "description": "Riduzione graduale della resistenza."
+        },
+        {
+          "name": "Chiusura",
+          "minutes": 3,
+          "description": "Discesa dalla bike e mobilità leggera."
+        }
+      ],
+      "what_to_bring": [
+        "Abbigliamento sportivo comodo",
+        "Acqua",
+        "Asciugamano"
+      ],
+      "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+      "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+      "related_workout_ids": [
+        "W14",
+        "W05"
+      ],
+      "instructor_id": null,
+      "schedule": null,
+      "capacity": null,
+      "location": null,
+      "price": null,
+      "booking_enabled": false,
+      "image": "images/C03.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri il corso",
+      "editorial_status": "Proposta di corso; calendario e staff non confermati"
+    },
+    {
+      "id": "C04",
+      "title": "Mobility & Reset",
+      "card_text": "Più spazio al movimento.",
+      "description": "Un corso a intensità contenuta per esplorare mobilità di colonna, anche e spalle. Ideale come momento di movimento consapevole, con ampiezze confortevoli e senza forzare gli allungamenti.",
+      "category": "course",
+      "level": "Tutti i livelli",
+      "duration_minutes": 30,
+      "equipment": [
+        "Tappetini",
+        "Parete",
+        "Supporti stabili"
+      ],
+      "objectives": [
+        "Esplorare l’ampiezza confortevole",
+        "Interrompere la sedentarietà",
+        "Allenare il controllo"
+      ],
+      "lesson_structure": [
+        {
+          "name": "Avvio",
+          "minutes": 4,
+          "description": "Marcia comoda e movimenti articolari dolci."
+        },
+        {
+          "name": "Mobilità guidata",
+          "minutes": 18,
+          "description": "Cat-cow, rotazioni toraciche, mobilità caviglie e anche; 2 giri lenti con spiegazioni."
+        },
+        {
+          "name": "Stabilità",
+          "minutes": 4,
+          "description": "Equilibrio vicino al supporto e scivolate delle braccia alla parete."
+        },
+        {
+          "name": "Chiusura",
+          "minutes": 4,
+          "description": "Posizione comoda e respiro naturale."
+        }
+      ],
+      "what_to_bring": [
+        "Abbigliamento sportivo comodo",
+        "Acqua",
+        "Asciugamano"
+      ],
+      "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+      "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+      "related_workout_ids": [
+        "W11",
+        "W12",
+        "W18",
+        "W19"
+      ],
+      "instructor_id": null,
+      "schedule": null,
+      "capacity": null,
+      "location": null,
+      "price": null,
+      "booking_enabled": false,
+      "image": "images/C04.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri il corso",
+      "editorial_status": "Proposta di corso; calendario e staff non confermati"
+    },
+    {
+      "id": "C05",
+      "title": "Functional Circuit",
+      "card_text": "Movimenti semplici. Energia di gruppo.",
+      "description": "Un circuito di gruppo con stazioni chiare e alternative senza salti. Squat, tirate, passi su rialzo basso e movimenti a corpo libero si alternano con recuperi programmati.",
+      "category": "course",
+      "level": "Base / intermedio",
+      "duration_minutes": 45,
+      "equipment": [
+        "Manubri",
+        "Step basso stabile",
+        "Panche",
+        "Tappetini"
+      ],
+      "objectives": [
+        "Allenare diversi schemi motori",
+        "Gestire lavoro e recupero",
+        "Muoversi con continuità"
+      ],
+      "lesson_structure": [
+        {
+          "name": "Riscaldamento",
+          "minutes": 7,
+          "description": "Marcia, mobilità e prove dei movimenti."
+        },
+        {
+          "name": "Spiegazione stazioni",
+          "minutes": 8,
+          "description": "Il trainer mostra squat, rematore con appoggio, step-up basso, push-up inclinato e marcia attiva."
+        },
+        {
+          "name": "Circuito",
+          "minutes": 25,
+          "description": "5 stazioni × 40 secondi di lavoro + 20 secondi di cambio, per 5 giri. Ridurre ritmo o usare la pausa secondo necessità; nessuna gara di ripetizioni."
+        },
+        {
+          "name": "Defaticamento",
+          "minutes": 5,
+          "description": "Camminata lenta e mobilità dolce."
+        }
+      ],
+      "what_to_bring": [
+        "Abbigliamento sportivo comodo",
+        "Acqua",
+        "Asciugamano"
+      ],
+      "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+      "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+      "related_workout_ids": [
+        "W01",
+        "W06",
+        "W20"
+      ],
+      "instructor_id": null,
+      "schedule": null,
+      "capacity": null,
+      "location": null,
+      "price": null,
+      "booking_enabled": false,
+      "image": "images/C05.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri il corso",
+      "editorial_status": "Proposta di corso; calendario e staff non confermati"
+    }
+  ]
+}

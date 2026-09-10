@@ -1,0 +1,64 @@
+{
+  "id": "W17",
+  "title": "Pilates core flow",
+  "card_text": "Respira, allinea, muoviti lentamente.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 22,
+  "intensity_rpe": "3–5/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "tabletop",
+      "name": "Toe tap da tabletop",
+      "dose": "6 per lato",
+      "instructions": "Da supino, ginocchia piegate sopra le anche. Abbassa un piede fino a un piccolo tocco a terra, torna e alterna senza perdere controllo del bacino.",
+      "easier_option": "Tieni un piede sempre appoggiato.",
+      "rest_after_seconds": 20
+    },
+    {
+      "exercise_id": "bridge",
+      "name": "Ponte glutei",
+      "dose": "10 ripetizioni",
+      "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+      "easier_option": "Riduci l’altezza del sollevamento.",
+      "rest_after_seconds": 20
+    },
+    {
+      "exercise_id": "bird",
+      "name": "Bird dog",
+      "dose": "6 per lato",
+      "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+      "easier_option": "Solleva soltanto un arto alla volta.",
+      "rest_after_seconds": 20
+    },
+    {
+      "exercise_id": "sidestretch",
+      "name": "Allungamento laterale da seduto",
+      "dose": "20 secondi per lato",
+      "instructions": "Siediti comodamente, alza un braccio e inclina dolcemente il tronco dal lato opposto mantenendo il bacino appoggiato.",
+      "easier_option": "Tieni il braccio più basso.",
+      "rest_after_seconds": 20
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+  "image": "images/W17.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

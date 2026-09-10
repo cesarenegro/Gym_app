@@ -1,0 +1,44 @@
+{
+  "id": "M18",
+  "title": "Bowl lenticchie e barbabietola",
+  "card_text": "Terra, agrumi e una nota sapida.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "10 min",
+  "ingredients": [
+    "150 g lenticchie cotte scolate",
+    "120 g barbabietola già cotta",
+    "50 g spinacino",
+    "100 g polpa di arancia",
+    "40 g feta",
+    "5 g olio EVO",
+    "10 ml succo di limone"
+  ],
+  "steps": [
+    "Sciacqua e scola le lenticchie.",
+    "Taglia la barbabietola a cubetti e l’arancia a spicchi.",
+    "Lava lo spinacino e disponilo in una ciotola con gli altri ingredienti.",
+    "Condisci con olio e limone e completa con feta sbriciolata."
+  ],
+  "chef_tip": "Aggiungi la barbabietola alla fine per mantenere i colori separati.",
+  "allergens": [
+    "Latte"
+  ],
+  "tags": [
+    "DETOX*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M18.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

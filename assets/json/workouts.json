@@ -1,0 +1,1204 @@
+{
+  "schema_version": "1.0",
+  "locale": "it-IT",
+  "items": [
+    {
+      "id": "W01",
+      "title": "Forza total body",
+      "card_text": "Quattro movimenti. Una base solida.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Kettlebell o manubrio",
+        "Panca stabile",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "goblet",
+          "name": "Goblet squat",
+          "dose": "8–10 ripetizioni",
+          "instructions": "Tieni un peso leggero vicino al petto, gomiti sotto il carico. Scendi con controllo senza perdere l’appoggio dei talloni e risali espirando.",
+          "easier_option": "Esegui senza peso verso una panca.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "row",
+          "name": "Rematore con appoggio",
+          "dose": "10 per lato",
+          "instructions": "Appoggia una mano su una panca stabile. Tieni schiena neutra e collo lungo; tira il manubrio verso il fianco senza ruotare il busto, poi scendi lentamente.",
+          "easier_option": "Usa un manubrio più leggero.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "push",
+          "name": "Push-up inclinato",
+          "dose": "8–10 ripetizioni",
+          "instructions": "Mani su una panca alta e stabile, corpo allineato. Avvicina il petto alla panca con gomiti obliqui, poi spingi senza inarcare la zona lombare.",
+          "easier_option": "Esegui contro una parete.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "deadbug",
+          "name": "Dead bug",
+          "dose": "6 per lato",
+          "instructions": "Da supino porta ginocchia sopra le anche. Espira e allunga lentamente un braccio e la gamba opposta senza perdere il controllo del bacino; alterna.",
+          "easier_option": "Muovi soltanto una gamba alla volta con un piccolo tocco del tallone.",
+          "rest_after_seconds": 45
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W01.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W02",
+      "title": "Gambe e glutei",
+      "card_text": "Controlla il movimento, senti ogni ripetizione.",
+      "category": "workout",
+      "level": "Intermedio",
+      "equipment": [
+        "Manubri",
+        "Tappetino",
+        "Supporto stabile"
+      ],
+      "duration_minutes_approx": 35,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "lunge",
+          "name": "Affondo indietro",
+          "dose": "8 per lato",
+          "instructions": "Da eretto fai un passo indietro, piega entrambe le ginocchia quanto controlli e ritorna spingendo sul piede anteriore. Alterna le gambe.",
+          "easier_option": "Tieni una mano su un supporto e riduci la discesa.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "hinge",
+          "name": "Stacco rumeno con manubri",
+          "dose": "10 ripetizioni",
+          "instructions": "Ginocchia morbide e manubri vicini alle gambe. Spingi il bacino indietro mantenendo la schiena neutra; fermati prima di arrotondarla e torna in piedi.",
+          "easier_option": "Impara il movimento senza carico, con un bastone lungo la schiena.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "12 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "calf",
+          "name": "Sollevamento polpacci",
+          "dose": "15 ripetizioni",
+          "instructions": "Vicino a un supporto stabile, sali lentamente sulle punte e torna con i talloni a terra senza rimbalzare.",
+          "easier_option": "Appoggiati con entrambe le mani.",
+          "rest_after_seconds": 60
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W02.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W03",
+      "title": "Upper body essenziale",
+      "card_text": "Spinta e tirata, con equilibrio.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Manubri",
+        "Panca stabile",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "row",
+          "name": "Rematore con appoggio",
+          "dose": "10 per lato",
+          "instructions": "Appoggia una mano su una panca stabile. Tieni schiena neutra e collo lungo; tira il manubrio verso il fianco senza ruotare il busto, poi scendi lentamente.",
+          "easier_option": "Usa un manubrio più leggero.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "press",
+          "name": "Distensioni con manubri da terra",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiato con ginocchia piegate, gomiti obliqui rispetto al busto. Spingi i manubri sopra il petto e scendi fino a sfiorare il pavimento con le braccia.",
+          "easier_option": "Usa carichi più leggeri.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "curl",
+          "name": "Curl con manubri",
+          "dose": "10 ripetizioni",
+          "instructions": "In piedi, gomiti vicino ai fianchi. Piega i gomiti senza oscillare con la schiena; scendi lentamente.",
+          "easier_option": "Riduci il peso o alterna un braccio alla volta.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "bird",
+          "name": "Bird dog",
+          "dose": "6 per lato",
+          "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+          "easier_option": "Solleva soltanto un arto alla volta.",
+          "rest_after_seconds": 45
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W03.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W04",
+      "title": "Core e stabilità",
+      "card_text": "Il controllo parte dal centro.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 22,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 3,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "deadbug",
+          "name": "Dead bug",
+          "dose": "6 per lato",
+          "instructions": "Da supino porta ginocchia sopra le anche. Espira e allunga lentamente un braccio e la gamba opposta senza perdere il controllo del bacino; alterna.",
+          "easier_option": "Muovi soltanto una gamba alla volta con un piccolo tocco del tallone.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "plank",
+          "name": "Plank sugli avambracci",
+          "dose": "20 secondi",
+          "instructions": "Gomiti sotto le spalle. Mantieni testa, bacino e talloni allineati, respira e interrompi la tenuta prima che la schiena ceda.",
+          "easier_option": "Appoggia le ginocchia a terra.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "sideplank",
+          "name": "Side plank con ginocchia a terra",
+          "dose": "15 secondi per lato",
+          "instructions": "Sul fianco, gomito sotto la spalla e ginocchia piegate. Solleva il bacino senza ruotare il tronco e continua a respirare.",
+          "easier_option": "Riduci la durata a 10 secondi.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "12 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 30
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W04.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W05",
+      "title": "Cardio a basso impatto",
+      "card_text": "Trova il ritmo che puoi mantenere.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Tapis roulant o percorso piano"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "4–5/10",
+      "format": "Circuito controllato",
+      "rounds": 1,
+      "warmup": {
+        "minutes": 5,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "walk",
+          "name": "Camminata comoda",
+          "dose": "20 minuti a ritmo sostenuto ma conversazionale",
+          "instructions": "Cammina a ritmo regolare, spalle rilassate e passi naturali. Sul tapis roulant scegli una velocità controllabile senza aggrapparti.",
+          "easier_option": "Rallenta o cammina su terreno piano.",
+          "rest_after_seconds": 0
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 5,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+      "image": "images/W05.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W06",
+      "title": "HIIT senza salti",
+      "card_text": "Intervalli brevi, piedi sempre sotto controllo.",
+      "category": "workout",
+      "level": "Intermedio",
+      "equipment": [
+        "Spazio libero",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 24,
+      "intensity_rpe": "6–7/10",
+      "format": "Circuito controllato",
+      "rounds": 4,
+      "warmup": {
+        "minutes": 5,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "march",
+          "name": "Marcia attiva",
+          "dose": "30 secondi",
+          "instructions": "Cammina sul posto con appoggi morbidi e braccia naturali. Solleva le ginocchia solo quanto riesci mantenendo il busto stabile.",
+          "easier_option": "Rallenta il ritmo.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "stepjack",
+          "name": "Step jack senza salto",
+          "dose": "30 secondi",
+          "instructions": "Fai un passo laterale mentre apri le braccia entro un’ampiezza comoda; richiudi e cambia lato. Mantieni sempre un piede a terra.",
+          "easier_option": "Tieni le mani ai fianchi.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "box",
+          "name": "Boxe a vuoto controllata",
+          "dose": "30 secondi",
+          "instructions": "Piedi stabili e ginocchia morbide. Alterna colpi in avanti senza bloccare i gomiti, ruotando dolcemente il tronco; non usare pesi.",
+          "easier_option": "Riduci velocità e ampiezza.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "knees",
+          "name": "Ginocchia alternate in piedi",
+          "dose": "30 secondi",
+          "instructions": "Solleva un ginocchio per volta verso il busto senza piegare la schiena; abbassa con controllo e alterna.",
+          "easier_option": "Appoggia una mano a un supporto.",
+          "rest_after_seconds": 30
+        }
+      ],
+      "between_rounds_rest_seconds": 0,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W06.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W07",
+      "title": "Manubri total body",
+      "card_text": "Due manubri, una sessione completa.",
+      "category": "workout",
+      "level": "Intermedio",
+      "equipment": [
+        "Manubri",
+        "Panca stabile",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 35,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "goblet",
+          "name": "Goblet squat",
+          "dose": "10 ripetizioni",
+          "instructions": "Tieni un peso leggero vicino al petto, gomiti sotto il carico. Scendi con controllo senza perdere l’appoggio dei talloni e risali espirando.",
+          "easier_option": "Esegui senza peso verso una panca.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "hinge",
+          "name": "Stacco rumeno con manubri",
+          "dose": "10 ripetizioni",
+          "instructions": "Ginocchia morbide e manubri vicini alle gambe. Spingi il bacino indietro mantenendo la schiena neutra; fermati prima di arrotondarla e torna in piedi.",
+          "easier_option": "Impara il movimento senza carico, con un bastone lungo la schiena.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "row",
+          "name": "Rematore con appoggio",
+          "dose": "10 per lato",
+          "instructions": "Appoggia una mano su una panca stabile. Tieni schiena neutra e collo lungo; tira il manubrio verso il fianco senza ruotare il busto, poi scendi lentamente.",
+          "easier_option": "Usa un manubrio più leggero.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "press",
+          "name": "Distensioni con manubri da terra",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiato con ginocchia piegate, gomiti obliqui rispetto al busto. Spingi i manubri sopra il petto e scendi fino a sfiorare il pavimento con le braccia.",
+          "easier_option": "Usa carichi più leggeri.",
+          "rest_after_seconds": 60
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W07.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W08",
+      "title": "Schiena e postura",
+      "card_text": "Più consapevolezza nei movimenti di tirata.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Macchina cavo basso",
+        "Parete",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 25,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "cable",
+          "name": "Rematore al cavo seduto",
+          "dose": "10 ripetizioni",
+          "instructions": "Regola seduta e appoggi. Tira la maniglia verso l’addome mantenendo il torace stabile; ritorna senza incurvare la schiena.",
+          "easier_option": "Riduci la resistenza e chiedi al trainer di regolare la macchina.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "wallslide",
+          "name": "Scivolate delle braccia alla parete",
+          "dose": "8 ripetizioni",
+          "instructions": "Appoggia delicatamente la schiena alla parete. Fai scorrere le braccia verso l’alto solo nell’ampiezza comoda, senza inarcare il busto.",
+          "easier_option": "Riduci l’altezza raggiunta.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "bird",
+          "name": "Bird dog",
+          "dose": "6 per lato",
+          "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+          "easier_option": "Solleva soltanto un arto alla volta.",
+          "rest_after_seconds": 45
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W08.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W09",
+      "title": "Spinta e controllo",
+      "card_text": "Una progressione accessibile per il tronco.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Panca stabile",
+        "Manubri",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 25,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "push",
+          "name": "Push-up inclinato",
+          "dose": "8 ripetizioni",
+          "instructions": "Mani su una panca alta e stabile, corpo allineato. Avvicina il petto alla panca con gomiti obliqui, poi spingi senza inarcare la zona lombare.",
+          "easier_option": "Esegui contro una parete.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "press",
+          "name": "Distensioni con manubri da terra",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiato con ginocchia piegate, gomiti obliqui rispetto al busto. Spingi i manubri sopra il petto e scendi fino a sfiorare il pavimento con le braccia.",
+          "easier_option": "Usa carichi più leggeri.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "plank",
+          "name": "Plank sugli avambracci",
+          "dose": "20 secondi",
+          "instructions": "Gomiti sotto le spalle. Mantieni testa, bacino e talloni allineati, respira e interrompi la tenuta prima che la schiena ceda.",
+          "easier_option": "Appoggia le ginocchia a terra.",
+          "rest_after_seconds": 60
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W09.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W10",
+      "title": "Glutei con miniband",
+      "card_text": "Piccoli movimenti, esecuzione precisa.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Miniband",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 22,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "band",
+          "name": "Passi laterali con miniband",
+          "dose": "8 passi per direzione",
+          "instructions": "Posiziona la miniband sopra le ginocchia, fletti leggermente anche e ginocchia. Fai piccoli passi laterali senza trascinare il piede e senza chiudere le ginocchia.",
+          "easier_option": "Esegui senza elastico.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "12 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "clamshell",
+          "name": "Aperture sul fianco",
+          "dose": "10 per lato",
+          "instructions": "Sdraiato sul fianco con anche e ginocchia piegate e piedi uniti. Apri il ginocchio superiore senza ruotare il bacino e richiudi lentamente.",
+          "easier_option": "Riduci l’ampiezza e togli l’elastico.",
+          "rest_after_seconds": 30
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W10.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W11",
+      "title": "Mobilità quotidiana",
+      "card_text": "Muoviti con calma, esplora la tua ampiezza.",
+      "category": "workout",
+      "level": "Tutti i livelli",
+      "equipment": [
+        "Tappetino",
+        "Supporto stabile"
+      ],
+      "duration_minutes_approx": 18,
+      "intensity_rpe": "2–3/10",
+      "format": "Circuito controllato",
+      "rounds": 2,
+      "warmup": {
+        "minutes": 2,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "cat",
+          "name": "Mobilità della colonna in quadrupedia",
+          "dose": "6 cicli lenti",
+          "instructions": "Da quattro appoggi alterna delicatamente arrotondamento e distensione della schiena, seguendo il respiro senza forzare il collo.",
+          "easier_option": "Riduci il movimento.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "hipstretch",
+          "name": "Allungamento flessori dell’anca",
+          "dose": "30 secondi per lato",
+          "instructions": "In mezzo inginocchio su tappetino, contrai leggermente il gluteo della gamba posteriore e porta il bacino poco avanti mantenendo il busto alto.",
+          "easier_option": "Esegui in piedi con un passo lungo e supporto.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "thoracic",
+          "name": "Rotazione toracica sul fianco",
+          "dose": "6 per lato",
+          "instructions": "Sdraiato sul fianco con ginocchia piegate e sovrapposte. Apri lentamente il braccio superiore verso il lato opposto lasciando ferme le ginocchia.",
+          "easier_option": "Apri il braccio solo parzialmente.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "ankle",
+          "name": "Mobilità caviglia",
+          "dose": "8 per lato",
+          "instructions": "Con il piede ben appoggiato, porta il ginocchio avanti nella direzione del secondo dito senza staccare il tallone; torna indietro.",
+          "easier_option": "Riduci l’avanzamento.",
+          "rest_after_seconds": 15
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 2,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+      "image": "images/W11.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W12",
+      "title": "Reset da scrivania",
+      "card_text": "Una pausa attiva tra due impegni.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Sedia stabile",
+        "Parete"
+      ],
+      "duration_minutes_approx": 12,
+      "intensity_rpe": "2–3/10",
+      "format": "Circuito controllato",
+      "rounds": 2,
+      "warmup": {
+        "minutes": 1,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "chest",
+          "name": "Apertura del petto",
+          "dose": "30 secondi",
+          "instructions": "In piedi, apri le braccia e avvicina delicatamente le scapole senza spingere la testa avanti o forzare le spalle.",
+          "easier_option": "Tieni le braccia più basse.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "neck",
+          "name": "Rotazioni dolci del capo",
+          "dose": "4 per lato",
+          "instructions": "Seduto o in piedi, ruota lentamente lo sguardo a destra e sinistra in un’ampiezza confortevole; evita circonduzioni e slanci.",
+          "easier_option": "Riduci molto l’ampiezza.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "wallslide",
+          "name": "Scivolate delle braccia alla parete",
+          "dose": "6 ripetizioni",
+          "instructions": "Appoggia delicatamente la schiena alla parete. Fai scorrere le braccia verso l’alto solo nell’ampiezza comoda, senza inarcare il busto.",
+          "easier_option": "Riduci l’altezza raggiunta.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "march",
+          "name": "Marcia attiva",
+          "dose": "60 secondi",
+          "instructions": "Cammina sul posto con appoggi morbidi e braccia naturali. Solleva le ginocchia solo quanto riesci mantenendo il busto stabile.",
+          "easier_option": "Rallenta il ritmo.",
+          "rest_after_seconds": 15
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 1,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+      "image": "images/W12.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W13",
+      "title": "Run walk starter",
+      "card_text": "Alterna cammino e corsa senza inseguire il passo.",
+      "category": "workout",
+      "level": "Base già abituato a camminare",
+      "equipment": [
+        "Scarpe adatte",
+        "Percorso piano"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "4–6/10",
+      "format": "Circuito controllato",
+      "rounds": 10,
+      "warmup": {
+        "minutes": 5,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "run_walk",
+          "name": "Intervallo corsa / cammino",
+          "dose": "1 minuto di corsa facile + 1 minuto di camminata",
+          "instructions": "Corri piano per 1 minuto con passo naturale; cammina per 1 minuto. Ripeti 10 volte, senza sprint e mantenendo una respirazione controllabile.",
+          "easier_option": "Sostituisci il minuto di corsa con camminata più vivace.",
+          "rest_after_seconds": 0
+        }
+      ],
+      "between_rounds_rest_seconds": 0,
+      "cooldown": {
+        "minutes": 5,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+      "image": "images/W13.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W14",
+      "title": "Cycle intervals",
+      "card_text": "Cambia ritmo, mantieni il controllo.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Bike indoor regolata alla propria statura"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "4–6/10",
+      "format": "Circuito controllato",
+      "rounds": 5,
+      "warmup": {
+        "minutes": 5,
+        "instructions": "Pedala 5 minuti facili, aumentando dolcemente la resistenza."
+      },
+      "exercises": [
+        {
+          "exercise_id": "bike",
+          "name": "Intervallo in bike",
+          "dose": "2 minuti moderati + 2 minuti facili",
+          "instructions": "Pedala seduto 2 minuti a resistenza moderata e 2 minuti facili. Ripeti 5 volte, senza sprint. Regola la bike con un trainer se non conosci le impostazioni.",
+          "easier_option": "Mantieni tutti i minuti a ritmo facile.",
+          "rest_after_seconds": 0
+        }
+      ],
+      "between_rounds_rest_seconds": 0,
+      "cooldown": {
+        "minutes": 5,
+        "instructions": "Pedala 5 minuti riducendo gradualmente la resistenza."
+      },
+      "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+      "image": "images/W14.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W15",
+      "title": "Circuito kettlebell",
+      "card_text": "Semplice, solido, senza movimenti balistici.",
+      "category": "workout",
+      "level": "Intermedio",
+      "equipment": [
+        "Kettlebell leggero",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 30,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "kbdead",
+          "name": "Stacco kettlebell",
+          "dose": "10 ripetizioni",
+          "instructions": "Kettlebell tra i piedi, bacino indietro e schiena neutra. Afferra il manico con due mani e alzati spingendo sui piedi; appoggia con controllo.",
+          "easier_option": "Usa un rialzo stabile per accorciare la discesa, con supervisione.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "goblet",
+          "name": "Goblet squat",
+          "dose": "8 ripetizioni",
+          "instructions": "Tieni un peso leggero vicino al petto, gomiti sotto il carico. Scendi con controllo senza perdere l’appoggio dei talloni e risali espirando.",
+          "easier_option": "Esegui senza peso verso una panca.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "suitcase",
+          "name": "Marcia con carico su un lato",
+          "dose": "30 secondi per lato",
+          "instructions": "Tieni un peso leggero a un fianco. Marcia lentamente mantenendo spalle e bacino orizzontali; cambia lato dopo la dose prevista.",
+          "easier_option": "Mantieni la posizione ferma o riduci il carico.",
+          "rest_after_seconds": 60
+        },
+        {
+          "exercise_id": "bird",
+          "name": "Bird dog",
+          "dose": "6 per lato",
+          "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+          "easier_option": "Solleva soltanto un arto alla volta.",
+          "rest_after_seconds": 60
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W15.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W16",
+      "title": "Corpo libero easy",
+      "card_text": "Inizia da ciò che riesci a controllare.",
+      "category": "workout",
+      "level": "Principiante",
+      "equipment": [
+        "Panca stabile",
+        "Parete",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 20,
+      "intensity_rpe": "3–5/10",
+      "format": "Circuito controllato",
+      "rounds": 2,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "squat",
+          "name": "Squat a corpo libero",
+          "dose": "8 ripetizioni verso panca",
+          "instructions": "Piedi stabili, circa alla larghezza delle spalle. Porta il bacino indietro e piega le ginocchia seguendo la direzione dei piedi; risali spingendo sul piede intero.",
+          "easier_option": "Siediti e rialzati da una panca stabile.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "push",
+          "name": "Push-up inclinato",
+          "dose": "8 ripetizioni alla parete",
+          "instructions": "Mani su una panca alta e stabile, corpo allineato. Avvicina il petto alla panca con gomiti obliqui, poi spingi senza inarcare la zona lombare.",
+          "easier_option": "Esegui contro una parete.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 45
+        },
+        {
+          "exercise_id": "march",
+          "name": "Marcia attiva",
+          "dose": "60 secondi",
+          "instructions": "Cammina sul posto con appoggi morbidi e braccia naturali. Solleva le ginocchia solo quanto riesci mantenendo il busto stabile.",
+          "easier_option": "Rallenta il ritmo.",
+          "rest_after_seconds": 45
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W16.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W17",
+      "title": "Pilates core flow",
+      "card_text": "Respira, allinea, muoviti lentamente.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 22,
+      "intensity_rpe": "3–5/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "tabletop",
+          "name": "Toe tap da tabletop",
+          "dose": "6 per lato",
+          "instructions": "Da supino, ginocchia piegate sopra le anche. Abbassa un piede fino a un piccolo tocco a terra, torna e alterna senza perdere controllo del bacino.",
+          "easier_option": "Tieni un piede sempre appoggiato.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "bird",
+          "name": "Bird dog",
+          "dose": "6 per lato",
+          "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+          "easier_option": "Solleva soltanto un arto alla volta.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "sidestretch",
+          "name": "Allungamento laterale da seduto",
+          "dose": "20 secondi per lato",
+          "instructions": "Siediti comodamente, alza un braccio e inclina dolcemente il tronco dal lato opposto mantenendo il bacino appoggiato.",
+          "easier_option": "Tieni il braccio più basso.",
+          "rest_after_seconds": 20
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+      "image": "images/W17.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W18",
+      "title": "Equilibrio e controllo",
+      "card_text": "Stabilità prima della velocità.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Supporto stabile",
+        "Percorso libero"
+      ],
+      "duration_minutes_approx": 18,
+      "intensity_rpe": "3–4/10",
+      "format": "Circuito controllato",
+      "rounds": 3,
+      "warmup": {
+        "minutes": 4,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "balance",
+          "name": "Equilibrio monopodalico",
+          "dose": "20 secondi per lato",
+          "instructions": "Vicino a un supporto stabile, solleva un piede di poco e mantieni bacino livellato e sguardo avanti. Cambia gamba.",
+          "easier_option": "Tieni un dito sul supporto.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "tandem",
+          "name": "Passi in linea",
+          "dose": "8 passi",
+          "instructions": "Cammina lentamente mettendo il tallone vicino alla punta del piede opposto, lungo un percorso libero accanto a una parete.",
+          "easier_option": "Lascia più spazio laterale tra i piedi.",
+          "rest_after_seconds": 30
+        },
+        {
+          "exercise_id": "calf",
+          "name": "Sollevamento polpacci",
+          "dose": "10 ripetizioni",
+          "instructions": "Vicino a un supporto stabile, sali lentamente sulle punte e torna con i talloni a terra senza rimbalzare.",
+          "easier_option": "Appoggiati con entrambe le mani.",
+          "rest_after_seconds": 30
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 3,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+      "image": "images/W18.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W19",
+      "title": "Recovery flow",
+      "card_text": "Un ritmo più lento per la tua giornata.",
+      "category": "workout",
+      "level": "Tutti i livelli",
+      "equipment": [
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 16,
+      "intensity_rpe": "1–3/10",
+      "format": "Circuito controllato",
+      "rounds": 2,
+      "warmup": {
+        "minutes": 2,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "cat",
+          "name": "Mobilità della colonna in quadrupedia",
+          "dose": "6 cicli lenti",
+          "instructions": "Da quattro appoggi alterna delicatamente arrotondamento e distensione della schiena, seguendo il respiro senza forzare il collo.",
+          "easier_option": "Riduci il movimento.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "thoracic",
+          "name": "Rotazione toracica sul fianco",
+          "dose": "5 per lato",
+          "instructions": "Sdraiato sul fianco con ginocchia piegate e sovrapposte. Apri lentamente il braccio superiore verso il lato opposto lasciando ferme le ginocchia.",
+          "easier_option": "Apri il braccio solo parzialmente.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "sidestretch",
+          "name": "Allungamento laterale da seduto",
+          "dose": "30 secondi per lato",
+          "instructions": "Siediti comodamente, alza un braccio e inclina dolcemente il tronco dal lato opposto mantenendo il bacino appoggiato.",
+          "easier_option": "Tieni il braccio più basso.",
+          "rest_after_seconds": 15
+        },
+        {
+          "exercise_id": "breath",
+          "name": "Respirazione tranquilla",
+          "dose": "60 secondi",
+          "instructions": "Siediti o sdraiati comodamente. Inspira ed espira in modo naturale senza trattenere il fiato o forzare respiri profondi.",
+          "easier_option": "Mantieni semplicemente il tuo respiro abituale.",
+          "rest_after_seconds": 15
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 2,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+      "image": "images/W19.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    },
+    {
+      "id": "W20",
+      "title": "Express total body",
+      "card_text": "Poco tempo, una sequenza chiara.",
+      "category": "workout",
+      "level": "Base",
+      "equipment": [
+        "Panca stabile",
+        "Tappetino"
+      ],
+      "duration_minutes_approx": 15,
+      "intensity_rpe": "5–6/10",
+      "format": "Circuito controllato",
+      "rounds": 2,
+      "warmup": {
+        "minutes": 3,
+        "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+      },
+      "exercises": [
+        {
+          "exercise_id": "squat",
+          "name": "Squat a corpo libero",
+          "dose": "10 ripetizioni",
+          "instructions": "Piedi stabili, circa alla larghezza delle spalle. Porta il bacino indietro e piega le ginocchia seguendo la direzione dei piedi; risali spingendo sul piede intero.",
+          "easier_option": "Siediti e rialzati da una panca stabile.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "push",
+          "name": "Push-up inclinato",
+          "dose": "8 ripetizioni",
+          "instructions": "Mani su una panca alta e stabile, corpo allineato. Avvicina il petto alla panca con gomiti obliqui, poi spingi senza inarcare la zona lombare.",
+          "easier_option": "Esegui contro una parete.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "bridge",
+          "name": "Ponte glutei",
+          "dose": "10 ripetizioni",
+          "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+          "easier_option": "Riduci l’altezza del sollevamento.",
+          "rest_after_seconds": 20
+        },
+        {
+          "exercise_id": "bird",
+          "name": "Bird dog",
+          "dose": "5 per lato",
+          "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+          "easier_option": "Solleva soltanto un arto alla volta.",
+          "rest_after_seconds": 20
+        }
+      ],
+      "between_rounds_rest_seconds": 60,
+      "cooldown": {
+        "minutes": 2,
+        "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+      },
+      "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+      "image": "images/W20.png",
+      "image_origin": "AI-generated",
+      "cta": "Inizia allenamento",
+      "editorial_status": "Programma originale proposto, non valutazione individuale",
+      "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+      "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+    }
+  ]
+}

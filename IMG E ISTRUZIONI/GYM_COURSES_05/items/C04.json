@@ -1,0 +1,64 @@
+{
+  "id": "C04",
+  "title": "Mobility & Reset",
+  "card_text": "Più spazio al movimento.",
+  "description": "Un corso a intensità contenuta per esplorare mobilità di colonna, anche e spalle. Ideale come momento di movimento consapevole, con ampiezze confortevoli e senza forzare gli allungamenti.",
+  "category": "course",
+  "level": "Tutti i livelli",
+  "duration_minutes": 30,
+  "equipment": [
+    "Tappetini",
+    "Parete",
+    "Supporti stabili"
+  ],
+  "objectives": [
+    "Esplorare l’ampiezza confortevole",
+    "Interrompere la sedentarietà",
+    "Allenare il controllo"
+  ],
+  "lesson_structure": [
+    {
+      "name": "Avvio",
+      "minutes": 4,
+      "description": "Marcia comoda e movimenti articolari dolci."
+    },
+    {
+      "name": "Mobilità guidata",
+      "minutes": 18,
+      "description": "Cat-cow, rotazioni toraciche, mobilità caviglie e anche; 2 giri lenti con spiegazioni."
+    },
+    {
+      "name": "Stabilità",
+      "minutes": 4,
+      "description": "Equilibrio vicino al supporto e scivolate delle braccia alla parete."
+    },
+    {
+      "name": "Chiusura",
+      "minutes": 4,
+      "description": "Posizione comoda e respiro naturale."
+    }
+  ],
+  "what_to_bring": [
+    "Abbigliamento sportivo comodo",
+    "Acqua",
+    "Asciugamano"
+  ],
+  "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+  "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+  "related_workout_ids": [
+    "W11",
+    "W12",
+    "W18",
+    "W19"
+  ],
+  "instructor_id": null,
+  "schedule": null,
+  "capacity": null,
+  "location": null,
+  "price": null,
+  "booking_enabled": false,
+  "image": "images/C04.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri il corso",
+  "editorial_status": "Proposta di corso; calendario e staff non confermati"
+}

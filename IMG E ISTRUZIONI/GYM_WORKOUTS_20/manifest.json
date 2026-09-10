@@ -1,0 +1,440 @@
+{
+  "pack": "GYM_WORKOUTS_20",
+  "version": "1.0",
+  "content_count": 20,
+  "image_count": 20,
+  "images": [
+    {
+      "id": "W01",
+      "path": "images/W01.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Forza total body",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W02",
+      "path": "images/W02.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Gambe e glutei",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W03",
+      "path": "images/W03.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Upper body essenziale",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W04",
+      "path": "images/W04.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Core e stabilità",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W05",
+      "path": "images/W05.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Cardio a basso impatto",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W06",
+      "path": "images/W06.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "HIIT senza salti",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W07",
+      "path": "images/W07.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Manubri total body",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W08",
+      "path": "images/W08.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Schiena e postura",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W09",
+      "path": "images/W09.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Spinta e controllo",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W10",
+      "path": "images/W10.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Glutei con miniband",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W11",
+      "path": "images/W11.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Mobilità quotidiana",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W12",
+      "path": "images/W12.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Reset da scrivania",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W13",
+      "path": "images/W13.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Run walk starter",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W14",
+      "path": "images/W14.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Cycle intervals",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W15",
+      "path": "images/W15.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Circuito kettlebell",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W16",
+      "path": "images/W16.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Corpo libero easy",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W17",
+      "path": "images/W17.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Pilates core flow",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W18",
+      "path": "images/W18.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Equilibrio e controllo",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W19",
+      "path": "images/W19.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Recovery flow",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "W20",
+      "path": "images/W20.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Express total body",
+      "origin": "AI-generated"
+    }
+  ],
+  "files": [
+    {
+      "path": "CATALOGO.html",
+      "bytes": 41270,
+      "sha256": "82aaef2aaa54d730a56f9ecb7a73aafba9d2efda69f87148bf5597323c349bd0"
+    },
+    {
+      "path": "CONTENUTI.md",
+      "bytes": 36906,
+      "sha256": "c54001654b38536be2a82f8aaa5b730ebe1b9436d92ef16f69fa7f98f67e65ef"
+    },
+    {
+      "path": "FONTI.md",
+      "bytes": 1406,
+      "sha256": "f249c12240a53f517089ed3abc16c36e4b3b66ceb6708310ec392daf552ccbb4"
+    },
+    {
+      "path": "IMAGE_PROMPTS.json",
+      "bytes": 20492,
+      "sha256": "48dab89a80a7a95d93aa3b75a193b66c093b84a763f1eabb72ec1bf70619da29"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3391,
+      "sha256": "89d1dc96a9bb638247238415dec4845c5f00166feb706de585ab48a63bb4e544"
+    },
+    {
+      "path": "images/W01.png",
+      "bytes": 2015122,
+      "sha256": "2c644eb2e2b0149ce99380e835d49f8ebb0abc4c89f2d736d01d4bab0e031025"
+    },
+    {
+      "path": "images/W02.png",
+      "bytes": 1981174,
+      "sha256": "5232e1de361d07f28a3c7b70f1527a2dea8291da1ac462e8f0b2886fb7ecb6b6"
+    },
+    {
+      "path": "images/W03.png",
+      "bytes": 1914837,
+      "sha256": "637fe873005572ce4cb4f36d6939a80fb18e18af60d72f1be1e910d8affee5dc"
+    },
+    {
+      "path": "images/W04.png",
+      "bytes": 2026042,
+      "sha256": "52ece4c6cbf0bbb843c867f0099d5919e589506fd7d39caba6f2e7167626430d"
+    },
+    {
+      "path": "images/W05.png",
+      "bytes": 1847385,
+      "sha256": "3430c0d5eed3e5223985b7777db1e3d14557e57ad43256087ed2798561739e01"
+    },
+    {
+      "path": "images/W06.png",
+      "bytes": 1998284,
+      "sha256": "63d4cde1dd63693c7fc605dae34b37b904be003693404d8bc86ab73f203a5c51"
+    },
+    {
+      "path": "images/W07.png",
+      "bytes": 2052722,
+      "sha256": "3b1a17188f1b2d00533dd6c2089cabb1b425670318e90a38df17fe7801900694"
+    },
+    {
+      "path": "images/W08.png",
+      "bytes": 1986652,
+      "sha256": "67cfce921058c87766d5331f1d54176d070b483bca9bb9953157582971a0d4ce"
+    },
+    {
+      "path": "images/W09.png",
+      "bytes": 2011966,
+      "sha256": "0e784a2568bc112abd4cd2e174aaedd8c61ad2a46c9285474f5a9bcc102d6418"
+    },
+    {
+      "path": "images/W10.png",
+      "bytes": 1966583,
+      "sha256": "d35bae6137916404426c648e2c85cda223d9e5dadfa0f75e39066ef1ca6626c6"
+    },
+    {
+      "path": "images/W11.png",
+      "bytes": 1928391,
+      "sha256": "b8cd7e666ab935b0ed215c50102958a22a70f06daad0336d7181925cedf2247e"
+    },
+    {
+      "path": "images/W12.png",
+      "bytes": 1852927,
+      "sha256": "d02e17cfbaa30853a87a941c9cff5134facf7cc899e3266fe19cfd1b1cd7183d"
+    },
+    {
+      "path": "images/W13.png",
+      "bytes": 2008926,
+      "sha256": "266c7dea5d3c94e3b2ae7891cf46db192565ffb8c22d3a4a6deab8ec725efe8c"
+    },
+    {
+      "path": "images/W14.png",
+      "bytes": 1914644,
+      "sha256": "de21860f8c489990a1293a065c3ecd0504f4702c05bf885a2ef2782ceef34515"
+    },
+    {
+      "path": "images/W15.png",
+      "bytes": 1942150,
+      "sha256": "3823c54b65830713e241e98c76473bd7f2fe8fb26ab06149d26a529092055889"
+    },
+    {
+      "path": "images/W16.png",
+      "bytes": 1954091,
+      "sha256": "9a6871ded2a11f20678d248cd73d7739c9104211e503cd3eac47dccae33eb92e"
+    },
+    {
+      "path": "images/W17.png",
+      "bytes": 1901559,
+      "sha256": "5ca3b67d9e012b40a8cd6248c8f91015a4ca072f89901ba3280d5060aeda9b47"
+    },
+    {
+      "path": "images/W18.png",
+      "bytes": 2028194,
+      "sha256": "f812fb755b71c1f2021ab34ae9b5ad422d8d635153533ac7fb30f50e3f234217"
+    },
+    {
+      "path": "images/W19.png",
+      "bytes": 1973392,
+      "sha256": "33d457ebcb63e18fd805baba42dd75aadba8e264db53086aff1ecd3e0310c9bc"
+    },
+    {
+      "path": "images/W20.png",
+      "bytes": 2037454,
+      "sha256": "927c1cb7ffc22dcfbb07f75b4ca5ce3ebaf4647ce1ab024be71fecbc4dbf6c2e"
+    },
+    {
+      "path": "items/W01.json",
+      "bytes": 2899,
+      "sha256": "8919b72b0c0f1aa6900227be28e7de2585a2ce339e13a6dc73c9d4e4ba84889f"
+    },
+    {
+      "path": "items/W02.json",
+      "bytes": 2885,
+      "sha256": "d67839ee4c55072abbf52310b098386196eecf7daf5d3360527a0cdce1544e78"
+    },
+    {
+      "path": "items/W03.json",
+      "bytes": 2840,
+      "sha256": "22edca84d086e395f20eb09b4c667c886c21336126edade200c31423030942ec"
+    },
+    {
+      "path": "items/W04.json",
+      "bytes": 2817,
+      "sha256": "2cf4bb6b352c67327499a41017f4c5331617c308365c0b1dfe264a09923f22c6"
+    },
+    {
+      "path": "items/W05.json",
+      "bytes": 1725,
+      "sha256": "9704b9b55b5283a7137a1b8b790d3c3fd669eeaa2210f7277a4ac0cd47ee0b03"
+    },
+    {
+      "path": "items/W06.json",
+      "bytes": 2749,
+      "sha256": "47db3f468619ac152fc874341c0d8ef6fa31866cdd8d930fcce359cd499ab74c"
+    },
+    {
+      "path": "items/W07.json",
+      "bytes": 2929,
+      "sha256": "fc047de665c251352f413ed61721a20a072155fe452dbd0920a79ed2328bf82b"
+    },
+    {
+      "path": "items/W08.json",
+      "bytes": 2523,
+      "sha256": "241cea9962a6d16a8eb9fd9271900bb808a06cb51966bad2b52c2b27ea32e30c"
+    },
+    {
+      "path": "items/W09.json",
+      "bytes": 2479,
+      "sha256": "67dd036d46cfbb6e57fd2e633d71f01e3e54ac78d067e2245b324e01187f8be0"
+    },
+    {
+      "path": "items/W10.json",
+      "bytes": 2497,
+      "sha256": "b6a5da9d7297d9fae35094a541d06a6a309e9a647ac42d3b2f198624fd4fe5c1"
+    },
+    {
+      "path": "items/W11.json",
+      "bytes": 2832,
+      "sha256": "da2f0c71d000f70f19f50193fb7bf6b3bf2a5ad18fdc59e735c81d484a18a3af"
+    },
+    {
+      "path": "items/W12.json",
+      "bytes": 2700,
+      "sha256": "062e5745fa29382dd4558c5956810715093650a1db877f4147af2abcdb55ef73"
+    },
+    {
+      "path": "items/W13.json",
+      "bytes": 1811,
+      "sha256": "b724b5516c85f314060a7af548a260994bba7898dffc8c8575c4fce24a385617"
+    },
+    {
+      "path": "items/W14.json",
+      "bytes": 1639,
+      "sha256": "47b209e4607e44ea84b1d6522cbd51026e0e1177c785ffdbf43ac7087b0b2119"
+    },
+    {
+      "path": "items/W15.json",
+      "bytes": 2899,
+      "sha256": "aecbacdd4c58f9bc8ab8e7e83a4a82cde775808ad3f010bd4235c5c5fdfd4e55"
+    },
+    {
+      "path": "items/W16.json",
+      "bytes": 2864,
+      "sha256": "36afe5d6f0817a8619d2d7190dc5842ede22bce6be5384247048bf064a1ab55a"
+    },
+    {
+      "path": "items/W17.json",
+      "bytes": 2754,
+      "sha256": "f5663ace38db47f8947a56aad99efcf8d9bd53d05326bb1aad070997de4aa8b3"
+    },
+    {
+      "path": "items/W18.json",
+      "bytes": 2351,
+      "sha256": "72a6099ec46cdfd0d3e340ce956d56a667fd2ce5ce9839658fc55ddfd8e9bdf5"
+    },
+    {
+      "path": "items/W19.json",
+      "bytes": 2773,
+      "sha256": "7b4a9b8e0140368cba73fffe81fde5bec15382b41ce4797090f3b47edfe068fd"
+    },
+    {
+      "path": "items/W20.json",
+      "bytes": 2843,
+      "sha256": "b09ccb6246eb936eb993dd5526f1c195a036bf0a67de5b214c4c1b96f26a9cbc"
+    },
+    {
+      "path": "workouts.json",
+      "bytes": 56708,
+      "sha256": "5d6634fd4951ecf2d078544d5ad7c499703016052b02e4cdbd5985ad1f082133"
+    }
+  ]
+}

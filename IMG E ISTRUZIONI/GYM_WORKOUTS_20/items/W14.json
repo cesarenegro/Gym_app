@@ -1,0 +1,40 @@
+{
+  "id": "W14",
+  "title": "Cycle intervals",
+  "card_text": "Cambia ritmo, mantieni il controllo.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Bike indoor regolata alla propria statura"
+  ],
+  "duration_minutes_approx": 30,
+  "intensity_rpe": "4–6/10",
+  "format": "Circuito controllato",
+  "rounds": 5,
+  "warmup": {
+    "minutes": 5,
+    "instructions": "Pedala 5 minuti facili, aumentando dolcemente la resistenza."
+  },
+  "exercises": [
+    {
+      "exercise_id": "bike",
+      "name": "Intervallo in bike",
+      "dose": "2 minuti moderati + 2 minuti facili",
+      "instructions": "Pedala seduto 2 minuti a resistenza moderata e 2 minuti facili. Ripeti 5 volte, senza sprint. Regola la bike con un trainer se non conosci le impostazioni.",
+      "easier_option": "Mantieni tutti i minuti a ritmo facile.",
+      "rest_after_seconds": 0
+    }
+  ],
+  "between_rounds_rest_seconds": 0,
+  "cooldown": {
+    "minutes": 5,
+    "instructions": "Pedala 5 minuti riducendo gradualmente la resistenza."
+  },
+  "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+  "image": "images/W14.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

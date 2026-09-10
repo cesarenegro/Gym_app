@@ -1,0 +1,65 @@
+{
+  "id": "W06",
+  "title": "HIIT senza salti",
+  "card_text": "Intervalli brevi, piedi sempre sotto controllo.",
+  "category": "workout",
+  "level": "Intermedio",
+  "equipment": [
+    "Spazio libero",
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 24,
+  "intensity_rpe": "6–7/10",
+  "format": "Circuito controllato",
+  "rounds": 4,
+  "warmup": {
+    "minutes": 5,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "march",
+      "name": "Marcia attiva",
+      "dose": "30 secondi",
+      "instructions": "Cammina sul posto con appoggi morbidi e braccia naturali. Solleva le ginocchia solo quanto riesci mantenendo il busto stabile.",
+      "easier_option": "Rallenta il ritmo.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "stepjack",
+      "name": "Step jack senza salto",
+      "dose": "30 secondi",
+      "instructions": "Fai un passo laterale mentre apri le braccia entro un’ampiezza comoda; richiudi e cambia lato. Mantieni sempre un piede a terra.",
+      "easier_option": "Tieni le mani ai fianchi.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "box",
+      "name": "Boxe a vuoto controllata",
+      "dose": "30 secondi",
+      "instructions": "Piedi stabili e ginocchia morbide. Alterna colpi in avanti senza bloccare i gomiti, ruotando dolcemente il tronco; non usare pesi.",
+      "easier_option": "Riduci velocità e ampiezza.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "knees",
+      "name": "Ginocchia alternate in piedi",
+      "dose": "30 secondi",
+      "instructions": "Solleva un ginocchio per volta verso il busto senza piegare la schiena; abbassa con controllo e alterna.",
+      "easier_option": "Appoggia una mano a un supporto.",
+      "rest_after_seconds": 30
+    }
+  ],
+  "between_rounds_rest_seconds": 0,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W06.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

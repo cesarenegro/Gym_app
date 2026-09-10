@@ -1,0 +1,440 @@
+{
+  "pack": "GYM_DAILIES_20",
+  "version": "1.0",
+  "content_count": 20,
+  "image_count": 20,
+  "images": [
+    {
+      "id": "M01",
+      "path": "images/M01.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Pancake cacao e lamponi",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M02",
+      "path": "images/M02.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Skyr mango e pistacchio",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M03",
+      "path": "images/M03.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Overnight oats espresso",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M04",
+      "path": "images/M04.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Toast uova e avocado",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M05",
+      "path": "images/M05.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "French toast fragole e yogurt",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M06",
+      "path": "images/M06.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Chicken bowl lime e paprika",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M07",
+      "path": "images/M07.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Salmone croccante e patata dolce",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M08",
+      "path": "images/M08.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Tacos di gamberi e mango",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M09",
+      "path": "images/M09.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Polpette di tacchino al pomodoro",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M10",
+      "path": "images/M10.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Pasta al pesto di piselli",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M11",
+      "path": "images/M11.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Bowl tofu e sesamo",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M12",
+      "path": "images/M12.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Cous cous ceci e limone",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M13",
+      "path": "images/M13.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Tagliata e crema di cannellini",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M14",
+      "path": "images/M14.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Frittata spinaci e feta",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M15",
+      "path": "images/M15.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Merluzzo mediterraneo",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M16",
+      "path": "images/M16.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Insalata croccante agrumi e ceci",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M17",
+      "path": "images/M17.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Vellutata verde con yogurt",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M18",
+      "path": "images/M18.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Bowl lenticchie e barbabietola",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M19",
+      "path": "images/M19.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Mousse cacao e ricotta",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "M20",
+      "path": "images/M20.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Frozen yogurt frutti rossi",
+      "origin": "AI-generated"
+    }
+  ],
+  "files": [
+    {
+      "path": "CATALOGO.html",
+      "bytes": 23041,
+      "sha256": "126fb22ea97c105b3f7720d0986f6667fe6425fde69cd86b75c1cf411c278256"
+    },
+    {
+      "path": "CONTENUTI.md",
+      "bytes": 19085,
+      "sha256": "b61f8610ecf29ef15ffd427116a4002483db76654c85d44cd818d1af7de039be"
+    },
+    {
+      "path": "FONTI.md",
+      "bytes": 1406,
+      "sha256": "f249c12240a53f517089ed3abc16c36e4b3b66ceb6708310ec392daf552ccbb4"
+    },
+    {
+      "path": "IMAGE_PROMPTS.json",
+      "bytes": 22707,
+      "sha256": "b597944de4ecdb024ce523afeb73f9ddddc3a18fdb52810427a3bad8a93741ec"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3931,
+      "sha256": "e55f81e075d73036d2fb3eff78083b58343db03ba95581c7e5111ac8707765c6"
+    },
+    {
+      "path": "images/M01.png",
+      "bytes": 2468816,
+      "sha256": "d61868ccb5f850f5d802f854bf121bded746daa634ad1f40ec216099f186a070"
+    },
+    {
+      "path": "images/M02.png",
+      "bytes": 2303272,
+      "sha256": "aa648a220cfd9ae03ffd3d4506ba4762a109bd0d4166b9601169e1dee7e60792"
+    },
+    {
+      "path": "images/M03.png",
+      "bytes": 2278198,
+      "sha256": "f3e6b37740f960f0f13202f5939f5470e40ec1b7f5c9453e1b5b84c0ea798d4c"
+    },
+    {
+      "path": "images/M04.png",
+      "bytes": 2391512,
+      "sha256": "a016c2067d3f81dbf8b72353775d7c408c65b9472d5812ed89d3d65696b069f6"
+    },
+    {
+      "path": "images/M05.png",
+      "bytes": 2608471,
+      "sha256": "c480e55f806e27f860cd474d53b4c286ef74a172c072607a24bac4ea220b84cd"
+    },
+    {
+      "path": "images/M06.png",
+      "bytes": 2641403,
+      "sha256": "23952b22db967c8038b471bc5c7f264f69a5b04b68985cab98a6d7096ae5ea9d"
+    },
+    {
+      "path": "images/M07.png",
+      "bytes": 2481559,
+      "sha256": "3edc586793a2dc4ebd647fd83c1a30fe5ffc8cebaf293914a9c916ee92fc0d1b"
+    },
+    {
+      "path": "images/M08.png",
+      "bytes": 2583733,
+      "sha256": "67120480e0bf7ffe64c4cfb597ca3213541ffa5127c6781d5aa7dee6a1b011bd"
+    },
+    {
+      "path": "images/M09.png",
+      "bytes": 2504683,
+      "sha256": "12057ff84f425a2a3acb443d48e35c1f47c521f6fcace5b582eb8938f34ca9a9"
+    },
+    {
+      "path": "images/M10.png",
+      "bytes": 2614421,
+      "sha256": "2ca8f28917e9851a55838e97625cda210c3367b3041fb6278580721cab9679f0"
+    },
+    {
+      "path": "images/M11.png",
+      "bytes": 2585619,
+      "sha256": "590b786c4491a3604239f9c9e53a2cb5763d8cca4fda9d9e5a7dddf195ed2c45"
+    },
+    {
+      "path": "images/M12.png",
+      "bytes": 2539535,
+      "sha256": "5e6615dca2e60ddf786cb0a6fa4f655daa9d132483752a58f882f5a8a2bac213"
+    },
+    {
+      "path": "images/M13.png",
+      "bytes": 2623173,
+      "sha256": "f095ac8e17591018c36660e5fe8094e5ffa7053a0467edd12ddbe209f14d49e2"
+    },
+    {
+      "path": "images/M14.png",
+      "bytes": 2451038,
+      "sha256": "af2dd0657627538fd7c27de494be97f7cd48b1d4bfa3382bebde4eec5de97337"
+    },
+    {
+      "path": "images/M15.png",
+      "bytes": 2356209,
+      "sha256": "ad3d218025e993261f3922dcb2c73513c9d2dcb871f55ed6fa9de13b5b54dfa3"
+    },
+    {
+      "path": "images/M16.png",
+      "bytes": 2633530,
+      "sha256": "8ab0ab53462cc1935ee8e3232e9e812899ed41b1e8eff355e21e44d3ab06dd68"
+    },
+    {
+      "path": "images/M17.png",
+      "bytes": 2507384,
+      "sha256": "64f39c432d2d0829ea91a1f5cf1e68b5aaedf75925c1aeffe0ed1d24803ff4c8"
+    },
+    {
+      "path": "images/M18.png",
+      "bytes": 2510594,
+      "sha256": "200ce1bc22625aca8b6891c113f81c5e7c3ffd6b9b9c4575e2f5a670d490ef97"
+    },
+    {
+      "path": "images/M19.png",
+      "bytes": 2588875,
+      "sha256": "7150a90432117ff0478924a8298e0bc7c4c80b5a74a209a0e2cf6fb54c80cefd"
+    },
+    {
+      "path": "images/M20.png",
+      "bytes": 2442015,
+      "sha256": "78123ffc359fd6d67f75d4008bda3806146cd94446017a5fecf6e8819ae05c7a"
+    },
+    {
+      "path": "items/M01.json",
+      "bytes": 1571,
+      "sha256": "ff68a4ee31f30b888504c1fe3d3cfe1724c86536475be4eca587711704cc4562"
+    },
+    {
+      "path": "items/M02.json",
+      "bytes": 1298,
+      "sha256": "f2098df9f26e67d686ffe29ee03f4960dc1419145496b40948f05bb7fd387513"
+    },
+    {
+      "path": "items/M03.json",
+      "bytes": 1360,
+      "sha256": "ec242315f15d8dd4603501445aa86fba06b7cd09ceb7122a58774bc69aafeb2d"
+    },
+    {
+      "path": "items/M04.json",
+      "bytes": 1371,
+      "sha256": "7444cb203f42aad09a0628b5ffd01fdd3da32159754abf6fa9be066a343872d5"
+    },
+    {
+      "path": "items/M05.json",
+      "bytes": 1381,
+      "sha256": "251b254b3ff02aad80cb5db3490907b86fc252b4d23021e11ad155758f67c377"
+    },
+    {
+      "path": "items/M06.json",
+      "bytes": 1562,
+      "sha256": "c0af03a4d7def9cd603f60f0f4ac1e0ecc18490a9aa848aab121d7766045a223"
+    },
+    {
+      "path": "items/M07.json",
+      "bytes": 1481,
+      "sha256": "b43050c394e6467bcc415cc83b8914aeadfb04f8da10b065cb0c43251b705466"
+    },
+    {
+      "path": "items/M08.json",
+      "bytes": 1486,
+      "sha256": "a25631df00c5fab3a70f9283e3572c596f8047010718ecd384b36353dd6925fa"
+    },
+    {
+      "path": "items/M09.json",
+      "bytes": 1536,
+      "sha256": "ae4886a3e928232d8ec484007b6b51dee258b2c0ec255dd9be9d7e4e4cd1982a"
+    },
+    {
+      "path": "items/M10.json",
+      "bytes": 1398,
+      "sha256": "482d1e83ef713fb111f790bba02d5692a85647517bd443e42624749486ec1aa7"
+    },
+    {
+      "path": "items/M11.json",
+      "bytes": 1524,
+      "sha256": "d3b5d779388cb54b37698727cdf7e0331c53b21e3a8f3521718a9bc92d2e7fb0"
+    },
+    {
+      "path": "items/M12.json",
+      "bytes": 1355,
+      "sha256": "077238e46391776436f8e05afdb22f7ea2c2dbcb359b3c4d2ea9ff8e7e1caec1"
+    },
+    {
+      "path": "items/M13.json",
+      "bytes": 1427,
+      "sha256": "cdb163357ef0b1f9088d968c1cd5cc9ee6bf8987d00763940a5be12c6f4eac51"
+    },
+    {
+      "path": "items/M14.json",
+      "bytes": 1445,
+      "sha256": "455e158487379ff9ffe66d5314e198a3cc8901fc73f625d3053b0f271b634836"
+    },
+    {
+      "path": "items/M15.json",
+      "bytes": 1385,
+      "sha256": "74ddf10a2808cdf1752526ad98ce406d376d77b3914b5ff29f304008c2c462a4"
+    },
+    {
+      "path": "items/M16.json",
+      "bytes": 1342,
+      "sha256": "bba63b51f81d2d57749e8e1e8ebae2aee24f12670a85570bce95fb00cf64b790"
+    },
+    {
+      "path": "items/M17.json",
+      "bytes": 1400,
+      "sha256": "80f184b2f2939e85a169f427f106bc0c331306b00283630775d0c16a7c602e4f"
+    },
+    {
+      "path": "items/M18.json",
+      "bytes": 1364,
+      "sha256": "8ba2f29750379e0d22e629e6cffb8ee1ffe3f2e8ccb3d8644d3be138c32a18e4"
+    },
+    {
+      "path": "items/M19.json",
+      "bytes": 1293,
+      "sha256": "e14655e6228afd05257b69aa80e091bcd3bc3f9a8db0f243448aaf4621665827"
+    },
+    {
+      "path": "items/M20.json",
+      "bytes": 1461,
+      "sha256": "957fe25c35a86b272cfc7175835810f96c16770e536dcd3a117649eb47b193f8"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 33404,
+      "sha256": "306717938f148828c9bc97d201f9f868fc56be00089927c6cde60f57f0c6821e"
+    }
+  ]
+}

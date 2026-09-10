@@ -1,0 +1,44 @@
+{
+  "id": "M17",
+  "title": "Vellutata verde con yogurt",
+  "card_text": "Un cucchiaio cremoso, un finale fresco.",
+  "category": "meal",
+  "meal_type": "Pranzo leggero / primo",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "25 min",
+  "ingredients": [
+    "250 g zucchine",
+    "100 g piselli surgelati",
+    "100 g yogurt greco",
+    "30 g cipolla",
+    "200 ml acqua",
+    "5 g olio EVO",
+    "Menta, pepe e sale a piacere"
+  ],
+  "steps": [
+    "Lava le zucchine e tagliale. Trita la cipolla.",
+    "Fai appassire la cipolla con olio e un cucchiaio d’acqua per 3 minuti.",
+    "Aggiungi zucchine, piselli e acqua restante; cuoci coperto per 12–15 minuti, rispettando anche i tempi dei piselli.",
+    "Frulla, regola di sale e pepe e servi con yogurt e menta."
+  ],
+  "chef_tip": "Aggiungi lo yogurt fuori dal fuoco.",
+  "allergens": [
+    "Latte"
+  ],
+  "tags": [
+    "DETOX*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M17.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

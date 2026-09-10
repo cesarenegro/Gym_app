@@ -1,0 +1,43 @@
+{
+  "id": "M19",
+  "title": "Mousse cacao e ricotta",
+  "card_text": "Il dessert cremoso che si fa in cinque minuti.",
+  "category": "meal",
+  "meal_type": "Dessert / spuntino",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "5 min",
+  "ingredients": [
+    "100 g ricotta vaccina",
+    "100 g yogurt greco bianco",
+    "8 g cacao amaro",
+    "5 g miele",
+    "80 g fragole",
+    "5 g cioccolato fondente"
+  ],
+  "steps": [
+    "Frulla ricotta, yogurt, cacao e miele fino a ottenere una crema liscia.",
+    "Trasferisci in una coppetta.",
+    "Lava e taglia le fragole.",
+    "Completa con fragole e cioccolato a scaglie e servi."
+  ],
+  "chef_tip": "Per una consistenza più compatta, lascia 20 minuti in frigo.",
+  "allergens": [
+    "Latte"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M19.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

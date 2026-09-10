@@ -1,0 +1,64 @@
+{
+  "id": "W04",
+  "title": "Core e stabilità",
+  "card_text": "Il controllo parte dal centro.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 22,
+  "intensity_rpe": "5–6/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 3,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "deadbug",
+      "name": "Dead bug",
+      "dose": "6 per lato",
+      "instructions": "Da supino porta ginocchia sopra le anche. Espira e allunga lentamente un braccio e la gamba opposta senza perdere il controllo del bacino; alterna.",
+      "easier_option": "Muovi soltanto una gamba alla volta con un piccolo tocco del tallone.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "plank",
+      "name": "Plank sugli avambracci",
+      "dose": "20 secondi",
+      "instructions": "Gomiti sotto le spalle. Mantieni testa, bacino e talloni allineati, respira e interrompi la tenuta prima che la schiena ceda.",
+      "easier_option": "Appoggia le ginocchia a terra.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "sideplank",
+      "name": "Side plank con ginocchia a terra",
+      "dose": "15 secondi per lato",
+      "instructions": "Sul fianco, gomito sotto la spalla e ginocchia piegate. Solleva il bacino senza ruotare il tronco e continua a respirare.",
+      "easier_option": "Riduci la durata a 10 secondi.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "bridge",
+      "name": "Ponte glutei",
+      "dose": "12 ripetizioni",
+      "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+      "easier_option": "Riduci l’altezza del sollevamento.",
+      "rest_after_seconds": 30
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W04.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

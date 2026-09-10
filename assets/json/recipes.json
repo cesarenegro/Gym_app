@@ -1,0 +1,924 @@
+{
+  "schema_version": "1.0",
+  "locale": "it-IT",
+  "tags": {
+    "SLIM": {
+      "color": "#D7F75B",
+      "text_color": "#111111",
+      "meaning": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento."
+    },
+    "PROTEIN": {
+      "color": "#80CFFF",
+      "text_color": "#111111",
+      "meaning": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati."
+    },
+    "POWER": {
+      "color": "#FFC76A",
+      "text_color": "#111111",
+      "meaning": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza."
+    },
+    "TESTOSTERONE*": {
+      "color": "#C8B6FF",
+      "text_color": "#111111",
+      "meaning": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+      "recommended_public_label": "BALANCE",
+      "requires_visible_note": true
+    },
+    "DETOX*": {
+      "color": "#86DEC4",
+      "text_color": "#111111",
+      "meaning": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+      "recommended_public_label": "FRESH",
+      "requires_visible_note": true
+    }
+  },
+  "items": [
+    {
+      "id": "M01",
+      "title": "Pancake cacao e lamponi",
+      "card_text": "Il lato goloso della tua colazione.",
+      "category": "meal",
+      "meal_type": "Colazione",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "15 min",
+      "ingredients": [
+        "40 g farina di avena",
+        "1 uovo medio",
+        "100 g yogurt greco bianco 0%",
+        "50 ml latte",
+        "5 g cacao amaro",
+        "2 g lievito per dolci",
+        "70 g lamponi",
+        "5 g cioccolato fondente",
+        "2 g olio per la padella"
+      ],
+      "steps": [
+        "Mescola farina, cacao e lievito. Aggiungi uovo, latte e 30 g di yogurt: ottieni una pastella densa.",
+        "Scalda una padella antiaderente con l’olio distribuito con un pennello. Versa tre piccole porzioni.",
+        "Cuoci a fuoco medio-basso circa 2–3 minuti per lato, finché il centro è cotto.",
+        "Servi con lo yogurt rimasto, lamponi lavati e cioccolato a scaglie."
+      ],
+      "chef_tip": "Non schiacciare i pancake mentre cuociono.",
+      "allergens": [
+        "Uova",
+        "Latte",
+        "Avena: verificare glutine in etichetta"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M01.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M02",
+      "title": "Skyr mango e pistacchio",
+      "card_text": "Fresco, cremoso, con il crunch giusto.",
+      "category": "meal",
+      "meal_type": "Colazione / spuntino",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "5 min",
+      "ingredients": [
+        "200 g skyr bianco",
+        "120 g polpa di mango",
+        "10 g pistacchi non salati",
+        "20 g fiocchi di avena"
+      ],
+      "steps": [
+        "Versa lo skyr in una ciotola e lavoralo con il cucchiaio.",
+        "Taglia il mango a cubetti.",
+        "Trita grossolanamente i pistacchi.",
+        "Distribuisci mango, avena e pistacchi sullo skyr e servi."
+      ],
+      "chef_tip": "Usa mango maturo: non serve aggiungere sciroppi.",
+      "allergens": [
+        "Latte",
+        "Pistacchi",
+        "Avena: verificare glutine in etichetta"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M02.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M03",
+      "title": "Overnight oats espresso",
+      "card_text": "La colazione si prepara mentre tu riposi.",
+      "category": "meal",
+      "meal_type": "Colazione",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "5 min + 8 ore in frigo",
+      "ingredients": [
+        "45 g fiocchi di avena",
+        "150 g yogurt greco bianco",
+        "60 ml latte",
+        "30 ml espresso freddo anche decaffeinato",
+        "3 g cacao amaro"
+      ],
+      "steps": [
+        "Mescola avena, latte, espresso freddo e 100 g di yogurt in un contenitore con coperchio.",
+        "Chiudi e lascia in frigorifero circa 8 ore.",
+        "Mescola; se serve aggiungi un cucchiaio d’acqua.",
+        "Completa con i 50 g di yogurt rimasti e cacao."
+      ],
+      "chef_tip": "Prepara la sera e consuma la mattina seguente.",
+      "allergens": [
+        "Latte",
+        "Avena: verificare glutine in etichetta"
+      ],
+      "tags": [
+        "POWER"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M03.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M04",
+      "title": "Toast uova e avocado",
+      "card_text": "Pochi ingredienti, un morso pieno di gusto.",
+      "category": "meal",
+      "meal_type": "Colazione / pranzo leggero",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "15 min",
+      "ingredients": [
+        "60 g pane integrale",
+        "1 uovo medio",
+        "50 g polpa di avocado",
+        "10 g semi di zucca",
+        "10 ml succo di limone",
+        "Pepe a piacere"
+      ],
+      "steps": [
+        "Metti l’uovo in acqua, porta a bollore e cuoci circa 9–10 minuti, fino ad albume e tuorlo sodi. Raffredda e sguscia.",
+        "Schiaccia l’avocado con il succo di limone.",
+        "Tosta il pane e spalma l’avocado.",
+        "Aggiungi l’uovo a fette, i semi di zucca e pepe."
+      ],
+      "chef_tip": "Il limone mantiene fresco il gusto dell’avocado.",
+      "allergens": [
+        "Glutine",
+        "Uova"
+      ],
+      "tags": [
+        "TESTOSTERONE*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M04.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M05",
+      "title": "French toast fragole e yogurt",
+      "card_text": "Dorato fuori, morbido dentro.",
+      "category": "meal",
+      "meal_type": "Colazione",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "15 min",
+      "ingredients": [
+        "60 g pane integrale",
+        "1 uovo medio",
+        "40 ml latte",
+        "100 g yogurt greco bianco",
+        "120 g fragole",
+        "2 g olio",
+        "Cannella a piacere"
+      ],
+      "steps": [
+        "Sbatti uovo e latte con un pizzico di cannella.",
+        "Immergi brevemente il pane sui due lati.",
+        "Cuoci in padella antiaderente spennellata d’olio a fuoco medio-basso per circa 3 minuti per lato, finché l’uovo è cotto anche al centro.",
+        "Servi con yogurt e fragole lavate e tagliate."
+      ],
+      "chef_tip": "Pane del giorno prima: assorbe bene senza rompersi.",
+      "allergens": [
+        "Glutine",
+        "Uova",
+        "Latte"
+      ],
+      "tags": [
+        "POWER"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M05.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M06",
+      "title": "Chicken bowl lime e paprika",
+      "card_text": "Speziato, fresco, pronto per la tua pausa.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "25 min",
+      "ingredients": [
+        "150 g petto di pollo crudo",
+        "60 g riso basmati secco",
+        "150 g zucchine",
+        "100 g pomodorini",
+        "50 g yogurt greco",
+        "5 g olio EVO",
+        "15 ml succo di lime",
+        "1 cucchiaino paprika dolce",
+        "Sale e pepe a piacere"
+      ],
+      "steps": [
+        "Cuoci il riso secondo la confezione.",
+        "Taglia le zucchine a rondelle e cuocile in padella con metà olio per circa 8 minuti.",
+        "Condisci il pollo con paprika e olio rimasto. Cuocilo in padella, girandolo, fino a 74 °C al cuore; affettalo con utensili puliti.",
+        "Mescola yogurt e lime. Componi la bowl con riso, pollo, zucchine e pomodorini lavati, quindi aggiungi la salsa."
+      ],
+      "chef_tip": "La paprika dolce dà carattere senza coprire il lime.",
+      "allergens": [
+        "Latte"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M06.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M07",
+      "title": "Salmone croccante e patata dolce",
+      "card_text": "Un piatto unico, colori pieni, zero complicazioni.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "35 min",
+      "ingredients": [
+        "140 g filetto di salmone crudo",
+        "180 g patata dolce",
+        "150 g broccoli",
+        "5 g olio EVO",
+        "15 ml succo di limone",
+        "Paprika e pepe a piacere"
+      ],
+      "steps": [
+        "Scalda il forno statico a 200 °C. Taglia la patata a spicchi sottili e condiscila con metà olio e paprika.",
+        "Cuoci la patata per 15 minuti su carta forno.",
+        "Aggiungi salmone e broccoli in piccole cimette, condisci con l’olio rimasto e cuoci altri 12–18 minuti. Il pesce deve raggiungere 63 °C al cuore.",
+        "Controlla che la patata sia tenera e servi con limone."
+      ],
+      "chef_tip": "Lascia spazio tra gli spicchi per farli dorare.",
+      "allergens": [
+        "Pesce"
+      ],
+      "tags": [
+        "TESTOSTERONE*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M07.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M08",
+      "title": "Tacos di gamberi e mango",
+      "card_text": "Dolce, fresco e speziato in due tacos.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "20 min",
+      "ingredients": [
+        "2 tortillas di mais da 25 g",
+        "150 g gamberi crudi sgusciati",
+        "70 g mango",
+        "80 g cavolo rosso",
+        "50 g yogurt greco",
+        "15 ml succo di lime",
+        "5 g olio EVO",
+        "Paprika a piacere"
+      ],
+      "steps": [
+        "Taglia mango a cubetti e cavolo a strisce sottili. Lava le verdure.",
+        "Mescola yogurt e lime.",
+        "Cuoci i gamberi con olio e paprika circa 2–3 minuti per lato, fino a polpa opaca e perlata.",
+        "Scalda le tortillas, farcisci con cavolo, gamberi e mango e completa con la salsa."
+      ],
+      "chef_tip": "Scalda le tortillas solo al momento di farcirle.",
+      "allergens": [
+        "Crostacei",
+        "Latte",
+        "Verificare eventuale glutine nelle tortillas"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M08.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M09",
+      "title": "Polpette di tacchino al pomodoro",
+      "card_text": "Comfort food con una base di zucchine.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "25 min",
+      "ingredients": [
+        "150 g macinato di tacchino",
+        "10 g pangrattato",
+        "15 ml latte",
+        "150 g passata di pomodoro",
+        "250 g zucchine",
+        "5 g olio EVO",
+        "Basilico, pepe e sale a piacere"
+      ],
+      "steps": [
+        "Ammorbidisci il pangrattato nel latte e mescolalo con tacchino e pepe. Forma 5 piccole polpette.",
+        "Scalda metà olio e fai dorare le polpette per 3 minuti girandole.",
+        "Aggiungi la passata, copri e cuoci a fuoco basso circa 12–15 minuti, fino a 74 °C al cuore.",
+        "Ricava nastri dalle zucchine con un pelapatate; saltali 2–3 minuti con l’olio rimasto. Servi con polpette e basilico."
+      ],
+      "chef_tip": "Mantieni le zucchine appena croccanti.",
+      "allergens": [
+        "Glutine",
+        "Latte"
+      ],
+      "tags": [
+        "SLIM"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M09.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M10",
+      "title": "Pasta al pesto di piselli",
+      "card_text": "Verde brillante, cremosa senza panna.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "20 min",
+      "ingredients": [
+        "70 g pasta integrale secca",
+        "100 g piselli surgelati",
+        "100 g fiocchi di latte",
+        "5 g olio EVO",
+        "5 foglie basilico",
+        "10 ml succo di limone",
+        "Sale e pepe a piacere"
+      ],
+      "steps": [
+        "Cuoci i piselli in acqua bollente per il tempo indicato sulla confezione.",
+        "Cuoci la pasta e conserva una tazzina d’acqua di cottura.",
+        "Frulla i piselli con olio, basilico, limone e poca acqua di cottura.",
+        "Condisci la pasta e completa con i fiocchi di latte."
+      ],
+      "chef_tip": "Aggiungi l’acqua poco alla volta per ottenere una crema.",
+      "allergens": [
+        "Glutine",
+        "Latte"
+      ],
+      "tags": [
+        "POWER"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M10.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M11",
+      "title": "Bowl tofu e sesamo",
+      "card_text": "Croccantezza e colore, tutta vegetale.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "25 min",
+      "ingredients": [
+        "180 g tofu compatto",
+        "50 g quinoa secca",
+        "80 g edamame sgusciati surgelati",
+        "80 g carota",
+        "5 g semi di sesamo",
+        "5 g olio EVO",
+        "10 ml salsa di soia a ridotto sale",
+        "10 ml succo di lime"
+      ],
+      "steps": [
+        "Sciacqua la quinoa e cuocila secondo confezione. Cuoci gli edamame secondo confezione.",
+        "Tampona il tofu, taglialo a cubetti e rosolalo con l’olio per 8–10 minuti, girandolo.",
+        "Aggiungi salsa di soia e lime e mescola per un minuto.",
+        "Componi la bowl con quinoa, tofu, edamame, carota lavata a nastri e sesamo."
+      ],
+      "chef_tip": "Asciugare il tofu è il segreto della crosticina.",
+      "allergens": [
+        "Soia",
+        "Sesamo",
+        "Possibile glutine nella salsa di soia"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M11.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M12",
+      "title": "Cous cous ceci e limone",
+      "card_text": "La pausa pranzo che sa di Mediterraneo.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "15 min",
+      "ingredients": [
+        "60 g cous cous integrale secco",
+        "120 g ceci cotti scolati",
+        "100 g cetriolo",
+        "100 g pomodorini",
+        "5 g olio EVO",
+        "15 ml succo di limone",
+        "Prezzemolo a piacere"
+      ],
+      "steps": [
+        "Reidrata il cous cous con acqua bollente nelle quantità e nei tempi della confezione.",
+        "Sgrana con una forchetta e lascia intiepidire.",
+        "Sciacqua i ceci; lava e taglia cetriolo e pomodorini.",
+        "Unisci tutto e condisci con olio, limone e prezzemolo tritato."
+      ],
+      "chef_tip": "Sgrana prima di aggiungere le verdure.",
+      "allergens": [
+        "Glutine"
+      ],
+      "tags": [
+        "POWER"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M12.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M13",
+      "title": "Tagliata e crema di cannellini",
+      "card_text": "Una cena essenziale, dal gusto deciso.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "20 min",
+      "ingredients": [
+        "130 g bistecca magra di manzo cruda",
+        "130 g cannellini cotti scolati",
+        "40 g rucola",
+        "5 g olio EVO",
+        "15 ml succo di limone",
+        "30 ml acqua calda",
+        "Rosmarino e pepe a piacere"
+      ],
+      "steps": [
+        "Sciacqua i cannellini, scaldali e frullali con acqua calda, metà olio e metà limone.",
+        "Scalda una padella e cuoci la bistecca su entrambi i lati fino a 63 °C al cuore.",
+        "Lascia riposare almeno 3 minuti, poi taglia a fette.",
+        "Servi sulla crema con rucola lavata, olio e limone rimasti e poco rosmarino."
+      ],
+      "chef_tip": "Taglia la carne trasversalmente alle fibre.",
+      "allergens": [],
+      "tags": [
+        "TESTOSTERONE*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M13.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M14",
+      "title": "Frittata spinaci e feta",
+      "card_text": "Morbida, saporita, pronta in padella.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "20 min",
+      "ingredients": [
+        "2 uova medie",
+        "100 g albume pastorizzato",
+        "100 g spinaci freschi",
+        "30 g feta",
+        "100 g pomodorini",
+        "5 g olio EVO",
+        "Pepe a piacere"
+      ],
+      "steps": [
+        "Lava gli spinaci e falli appassire 2–3 minuti in una padella piccola con olio.",
+        "Sbatti uova e albume, poi aggiungi feta sbriciolata e pepe.",
+        "Versa sugli spinaci, copri e cuoci a fuoco basso circa 8–10 minuti; gira aiutandoti con un piatto se necessario. Raggiungi 71 °C al centro.",
+        "Servi con pomodorini lavati e tagliati."
+      ],
+      "chef_tip": "Fiamma bassa: il fondo non brucia mentre il centro cuoce.",
+      "allergens": [
+        "Uova",
+        "Latte"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M14.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M15",
+      "title": "Merluzzo mediterraneo",
+      "card_text": "Pomodorini, olive e una scarpetta di profumi.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "20 min",
+      "ingredients": [
+        "180 g filetto di merluzzo crudo",
+        "200 g pomodorini",
+        "15 g olive nere denocciolate",
+        "5 g capperi dissalati",
+        "5 g olio EVO",
+        "Basilico e pepe a piacere"
+      ],
+      "steps": [
+        "Lava e taglia i pomodorini. Scaldali in padella con l’olio per 4 minuti.",
+        "Aggiungi il merluzzo, le olive e i capperi.",
+        "Copri e cuoci dolcemente circa 8–12 minuti, secondo lo spessore, fino a 63 °C al cuore.",
+        "Completa con basilico e pepe."
+      ],
+      "chef_tip": "Se il fondo si asciuga aggiungi 1–2 cucchiai d’acqua.",
+      "allergens": [
+        "Pesce"
+      ],
+      "tags": [
+        "SLIM"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M15.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M16",
+      "title": "Insalata croccante agrumi e ceci",
+      "card_text": "Freschezza vera, cucchiaio dopo cucchiaio.",
+      "category": "meal",
+      "meal_type": "Pranzo leggero / contorno",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "10 min",
+      "ingredients": [
+        "150 g finocchio",
+        "120 g polpa di arancia",
+        "100 g ceci cotti scolati",
+        "40 g spinacino",
+        "10 g semi di zucca",
+        "5 g olio EVO",
+        "10 ml succo di limone"
+      ],
+      "steps": [
+        "Lava finocchio e spinacino. Affetta il finocchio sottile.",
+        "Pela l’arancia e ricava gli spicchi senza semi.",
+        "Sciacqua i ceci e uniscili alle verdure e all’arancia.",
+        "Condisci con olio e limone; completa con i semi."
+      ],
+      "chef_tip": "Conserva gli spicchi interi per un contrasto piacevole.",
+      "allergens": [],
+      "tags": [
+        "DETOX*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M16.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M17",
+      "title": "Vellutata verde con yogurt",
+      "card_text": "Un cucchiaio cremoso, un finale fresco.",
+      "category": "meal",
+      "meal_type": "Pranzo leggero / primo",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "25 min",
+      "ingredients": [
+        "250 g zucchine",
+        "100 g piselli surgelati",
+        "100 g yogurt greco",
+        "30 g cipolla",
+        "200 ml acqua",
+        "5 g olio EVO",
+        "Menta, pepe e sale a piacere"
+      ],
+      "steps": [
+        "Lava le zucchine e tagliale. Trita la cipolla.",
+        "Fai appassire la cipolla con olio e un cucchiaio d’acqua per 3 minuti.",
+        "Aggiungi zucchine, piselli e acqua restante; cuoci coperto per 12–15 minuti, rispettando anche i tempi dei piselli.",
+        "Frulla, regola di sale e pepe e servi con yogurt e menta."
+      ],
+      "chef_tip": "Aggiungi lo yogurt fuori dal fuoco.",
+      "allergens": [
+        "Latte"
+      ],
+      "tags": [
+        "DETOX*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M17.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M18",
+      "title": "Bowl lenticchie e barbabietola",
+      "card_text": "Terra, agrumi e una nota sapida.",
+      "category": "meal",
+      "meal_type": "Pranzo / cena",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "10 min",
+      "ingredients": [
+        "150 g lenticchie cotte scolate",
+        "120 g barbabietola già cotta",
+        "50 g spinacino",
+        "100 g polpa di arancia",
+        "40 g feta",
+        "5 g olio EVO",
+        "10 ml succo di limone"
+      ],
+      "steps": [
+        "Sciacqua e scola le lenticchie.",
+        "Taglia la barbabietola a cubetti e l’arancia a spicchi.",
+        "Lava lo spinacino e disponilo in una ciotola con gli altri ingredienti.",
+        "Condisci con olio e limone e completa con feta sbriciolata."
+      ],
+      "chef_tip": "Aggiungi la barbabietola alla fine per mantenere i colori separati.",
+      "allergens": [
+        "Latte"
+      ],
+      "tags": [
+        "DETOX*"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M18.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M19",
+      "title": "Mousse cacao e ricotta",
+      "card_text": "Il dessert cremoso che si fa in cinque minuti.",
+      "category": "meal",
+      "meal_type": "Dessert / spuntino",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "5 min",
+      "ingredients": [
+        "100 g ricotta vaccina",
+        "100 g yogurt greco bianco",
+        "8 g cacao amaro",
+        "5 g miele",
+        "80 g fragole",
+        "5 g cioccolato fondente"
+      ],
+      "steps": [
+        "Frulla ricotta, yogurt, cacao e miele fino a ottenere una crema liscia.",
+        "Trasferisci in una coppetta.",
+        "Lava e taglia le fragole.",
+        "Completa con fragole e cioccolato a scaglie e servi."
+      ],
+      "chef_tip": "Per una consistenza più compatta, lascia 20 minuti in frigo.",
+      "allergens": [
+        "Latte"
+      ],
+      "tags": [
+        "PROTEIN"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M19.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    },
+    {
+      "id": "M20",
+      "title": "Frozen yogurt frutti rossi",
+      "card_text": "Fresco e goloso, senza gelatiera.",
+      "category": "meal",
+      "meal_type": "Dessert / spuntino",
+      "servings": 1,
+      "difficulty": "Facile",
+      "total_time_label": "10 min + 4 ore freezer",
+      "ingredients": [
+        "170 g yogurt greco bianco 0%",
+        "100 g fragole fresche",
+        "50 g mirtilli freschi",
+        "5 g miele",
+        "5 g mandorle a lamelle"
+      ],
+      "steps": [
+        "Lava e asciuga la frutta. Taglia le fragole e congelale con 30 g di mirtilli in un contenitore per almeno 4 ore.",
+        "Frulla la frutta congelata con yogurt e miele, a impulsi, usando un frullatore adatto.",
+        "Se necessario lascia ammorbidire la frutta 5 minuti: non aggiungere molta acqua.",
+        "Servi subito con i mirtilli rimasti e le mandorle."
+      ],
+      "chef_tip": "La consistenza migliore si ottiene appena frullato.",
+      "allergens": [
+        "Latte",
+        "Mandorle"
+      ],
+      "tags": [
+        "SLIM"
+      ],
+      "nutrition": {
+        "status": "Non calcolata: servono composizione e marche degli ingredienti",
+        "kcal": null,
+        "protein_g": null,
+        "carbs_g": null,
+        "fat_g": null
+      },
+      "image": "images/M20.png",
+      "image_origin": "AI-generated",
+      "cta": "Scopri la ricetta",
+      "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+      "editorial_status": "Originale proposto; ricetta non testata in cucina"
+    }
+  ]
+}

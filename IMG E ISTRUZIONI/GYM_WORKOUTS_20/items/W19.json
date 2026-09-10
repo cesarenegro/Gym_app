@@ -1,0 +1,64 @@
+{
+  "id": "W19",
+  "title": "Recovery flow",
+  "card_text": "Un ritmo più lento per la tua giornata.",
+  "category": "workout",
+  "level": "Tutti i livelli",
+  "equipment": [
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 16,
+  "intensity_rpe": "1–3/10",
+  "format": "Circuito controllato",
+  "rounds": 2,
+  "warmup": {
+    "minutes": 2,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "cat",
+      "name": "Mobilità della colonna in quadrupedia",
+      "dose": "6 cicli lenti",
+      "instructions": "Da quattro appoggi alterna delicatamente arrotondamento e distensione della schiena, seguendo il respiro senza forzare il collo.",
+      "easier_option": "Riduci il movimento.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "thoracic",
+      "name": "Rotazione toracica sul fianco",
+      "dose": "5 per lato",
+      "instructions": "Sdraiato sul fianco con ginocchia piegate e sovrapposte. Apri lentamente il braccio superiore verso il lato opposto lasciando ferme le ginocchia.",
+      "easier_option": "Apri il braccio solo parzialmente.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "sidestretch",
+      "name": "Allungamento laterale da seduto",
+      "dose": "30 secondi per lato",
+      "instructions": "Siediti comodamente, alza un braccio e inclina dolcemente il tronco dal lato opposto mantenendo il bacino appoggiato.",
+      "easier_option": "Tieni il braccio più basso.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "breath",
+      "name": "Respirazione tranquilla",
+      "dose": "60 secondi",
+      "instructions": "Siediti o sdraiati comodamente. Inspira ed espira in modo naturale senza trattenere il fiato o forzare respiri profondi.",
+      "easier_option": "Mantieni semplicemente il tuo respiro abituale.",
+      "rest_after_seconds": 15
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 2,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+  "image": "images/W19.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

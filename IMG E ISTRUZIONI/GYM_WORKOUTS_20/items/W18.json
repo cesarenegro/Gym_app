@@ -1,0 +1,57 @@
+{
+  "id": "W18",
+  "title": "Equilibrio e controllo",
+  "card_text": "Stabilità prima della velocità.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Supporto stabile",
+    "Percorso libero"
+  ],
+  "duration_minutes_approx": 18,
+  "intensity_rpe": "3–4/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "balance",
+      "name": "Equilibrio monopodalico",
+      "dose": "20 secondi per lato",
+      "instructions": "Vicino a un supporto stabile, solleva un piede di poco e mantieni bacino livellato e sguardo avanti. Cambia gamba.",
+      "easier_option": "Tieni un dito sul supporto.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "tandem",
+      "name": "Passi in linea",
+      "dose": "8 passi",
+      "instructions": "Cammina lentamente mettendo il tallone vicino alla punta del piede opposto, lungo un percorso libero accanto a una parete.",
+      "easier_option": "Lascia più spazio laterale tra i piedi.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "calf",
+      "name": "Sollevamento polpacci",
+      "dose": "10 ripetizioni",
+      "instructions": "Vicino a un supporto stabile, sali lentamente sulle punte e torna con i talloni a terra senza rimbalzare.",
+      "easier_option": "Appoggiati con entrambe le mani.",
+      "rest_after_seconds": 30
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+  "image": "images/W18.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "W05",
+  "title": "Cardio a basso impatto",
+  "card_text": "Trova il ritmo che puoi mantenere.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Tapis roulant o percorso piano"
+  ],
+  "duration_minutes_approx": 30,
+  "intensity_rpe": "4–5/10",
+  "format": "Circuito controllato",
+  "rounds": 1,
+  "warmup": {
+    "minutes": 5,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "walk",
+      "name": "Camminata comoda",
+      "dose": "20 minuti a ritmo sostenuto ma conversazionale",
+      "instructions": "Cammina a ritmo regolare, spalle rilassate e passi naturali. Sul tapis roulant scegli una velocità controllabile senza aggrapparti.",
+      "easier_option": "Rallenta o cammina su terreno piano.",
+      "rest_after_seconds": 0
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 5,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Mantieni un ritmo gestibile. Aumenta gradualmente la durata solo quando la sessione risulta comoda; non aumentare insieme durata e intensità.",
+  "image": "images/W05.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

@@ -1,0 +1,47 @@
+{
+  "id": "M11",
+  "title": "Bowl tofu e sesamo",
+  "card_text": "Croccantezza e colore, tutta vegetale.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "25 min",
+  "ingredients": [
+    "180 g tofu compatto",
+    "50 g quinoa secca",
+    "80 g edamame sgusciati surgelati",
+    "80 g carota",
+    "5 g semi di sesamo",
+    "5 g olio EVO",
+    "10 ml salsa di soia a ridotto sale",
+    "10 ml succo di lime"
+  ],
+  "steps": [
+    "Sciacqua la quinoa e cuocila secondo confezione. Cuoci gli edamame secondo confezione.",
+    "Tampona il tofu, taglialo a cubetti e rosolalo con l’olio per 8–10 minuti, girandolo.",
+    "Aggiungi salsa di soia e lime e mescola per un minuto.",
+    "Componi la bowl con quinoa, tofu, edamame, carota lavata a nastri e sesamo."
+  ],
+  "chef_tip": "Asciugare il tofu è il segreto della crosticina.",
+  "allergens": [
+    "Soia",
+    "Sesamo",
+    "Possibile glutine nella salsa di soia"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M11.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

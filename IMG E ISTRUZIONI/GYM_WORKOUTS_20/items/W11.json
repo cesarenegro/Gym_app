@@ -1,0 +1,65 @@
+{
+  "id": "W11",
+  "title": "Mobilità quotidiana",
+  "card_text": "Muoviti con calma, esplora la tua ampiezza.",
+  "category": "workout",
+  "level": "Tutti i livelli",
+  "equipment": [
+    "Tappetino",
+    "Supporto stabile"
+  ],
+  "duration_minutes_approx": 18,
+  "intensity_rpe": "2–3/10",
+  "format": "Circuito controllato",
+  "rounds": 2,
+  "warmup": {
+    "minutes": 2,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "cat",
+      "name": "Mobilità della colonna in quadrupedia",
+      "dose": "6 cicli lenti",
+      "instructions": "Da quattro appoggi alterna delicatamente arrotondamento e distensione della schiena, seguendo il respiro senza forzare il collo.",
+      "easier_option": "Riduci il movimento.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "hipstretch",
+      "name": "Allungamento flessori dell’anca",
+      "dose": "30 secondi per lato",
+      "instructions": "In mezzo inginocchio su tappetino, contrai leggermente il gluteo della gamba posteriore e porta il bacino poco avanti mantenendo il busto alto.",
+      "easier_option": "Esegui in piedi con un passo lungo e supporto.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "thoracic",
+      "name": "Rotazione toracica sul fianco",
+      "dose": "6 per lato",
+      "instructions": "Sdraiato sul fianco con ginocchia piegate e sovrapposte. Apri lentamente il braccio superiore verso il lato opposto lasciando ferme le ginocchia.",
+      "easier_option": "Apri il braccio solo parzialmente.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "ankle",
+      "name": "Mobilità caviglia",
+      "dose": "8 per lato",
+      "instructions": "Con il piede ben appoggiato, porta il ginocchio avanti nella direzione del secondo dito senza staccare il tallone; torna indietro.",
+      "easier_option": "Riduci l’avanzamento.",
+      "rest_after_seconds": 15
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 2,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+  "image": "images/W11.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

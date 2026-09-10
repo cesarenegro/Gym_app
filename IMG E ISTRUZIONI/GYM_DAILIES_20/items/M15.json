@@ -1,0 +1,43 @@
+{
+  "id": "M15",
+  "title": "Merluzzo mediterraneo",
+  "card_text": "Pomodorini, olive e una scarpetta di profumi.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "20 min",
+  "ingredients": [
+    "180 g filetto di merluzzo crudo",
+    "200 g pomodorini",
+    "15 g olive nere denocciolate",
+    "5 g capperi dissalati",
+    "5 g olio EVO",
+    "Basilico e pepe a piacere"
+  ],
+  "steps": [
+    "Lava e taglia i pomodorini. Scaldali in padella con l’olio per 4 minuti.",
+    "Aggiungi il merluzzo, le olive e i capperi.",
+    "Copri e cuoci dolcemente circa 8–12 minuti, secondo lo spessore, fino a 63 °C al cuore.",
+    "Completa con basilico e pepe."
+  ],
+  "chef_tip": "Se il fondo si asciuga aggiungi 1–2 cucchiai d’acqua.",
+  "allergens": [
+    "Pesce"
+  ],
+  "tags": [
+    "SLIM"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M15.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

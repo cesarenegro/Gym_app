@@ -1,0 +1,58 @@
+{
+  "id": "W09",
+  "title": "Spinta e controllo",
+  "card_text": "Una progressione accessibile per il tronco.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Panca stabile",
+    "Manubri",
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 25,
+  "intensity_rpe": "5–6/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "push",
+      "name": "Push-up inclinato",
+      "dose": "8 ripetizioni",
+      "instructions": "Mani su una panca alta e stabile, corpo allineato. Avvicina il petto alla panca con gomiti obliqui, poi spingi senza inarcare la zona lombare.",
+      "easier_option": "Esegui contro una parete.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "press",
+      "name": "Distensioni con manubri da terra",
+      "dose": "10 ripetizioni",
+      "instructions": "Sdraiato con ginocchia piegate, gomiti obliqui rispetto al busto. Spingi i manubri sopra il petto e scendi fino a sfiorare il pavimento con le braccia.",
+      "easier_option": "Usa carichi più leggeri.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "plank",
+      "name": "Plank sugli avambracci",
+      "dose": "20 secondi",
+      "instructions": "Gomiti sotto le spalle. Mantieni testa, bacino e talloni allineati, respira e interrompi la tenuta prima che la schiena ceda.",
+      "easier_option": "Appoggia le ginocchia a terra.",
+      "rest_after_seconds": 60
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W09.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

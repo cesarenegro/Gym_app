@@ -1,0 +1,42 @@
+{
+  "id": "M13",
+  "title": "Tagliata e crema di cannellini",
+  "card_text": "Una cena essenziale, dal gusto deciso.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "20 min",
+  "ingredients": [
+    "130 g bistecca magra di manzo cruda",
+    "130 g cannellini cotti scolati",
+    "40 g rucola",
+    "5 g olio EVO",
+    "15 ml succo di limone",
+    "30 ml acqua calda",
+    "Rosmarino e pepe a piacere"
+  ],
+  "steps": [
+    "Sciacqua i cannellini, scaldali e frullali con acqua calda, metà olio e metà limone.",
+    "Scalda una padella e cuoci la bistecca su entrambi i lati fino a 63 °C al cuore.",
+    "Lascia riposare almeno 3 minuti, poi taglia a fette.",
+    "Servi sulla crema con rucola lavata, olio e limone rimasti e poco rosmarino."
+  ],
+  "chef_tip": "Taglia la carne trasversalmente alle fibre.",
+  "allergens": [],
+  "tags": [
+    "TESTOSTERONE*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M13.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

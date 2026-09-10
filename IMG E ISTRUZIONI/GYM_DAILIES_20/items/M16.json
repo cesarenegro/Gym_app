@@ -1,0 +1,42 @@
+{
+  "id": "M16",
+  "title": "Insalata croccante agrumi e ceci",
+  "card_text": "Freschezza vera, cucchiaio dopo cucchiaio.",
+  "category": "meal",
+  "meal_type": "Pranzo leggero / contorno",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "10 min",
+  "ingredients": [
+    "150 g finocchio",
+    "120 g polpa di arancia",
+    "100 g ceci cotti scolati",
+    "40 g spinacino",
+    "10 g semi di zucca",
+    "5 g olio EVO",
+    "10 ml succo di limone"
+  ],
+  "steps": [
+    "Lava finocchio e spinacino. Affetta il finocchio sottile.",
+    "Pela l’arancia e ricava gli spicchi senza semi.",
+    "Sciacqua i ceci e uniscili alle verdure e all’arancia.",
+    "Condisci con olio e limone; completa con i semi."
+  ],
+  "chef_tip": "Conserva gli spicchi interi per un contrasto piacevole.",
+  "allergens": [],
+  "tags": [
+    "DETOX*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M16.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta per ricette vegetali. Non significa eliminazione di tossine o purificazione dell’organismo.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

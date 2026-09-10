@@ -1,0 +1,65 @@
+{
+  "id": "W12",
+  "title": "Reset da scrivania",
+  "card_text": "Una pausa attiva tra due impegni.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Sedia stabile",
+    "Parete"
+  ],
+  "duration_minutes_approx": 12,
+  "intensity_rpe": "2–3/10",
+  "format": "Circuito controllato",
+  "rounds": 2,
+  "warmup": {
+    "minutes": 1,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "chest",
+      "name": "Apertura del petto",
+      "dose": "30 secondi",
+      "instructions": "In piedi, apri le braccia e avvicina delicatamente le scapole senza spingere la testa avanti o forzare le spalle.",
+      "easier_option": "Tieni le braccia più basse.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "neck",
+      "name": "Rotazioni dolci del capo",
+      "dose": "4 per lato",
+      "instructions": "Seduto o in piedi, ruota lentamente lo sguardo a destra e sinistra in un’ampiezza confortevole; evita circonduzioni e slanci.",
+      "easier_option": "Riduci molto l’ampiezza.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "wallslide",
+      "name": "Scivolate delle braccia alla parete",
+      "dose": "6 ripetizioni",
+      "instructions": "Appoggia delicatamente la schiena alla parete. Fai scorrere le braccia verso l’alto solo nell’ampiezza comoda, senza inarcare il busto.",
+      "easier_option": "Riduci l’altezza raggiunta.",
+      "rest_after_seconds": 15
+    },
+    {
+      "exercise_id": "march",
+      "name": "Marcia attiva",
+      "dose": "60 secondi",
+      "instructions": "Cammina sul posto con appoggi morbidi e braccia naturali. Solleva le ginocchia solo quanto riesci mantenendo il busto stabile.",
+      "easier_option": "Rallenta il ritmo.",
+      "rest_after_seconds": 15
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 1,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Cerca maggiore controllo e continuità del respiro. Non forzare ampiezza o durata; ripeti nel tuo intervallo confortevole.",
+  "image": "images/W12.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

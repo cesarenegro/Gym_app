@@ -1,0 +1,44 @@
+{
+  "id": "M04",
+  "title": "Toast uova e avocado",
+  "card_text": "Pochi ingredienti, un morso pieno di gusto.",
+  "category": "meal",
+  "meal_type": "Colazione / pranzo leggero",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "15 min",
+  "ingredients": [
+    "60 g pane integrale",
+    "1 uovo medio",
+    "50 g polpa di avocado",
+    "10 g semi di zucca",
+    "10 ml succo di limone",
+    "Pepe a piacere"
+  ],
+  "steps": [
+    "Metti l’uovo in acqua, porta a bollore e cuoci circa 9–10 minuti, fino ad albume e tuorlo sodi. Raffredda e sguscia.",
+    "Schiaccia l’avocado con il succo di limone.",
+    "Tosta il pane e spalma l’avocado.",
+    "Aggiungi l’uovo a fette, i semi di zucca e pepe."
+  ],
+  "chef_tip": "Il limone mantiene fresco il gusto dell’avocado.",
+  "allergens": [
+    "Glutine",
+    "Uova"
+  ],
+  "tags": [
+    "TESTOSTERONE*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M04.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

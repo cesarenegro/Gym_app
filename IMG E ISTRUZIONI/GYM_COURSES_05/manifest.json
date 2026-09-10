@@ -1,0 +1,140 @@
+{
+  "pack": "GYM_COURSES_05",
+  "version": "1.0",
+  "content_count": 5,
+  "image_count": 5,
+  "images": [
+    {
+      "id": "C01",
+      "path": "images/C01.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Strength Foundations",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "C02",
+      "path": "images/C02.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Pilates Sculpt",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "C03",
+      "path": "images/C03.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Ride Studio",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "C04",
+      "path": "images/C04.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Mobility & Reset",
+      "origin": "AI-generated"
+    },
+    {
+      "id": "C05",
+      "path": "images/C05.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "alt_text": "Functional Circuit",
+      "origin": "AI-generated"
+    }
+  ],
+  "files": [
+    {
+      "path": "CATALOGO.html",
+      "bytes": 8185,
+      "sha256": "4a02412e2a3f11b14b2e3c35ac1599b0837ea71783125dc99e2bb223c604153a"
+    },
+    {
+      "path": "CONTENUTI.md",
+      "bytes": 6145,
+      "sha256": "556f571072dd7e3e112b5ad1230563db89e4c05cd418175e0dea92688816ecf7"
+    },
+    {
+      "path": "FONTI.md",
+      "bytes": 1406,
+      "sha256": "f249c12240a53f517089ed3abc16c36e4b3b66ceb6708310ec392daf552ccbb4"
+    },
+    {
+      "path": "IMAGE_PROMPTS.json",
+      "bytes": 5314,
+      "sha256": "cd87d159f96f0e583f04f51c2fe067c0c752389106aaba707c361a732917eb0f"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2949,
+      "sha256": "7523c5ddfb1bbe94396746920687cf163c3c2043a3c31029fb4e3c03570bf88b"
+    },
+    {
+      "path": "courses.json",
+      "bytes": 10810,
+      "sha256": "fe527a52e94b8838deb5718b14b0909807a21a1ea29b99db58cfc8add1a9a0f2"
+    },
+    {
+      "path": "images/C01.png",
+      "bytes": 2145383,
+      "sha256": "0887ec6e1def4b3008391ef3e4f236c7b260d584072b51c699bf46b2655acbd9"
+    },
+    {
+      "path": "images/C02.png",
+      "bytes": 1880562,
+      "sha256": "af0513122ea2295078c2d852a1a2a82a1f96380c4874a158fb55dc313c0022bc"
+    },
+    {
+      "path": "images/C03.png",
+      "bytes": 2029198,
+      "sha256": "c495a11e31c3c001a3ede68adb3d697d9bf166e3a62e875ffbfcbbc144276edb"
+    },
+    {
+      "path": "images/C04.png",
+      "bytes": 1979529,
+      "sha256": "135f0f46a4ff745f08c7bb0215523bb67fd18db71e22f046d8fe503c9c04185d"
+    },
+    {
+      "path": "images/C05.png",
+      "bytes": 2141414,
+      "sha256": "1c932b2e2c8ef1ee34558c81ff55ed7b631f32d48258b4c34ad1e37579229447"
+    },
+    {
+      "path": "items/C01.json",
+      "bytes": 1866,
+      "sha256": "d004fc7f7225f6fdee19353cbed0a5fb0aa3ae4c1b1380635e731dec32fd6be9"
+    },
+    {
+      "path": "items/C02.json",
+      "bytes": 1870,
+      "sha256": "4166501c36d6e986fddeaa0da2213584ca3ccd0469dbba086d9e9f5a47de408c"
+    },
+    {
+      "path": "items/C03.json",
+      "bytes": 1897,
+      "sha256": "3b376a6768acf415b6d0d800c555987a5b8f8849d8e9a014a22916b8bde663b9"
+    },
+    {
+      "path": "items/C04.json",
+      "bytes": 1862,
+      "sha256": "3ce65597167251cd6672a3a5cf7308d161cd8729c51480ddbb08bf7b085ce8c9"
+    },
+    {
+      "path": "items/C05.json",
+      "bytes": 1962,
+      "sha256": "2fb0b04f0939f61a5bb70ee41b34b577108718ce076c4b6554d76961266f19f9"
+    }
+  ]
+}

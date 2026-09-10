@@ -1,0 +1,65 @@
+{
+  "id": "W15",
+  "title": "Circuito kettlebell",
+  "card_text": "Semplice, solido, senza movimenti balistici.",
+  "category": "workout",
+  "level": "Intermedio",
+  "equipment": [
+    "Kettlebell leggero",
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 30,
+  "intensity_rpe": "5–6/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "kbdead",
+      "name": "Stacco kettlebell",
+      "dose": "10 ripetizioni",
+      "instructions": "Kettlebell tra i piedi, bacino indietro e schiena neutra. Afferra il manico con due mani e alzati spingendo sui piedi; appoggia con controllo.",
+      "easier_option": "Usa un rialzo stabile per accorciare la discesa, con supervisione.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "goblet",
+      "name": "Goblet squat",
+      "dose": "8 ripetizioni",
+      "instructions": "Tieni un peso leggero vicino al petto, gomiti sotto il carico. Scendi con controllo senza perdere l’appoggio dei talloni e risali espirando.",
+      "easier_option": "Esegui senza peso verso una panca.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "suitcase",
+      "name": "Marcia con carico su un lato",
+      "dose": "30 secondi per lato",
+      "instructions": "Tieni un peso leggero a un fianco. Marcia lentamente mantenendo spalle e bacino orizzontali; cambia lato dopo la dose prevista.",
+      "easier_option": "Mantieni la posizione ferma o riduci il carico.",
+      "rest_after_seconds": 60
+    },
+    {
+      "exercise_id": "bird",
+      "name": "Bird dog",
+      "dose": "6 per lato",
+      "instructions": "In quadrupedia, mani sotto le spalle e ginocchia sotto le anche. Allunga braccio e gamba opposti senza inarcare o ruotare il bacino, poi alterna.",
+      "easier_option": "Solleva soltanto un arto alla volta.",
+      "rest_after_seconds": 60
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W15.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

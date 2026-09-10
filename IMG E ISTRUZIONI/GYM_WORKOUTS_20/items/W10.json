@@ -1,0 +1,57 @@
+{
+  "id": "W10",
+  "title": "Glutei con miniband",
+  "card_text": "Piccoli movimenti, esecuzione precisa.",
+  "category": "workout",
+  "level": "Base",
+  "equipment": [
+    "Miniband",
+    "Tappetino"
+  ],
+  "duration_minutes_approx": 22,
+  "intensity_rpe": "5–6/10",
+  "format": "Circuito controllato",
+  "rounds": 3,
+  "warmup": {
+    "minutes": 4,
+    "instructions": "Marcia facile, mobilità dolce delle articolazioni coinvolte e una prova senza carico dei movimenti. Aumenta il ritmo gradualmente."
+  },
+  "exercises": [
+    {
+      "exercise_id": "band",
+      "name": "Passi laterali con miniband",
+      "dose": "8 passi per direzione",
+      "instructions": "Posiziona la miniband sopra le ginocchia, fletti leggermente anche e ginocchia. Fai piccoli passi laterali senza trascinare il piede e senza chiudere le ginocchia.",
+      "easier_option": "Esegui senza elastico.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "bridge",
+      "name": "Ponte glutei",
+      "dose": "12 ripetizioni",
+      "instructions": "Sdraiati con ginocchia piegate e piedi a terra. Solleva il bacino contraendo i glutei senza spingere in arco la schiena, poi scendi piano.",
+      "easier_option": "Riduci l’altezza del sollevamento.",
+      "rest_after_seconds": 30
+    },
+    {
+      "exercise_id": "clamshell",
+      "name": "Aperture sul fianco",
+      "dose": "10 per lato",
+      "instructions": "Sdraiato sul fianco con anche e ginocchia piegate e piedi uniti. Apri il ginocchio superiore senza ruotare il bacino e richiudi lentamente.",
+      "easier_option": "Riduci l’ampiezza e togli l’elastico.",
+      "rest_after_seconds": 30
+    }
+  ],
+  "between_rounds_rest_seconds": 60,
+  "cooldown": {
+    "minutes": 3,
+    "instructions": "Rallenta con una camminata facile e movimenti dolci. Lascia tornare il respiro tranquillo."
+  },
+  "progression": "Ripeti mantenendo il controllo. Quando completi tutte le dosi con facilità, aumenta solo una variabile: poche ripetizioni oppure il minimo incremento di carico disponibile.",
+  "image": "images/W10.png",
+  "image_origin": "AI-generated",
+  "cta": "Inizia allenamento",
+  "editorial_status": "Programma originale proposto, non valutazione individuale",
+  "safety_note": "Scegli uno sforzo gestibile e respira durante i movimenti. Interrompi in caso di dolore, capogiro o malessere. In presenza di limitazioni, chiedi una variante al trainer.",
+  "image_usage": "Copertina editoriale, non sequenza tecnica dimostrativa."
+}

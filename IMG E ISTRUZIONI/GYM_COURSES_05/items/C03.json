@@ -1,0 +1,65 @@
+{
+  "id": "C03",
+  "title": "Ride Studio",
+  "card_text": "Il tuo ritmo, una strada condivisa.",
+  "description": "Una sessione di cycling indoor con alternanza di tratti facili e moderati. La musica accompagna la lezione; resistenza e cadenza restano adattabili, senza obbligo di seguire il gruppo.",
+  "category": "course",
+  "level": "Base / intermedio",
+  "duration_minutes": 45,
+  "equipment": [
+    "Bike indoor"
+  ],
+  "objectives": [
+    "Allenare la continuità aerobica",
+    "Gestire lo sforzo percepito",
+    "Imparare a regolare il ritmo"
+  ],
+  "lesson_structure": [
+    {
+      "name": "Setup",
+      "minutes": 5,
+      "description": "Regolazione individuale della bike con l’istruttore."
+    },
+    {
+      "name": "Riscaldamento",
+      "minutes": 7,
+      "description": "Pedalata progressiva e confortevole."
+    },
+    {
+      "name": "Intervalli",
+      "minutes": 24,
+      "description": "6 cicli di 2 minuti moderati e 2 minuti facili, prevalentemente da seduti."
+    },
+    {
+      "name": "Defaticamento",
+      "minutes": 6,
+      "description": "Riduzione graduale della resistenza."
+    },
+    {
+      "name": "Chiusura",
+      "minutes": 3,
+      "description": "Discesa dalla bike e mobilità leggera."
+    }
+  ],
+  "what_to_bring": [
+    "Abbigliamento sportivo comodo",
+    "Acqua",
+    "Asciugamano"
+  ],
+  "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+  "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+  "related_workout_ids": [
+    "W14",
+    "W05"
+  ],
+  "instructor_id": null,
+  "schedule": null,
+  "capacity": null,
+  "location": null,
+  "price": null,
+  "booking_enabled": false,
+  "image": "images/C03.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri il corso",
+  "editorial_status": "Proposta di corso; calendario e staff non confermati"
+}

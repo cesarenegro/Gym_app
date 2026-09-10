@@ -1,0 +1,48 @@
+{
+  "id": "M01",
+  "title": "Pancake cacao e lamponi",
+  "card_text": "Il lato goloso della tua colazione.",
+  "category": "meal",
+  "meal_type": "Colazione",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "15 min",
+  "ingredients": [
+    "40 g farina di avena",
+    "1 uovo medio",
+    "100 g yogurt greco bianco 0%",
+    "50 ml latte",
+    "5 g cacao amaro",
+    "2 g lievito per dolci",
+    "70 g lamponi",
+    "5 g cioccolato fondente",
+    "2 g olio per la padella"
+  ],
+  "steps": [
+    "Mescola farina, cacao e lievito. Aggiungi uovo, latte e 30 g di yogurt: ottieni una pastella densa.",
+    "Scalda una padella antiaderente con l’olio distribuito con un pennello. Versa tre piccole porzioni.",
+    "Cuoci a fuoco medio-basso circa 2–3 minuti per lato, finché il centro è cotto.",
+    "Servi con lo yogurt rimasto, lamponi lavati e cioccolato a scaglie."
+  ],
+  "chef_tip": "Non schiacciare i pancake mentre cuociono.",
+  "allergens": [
+    "Uova",
+    "Latte",
+    "Avena: verificare glutine in etichetta"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M01.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

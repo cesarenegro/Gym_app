@@ -1,0 +1,46 @@
+{
+  "id": "M06",
+  "title": "Chicken bowl lime e paprika",
+  "card_text": "Speziato, fresco, pronto per la tua pausa.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "25 min",
+  "ingredients": [
+    "150 g petto di pollo crudo",
+    "60 g riso basmati secco",
+    "150 g zucchine",
+    "100 g pomodorini",
+    "50 g yogurt greco",
+    "5 g olio EVO",
+    "15 ml succo di lime",
+    "1 cucchiaino paprika dolce",
+    "Sale e pepe a piacere"
+  ],
+  "steps": [
+    "Cuoci il riso secondo la confezione.",
+    "Taglia le zucchine a rondelle e cuocile in padella con metà olio per circa 8 minuti.",
+    "Condisci il pollo con paprika e olio rimasto. Cuocilo in padella, girandolo, fino a 74 °C al cuore; affettalo con utensili puliti.",
+    "Mescola yogurt e lime. Componi la bowl con riso, pollo, zucchine e pomodorini lavati, quindi aggiungi la salsa."
+  ],
+  "chef_tip": "La paprika dolce dà carattere senza coprire il lime.",
+  "allergens": [
+    "Latte"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M06.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

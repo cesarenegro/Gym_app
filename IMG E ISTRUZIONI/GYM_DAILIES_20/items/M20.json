@@ -1,0 +1,43 @@
+{
+  "id": "M20",
+  "title": "Frozen yogurt frutti rossi",
+  "card_text": "Fresco e goloso, senza gelatiera.",
+  "category": "meal",
+  "meal_type": "Dessert / spuntino",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "10 min + 4 ore freezer",
+  "ingredients": [
+    "170 g yogurt greco bianco 0%",
+    "100 g fragole fresche",
+    "50 g mirtilli freschi",
+    "5 g miele",
+    "5 g mandorle a lamelle"
+  ],
+  "steps": [
+    "Lava e asciuga la frutta. Taglia le fragole e congelale con 30 g di mirtilli in un contenitore per almeno 4 ore.",
+    "Frulla la frutta congelata con yogurt e miele, a impulsi, usando un frullatore adatto.",
+    "Se necessario lascia ammorbidire la frutta 5 minuti: non aggiungere molta acqua.",
+    "Servi subito con i mirtilli rimasti e le mandorle."
+  ],
+  "chef_tip": "La consistenza migliore si ottiene appena frullato.",
+  "allergens": [
+    "Latte",
+    "Mandorle"
+  ],
+  "tags": [
+    "SLIM"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M20.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Selezione editoriale di piatti con porzioni definite e condimenti misurati. Non certifica basso contenuto calorico e non garantisce dimagrimento.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

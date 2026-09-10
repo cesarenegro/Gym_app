@@ -24,6 +24,8 @@ class WorkoutExercise {
   final String previousBest;
   final int restSeconds;
   final String notes;
+  final String instructions;
+  final String easierOption;
   final List<ExerciseSet> sets;
 
   WorkoutExercise({
@@ -34,6 +36,8 @@ class WorkoutExercise {
     required this.previousBest,
     required this.restSeconds,
     this.notes = '',
+    this.instructions = '',
+    this.easierOption = '',
     required this.sets,
   });
 }
@@ -45,6 +49,16 @@ class WorkoutPlan {
   final String splitName;
   final int durationMinutes;
   final String coachName;
+  final String imageUrl;
+  final String intensityRpe;
+  final String format;
+  final int rounds;
+  final List<String> equipment;
+  final int warmupMinutes;
+  final String warmupInstructions;
+  final int cooldownMinutes;
+  final String cooldownInstructions;
+  final int betweenRoundsRestSeconds;
   final List<WorkoutExercise> exercises;
   final DateTime scheduledDate;
   final bool isCompleted;
@@ -56,6 +70,16 @@ class WorkoutPlan {
     required this.splitName,
     required this.durationMinutes,
     required this.coachName,
+    this.imageUrl = '',
+    this.intensityRpe = '6-7/10',
+    this.format = 'Circuito guidato',
+    this.rounds = 3,
+    this.equipment = const [],
+    this.warmupMinutes = 4,
+    this.warmupInstructions = 'Attivazione e mobilità generale.',
+    this.cooldownMinutes = 3,
+    this.cooldownInstructions = 'Defaticamento e respirazione controllata.',
+    this.betweenRoundsRestSeconds = 60,
     required this.exercises,
     required this.scheduledDate,
     this.isCompleted = false,

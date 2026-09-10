@@ -1,0 +1,64 @@
+{
+  "id": "C05",
+  "title": "Functional Circuit",
+  "card_text": "Movimenti semplici. Energia di gruppo.",
+  "description": "Un circuito di gruppo con stazioni chiare e alternative senza salti. Squat, tirate, passi su rialzo basso e movimenti a corpo libero si alternano con recuperi programmati.",
+  "category": "course",
+  "level": "Base / intermedio",
+  "duration_minutes": 45,
+  "equipment": [
+    "Manubri",
+    "Step basso stabile",
+    "Panche",
+    "Tappetini"
+  ],
+  "objectives": [
+    "Allenare diversi schemi motori",
+    "Gestire lavoro e recupero",
+    "Muoversi con continuità"
+  ],
+  "lesson_structure": [
+    {
+      "name": "Riscaldamento",
+      "minutes": 7,
+      "description": "Marcia, mobilità e prove dei movimenti."
+    },
+    {
+      "name": "Spiegazione stazioni",
+      "minutes": 8,
+      "description": "Il trainer mostra squat, rematore con appoggio, step-up basso, push-up inclinato e marcia attiva."
+    },
+    {
+      "name": "Circuito",
+      "minutes": 25,
+      "description": "5 stazioni × 40 secondi di lavoro + 20 secondi di cambio, per 5 giri. Ridurre ritmo o usare la pausa secondo necessità; nessuna gara di ripetizioni."
+    },
+    {
+      "name": "Defaticamento",
+      "minutes": 5,
+      "description": "Camminata lenta e mobilità dolce."
+    }
+  ],
+  "what_to_bring": [
+    "Abbigliamento sportivo comodo",
+    "Acqua",
+    "Asciugamano"
+  ],
+  "first_lesson": "Presentati qualche minuto prima e comunica all’istruttore il tuo livello e le eventuali limitazioni.",
+  "intensity_note": "Il trainer adatta carichi, ampiezza e ritmo al gruppo.",
+  "related_workout_ids": [
+    "W01",
+    "W06",
+    "W20"
+  ],
+  "instructor_id": null,
+  "schedule": null,
+  "capacity": null,
+  "location": null,
+  "price": null,
+  "booking_enabled": false,
+  "image": "images/C05.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri il corso",
+  "editorial_status": "Proposta di corso; calendario e staff non confermati"
+}

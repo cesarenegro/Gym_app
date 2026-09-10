@@ -1,3 +1,15 @@
+class LessonStep {
+  final String name;
+  final int minutes;
+  final String description;
+
+  const LessonStep({
+    required this.name,
+    required this.minutes,
+    required this.description,
+  });
+}
+
 class CourseSession {
   final String id;
   final String courseId;
@@ -12,6 +24,12 @@ class CourseSession {
   final String imageUrl;
   final String intensity;
   final String description;
+  final List<String> objectives;
+  final List<LessonStep> lessonStructure;
+  final List<String> whatToBring;
+  final String firstLesson;
+  final String intensityNote;
+  final List<String> relatedWorkoutIds;
   final bool isBookedByUser;
   final bool isWaitlistedByUser;
 
@@ -29,6 +47,12 @@ class CourseSession {
     required this.imageUrl,
     required this.intensity,
     required this.description,
+    this.objectives = const [],
+    this.lessonStructure = const [],
+    this.whatToBring = const [],
+    this.firstLesson = '',
+    this.intensityNote = '',
+    this.relatedWorkoutIds = const [],
     this.isBookedByUser = false,
     this.isWaitlistedByUser = false,
   });
@@ -55,6 +79,12 @@ class CourseSession {
       imageUrl: imageUrl,
       intensity: intensity,
       description: description,
+      objectives: objectives,
+      lessonStructure: lessonStructure,
+      whatToBring: whatToBring,
+      firstLesson: firstLesson,
+      intensityNote: intensityNote,
+      relatedWorkoutIds: relatedWorkoutIds,
       isBookedByUser: isBookedByUser ?? this.isBookedByUser,
       isWaitlistedByUser: isWaitlistedByUser ?? this.isWaitlistedByUser,
     );

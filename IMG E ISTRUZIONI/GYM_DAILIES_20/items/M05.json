@@ -1,0 +1,46 @@
+{
+  "id": "M05",
+  "title": "French toast fragole e yogurt",
+  "card_text": "Dorato fuori, morbido dentro.",
+  "category": "meal",
+  "meal_type": "Colazione",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "15 min",
+  "ingredients": [
+    "60 g pane integrale",
+    "1 uovo medio",
+    "40 ml latte",
+    "100 g yogurt greco bianco",
+    "120 g fragole",
+    "2 g olio",
+    "Cannella a piacere"
+  ],
+  "steps": [
+    "Sbatti uovo e latte con un pizzico di cannella.",
+    "Immergi brevemente il pane sui due lati.",
+    "Cuoci in padella antiaderente spennellata d’olio a fuoco medio-basso per circa 3 minuti per lato, finché l’uovo è cotto anche al centro.",
+    "Servi con yogurt e fragole lavate e tagliate."
+  ],
+  "chef_tip": "Pane del giorno prima: assorbe bene senza rompersi.",
+  "allergens": [
+    "Glutine",
+    "Uova",
+    "Latte"
+  ],
+  "tags": [
+    "POWER"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M05.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

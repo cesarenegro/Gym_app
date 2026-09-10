@@ -1,0 +1,45 @@
+{
+  "id": "M10",
+  "title": "Pasta al pesto di piselli",
+  "card_text": "Verde brillante, cremosa senza panna.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "20 min",
+  "ingredients": [
+    "70 g pasta integrale secca",
+    "100 g piselli surgelati",
+    "100 g fiocchi di latte",
+    "5 g olio EVO",
+    "5 foglie basilico",
+    "10 ml succo di limone",
+    "Sale e pepe a piacere"
+  ],
+  "steps": [
+    "Cuoci i piselli in acqua bollente per il tempo indicato sulla confezione.",
+    "Cuoci la pasta e conserva una tazzina d’acqua di cottura.",
+    "Frulla i piselli con olio, basilico, limone e poca acqua di cottura.",
+    "Condisci la pasta e completa con i fiocchi di latte."
+  ],
+  "chef_tip": "Aggiungi l’acqua poco alla volta per ottenere una crema.",
+  "allergens": [
+    "Glutine",
+    "Latte"
+  ],
+  "tags": [
+    "POWER"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M10.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

@@ -11,11 +11,11 @@ extension DailyCategoryExt on DailyCategory {
       case DailyCategory.workoutOfDay:
         return 'Scheda del Giorno';
       case DailyCategory.mealOfDay:
-        return 'Pasto del Giorno';
+        return 'Pasto & Ricetta';
       case DailyCategory.trainerTip:
-        return 'Trainer Tip';
+        return 'Consiglio del Coach';
       case DailyCategory.challengeOfDay:
-        return 'Sfida del Giorno';
+        return 'Sfida Atleta';
     }
   }
 
@@ -24,11 +24,11 @@ extension DailyCategoryExt on DailyCategory {
       case DailyCategory.workoutOfDay:
         return 'WOD';
       case DailyCategory.mealOfDay:
-        return 'MEAL';
+        return 'RICETTA';
       case DailyCategory.trainerTip:
         return 'TIP';
       case DailyCategory.challengeOfDay:
-        return 'CHALLENGE';
+        return 'SFIDA';
     }
   }
 }
@@ -46,6 +46,16 @@ class DailyItem {
   final String ctaLabel;
   final String ctaAction;
   final DateTime publishedAt;
+  
+  // Campi specifici del pacchetto Dailies / Ricette
+  final String mealType;
+  final int servings;
+  final String difficulty;
+  final String totalTimeLabel;
+  final List<String> ingredients;
+  final List<String> steps;
+  final List<String> tags;
+  final String? tagNote;
 
   const DailyItem({
     required this.id,
@@ -60,5 +70,13 @@ class DailyItem {
     required this.ctaLabel,
     required this.ctaAction,
     required this.publishedAt,
+    this.mealType = 'Pasto',
+    this.servings = 1,
+    this.difficulty = 'Facile',
+    this.totalTimeLabel = '15 min',
+    this.ingredients = const [],
+    this.steps = const [],
+    this.tags = const [],
+    this.tagNote,
   });
 }

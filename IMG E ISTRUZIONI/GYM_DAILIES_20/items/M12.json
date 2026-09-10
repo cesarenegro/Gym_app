@@ -1,0 +1,44 @@
+{
+  "id": "M12",
+  "title": "Cous cous ceci e limone",
+  "card_text": "La pausa pranzo che sa di Mediterraneo.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "15 min",
+  "ingredients": [
+    "60 g cous cous integrale secco",
+    "120 g ceci cotti scolati",
+    "100 g cetriolo",
+    "100 g pomodorini",
+    "5 g olio EVO",
+    "15 ml succo di limone",
+    "Prezzemolo a piacere"
+  ],
+  "steps": [
+    "Reidrata il cous cous con acqua bollente nelle quantità e nei tempi della confezione.",
+    "Sgrana con una forchetta e lascia intiepidire.",
+    "Sciacqua i ceci; lava e taglia cetriolo e pomodorini.",
+    "Unisci tutto e condisci con olio, limone e prezzemolo tritato."
+  ],
+  "chef_tip": "Sgrana prima di aggiungere le verdure.",
+  "allergens": [
+    "Glutine"
+  ],
+  "tags": [
+    "POWER"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M12.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Pasti con cereali e altri ingredienti per accompagnare giornate attive. Nessuna promessa di aumento della forza.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

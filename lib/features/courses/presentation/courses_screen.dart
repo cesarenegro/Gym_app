@@ -15,7 +15,22 @@ class CoursesScreen extends ConsumerStatefulWidget {
 
 class _CoursesScreenState extends ConsumerState<CoursesScreen> {
   String _selectedCategory = 'Tutti';
-  final List<String> _categories = ['Tutti', 'Funzionale', 'Mobilità', 'Combat', 'Postura'];
+  final List<String> _categories = ['Tutti', 'Base', 'Intermedio', 'Avanzato', 'Tutti i Livelli'];
+
+  Widget _buildImage(String path) {
+    if (path.startsWith('assets/')) {
+      return Image.asset(
+        path,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(color: AppColors.carbonSurface2),
+      );
+    }
+    return Image.network(
+      path,
+      fit: BoxFit.cover,
+      errorBuilder: (_, __, ___) => Container(color: AppColors.carbonSurface2),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +94,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
             child: ListView.separated(
               padding: const EdgeInsets.all(20),
               itemCount: filteredCourses.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 18),
+              separatorBuilder: (_, __) => const SizedBox(height: 20),
               itemBuilder: (context, idx) {
                 final session = filteredCourses[idx];
                 return _buildCourseCard(session);
@@ -106,17 +121,12 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
           Stack(
             children: [
               Container(
-                height: 160,
+                height: 180,
                 width: double.infinity,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(session.imageUrl),
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                child: _buildImage(session.imageUrl),
               ),
               Container(
-                height: 160,
+                height: 180,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
@@ -138,7 +148,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
-                    session.category.toUpperCase(),
+                    'LIVELLO · ${session.category.toUpperCase()}',
                     style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 11),
                   ),
                 ),
@@ -167,7 +177,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                 right: 14,
                 child: Text(
                   session.courseName.toUpperCase(),
-                  style: AppTypography.headlineEditorialSm.copyWith(fontSize: 20),
+                  style: AppTypography.headlineEditorialSm.copyWith(fontSize: 22),
                 ),
               ),
             ],
@@ -186,7 +196,7 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                       children: [
                         const Icon(Icons.schedule, size: 16, color: AppColors.textSecondary),
                         const SizedBox(width: 6),
-                        Text('Oggi · ${session.durationMinutes} min', style: AppTypography.bodyDefault),
+                        Text('${session.durationMinutes} min', style: AppTypography.bodyDefault),
                       ],
                     ),
                     Row(
@@ -206,8 +216,77 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                   ],
                 ),
                 const SizedBox(height: 14),
-                Text(session.description, style: AppTypography.bodyDefault.copyWith(color: AppColors.textSecondary)),
-                const SizedBox(height: 18),
+                Text(session.description, style: AppTypography.bodyDefault.copyWith(color: AppColors.textSecondary, height: 1.4)),
+                const SizedBox(height: 16),
+
+                // Objectives
+                if (session.objectives.isNotEmpty) ...[
+                  Text('OBIETTIVI DEL CORSO', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: AppColors.volt)),
+                  const SizedBox(height: 6),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: session.objectives.map((obj) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 2),
+                        child: Row(
+                          children: [
+                            const Text('✦ ', style: TextStyle(color: AppColors.volt, fontSize: 12)),
+                            Expanded(child: Text(obj, style: AppTypography.bodyDefault.copyWith(fontSize: 13))),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                  const SizedBox(height: 16),
+                ],
+
+                // Lesson Structure Timeline
+                if (session.lessonStructure.isNotEmpty) ...[
+                  Text('STRUTTURA DELLA LEZIONE', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: AppColors.textSecondary)),
+                  const SizedBox(height: 8),
+                  Container(
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: AppColors.carbonSurface2,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: AppColors.hairline),
+                    ),
+                    child: Column(
+                      children: session.lessonStructure.map((step) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: 50,
+                                padding: const EdgeInsets.symmetric(vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: AppColors.obsidianCore,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Center(
+                                  child: Text('${step.minutes}m', style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 10)),
+                                ),
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(step.name, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.bold, fontSize: 13)),
+                                    Text(step.description, style: AppTypography.bodyCompact.copyWith(fontSize: 12)),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                  ),
+                  const SizedBox(height: 18),
+                ],
 
                 // Booking Button with dynamic states
                 if (session.isBookedByUser)

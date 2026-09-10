@@ -1,0 +1,47 @@
+{
+  "id": "M08",
+  "title": "Tacos di gamberi e mango",
+  "card_text": "Dolce, fresco e speziato in due tacos.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "20 min",
+  "ingredients": [
+    "2 tortillas di mais da 25 g",
+    "150 g gamberi crudi sgusciati",
+    "70 g mango",
+    "80 g cavolo rosso",
+    "50 g yogurt greco",
+    "15 ml succo di lime",
+    "5 g olio EVO",
+    "Paprika a piacere"
+  ],
+  "steps": [
+    "Taglia mango a cubetti e cavolo a strisce sottili. Lava le verdure.",
+    "Mescola yogurt e lime.",
+    "Cuoci i gamberi con olio e paprika circa 2–3 minuti per lato, fino a polpa opaca e perlata.",
+    "Scalda le tortillas, farcisci con cavolo, gamberi e mango e completa con la salsa."
+  ],
+  "chef_tip": "Scalda le tortillas solo al momento di farcirle.",
+  "allergens": [
+    "Crostacei",
+    "Latte",
+    "Verificare eventuale glutine nelle tortillas"
+  ],
+  "tags": [
+    "PROTEIN"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M08.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Ricette con un ingrediente proteico centrale. Quantità di proteine e requisiti per eventuali claim nutrizionali non verificati.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}

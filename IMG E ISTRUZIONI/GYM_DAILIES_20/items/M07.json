@@ -1,0 +1,43 @@
+{
+  "id": "M07",
+  "title": "Salmone croccante e patata dolce",
+  "card_text": "Un piatto unico, colori pieni, zero complicazioni.",
+  "category": "meal",
+  "meal_type": "Pranzo / cena",
+  "servings": 1,
+  "difficulty": "Facile",
+  "total_time_label": "35 min",
+  "ingredients": [
+    "140 g filetto di salmone crudo",
+    "180 g patata dolce",
+    "150 g broccoli",
+    "5 g olio EVO",
+    "15 ml succo di limone",
+    "Paprika e pepe a piacere"
+  ],
+  "steps": [
+    "Scalda il forno statico a 200 °C. Taglia la patata a spicchi sottili e condiscila con metà olio e paprika.",
+    "Cuoci la patata per 15 minuti su carta forno.",
+    "Aggiungi salmone e broccoli in piccole cimette, condisci con l’olio rimasto e cuoci altri 12–18 minuti. Il pesce deve raggiungere 63 °C al cuore.",
+    "Controlla che la patata sia tenera e servi con limone."
+  ],
+  "chef_tip": "Lascia spazio tra gli spicchi per farli dorare.",
+  "allergens": [
+    "Pesce"
+  ],
+  "tags": [
+    "TESTOSTERONE*"
+  ],
+  "nutrition": {
+    "status": "Non calcolata: servono composizione e marche degli ingredienti",
+    "kcal": null,
+    "protein_g": null,
+    "carbs_g": null,
+    "fat_g": null
+  },
+  "image": "images/M07.png",
+  "image_origin": "AI-generated",
+  "cta": "Scopri la ricetta",
+  "tag_note": "Etichetta tematica richiesta, non beneficio dimostrato. Non è verificato che queste ricette aumentino il testosterone.",
+  "editorial_status": "Originale proposto; ricetta non testata in cucina"
+}
