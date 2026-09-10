@@ -7,7 +7,7 @@ import 'features/navigation/main_layout.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Set immersive dark status and navigation bar styling
+  // Impostazione stile scuro immersivo per barra di stato e di navigazione
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
@@ -33,6 +33,18 @@ class GymApp extends StatelessWidget {
       title: 'KINETIC — Black Performance Gym',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
+      builder: (context, child) {
+        final mediaQuery = MediaQuery.of(context);
+        // Garantisce che la scala del testo sia perfettamente leggibile su schermi mobile e browser Web
+        final scaledScaler = mediaQuery.textScaler.clamp(
+          minScaleFactor: 1.15,
+          maxScaleFactor: 1.35,
+        );
+        return MediaQuery(
+          data: mediaQuery.copyWith(textScaler: scaledScaler),
+          child: child!,
+        );
+      },
       home: const MainLayout(),
     );
   }

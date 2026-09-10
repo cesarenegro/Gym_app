@@ -2,109 +2,109 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 
-/// Kinetic Obsidian Typography Rules:
-/// Headlines, Metrics, Labels & Index Tags -> Space Grotesk
-/// Body, Descriptions, Form Controls -> Inter
+/// Regole Tipografiche Kinetic Obsidian (Dimensioni incrementate per leggibilità su Mobile/Chrome):
+/// Headlines, Metriche, Etichette e Tag -> Space Grotesk
+/// Corpo testo, Descrizioni, Controlli form -> Inter
 abstract class AppTypography {
   // Display Hero
   static TextStyle get displayHero => GoogleFonts.spaceGrotesk(
-        fontSize: 48,
+        fontSize: 52,
         fontWeight: FontWeight.w700,
-        height: 52 / 48,
-        letterSpacing: -0.04 * 48,
+        height: 56 / 52,
+        letterSpacing: -0.04 * 52,
         color: AppColors.textPrimary,
       );
 
   static TextStyle get displayHeroMobile => GoogleFonts.spaceGrotesk(
-        fontSize: 32,
+        fontSize: 36,
         fontWeight: FontWeight.w700,
-        height: 38 / 32,
-        letterSpacing: -0.03 * 32,
+        height: 42 / 36,
+        letterSpacing: -0.03 * 36,
         color: AppColors.textPrimary,
       );
 
   // Headlines
   static TextStyle get headlineEditorialLg => GoogleFonts.spaceGrotesk(
-        fontSize: 26,
+        fontSize: 28,
         fontWeight: FontWeight.w600,
-        height: 30 / 26,
-        letterSpacing: -0.02 * 26,
+        height: 34 / 28,
+        letterSpacing: -0.02 * 28,
         color: AppColors.textPrimary,
       );
 
   static TextStyle get headlineEditorialMd => GoogleFonts.spaceGrotesk(
-        fontSize: 20,
+        fontSize: 22,
         fontWeight: FontWeight.w600,
-        height: 26 / 20,
-        letterSpacing: -0.01 * 20,
+        height: 28 / 22,
+        letterSpacing: -0.01 * 22,
         color: AppColors.textPrimary,
       );
 
   static TextStyle get headlineEditorialSm => GoogleFonts.spaceGrotesk(
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: FontWeight.w600,
-        height: 22 / 16,
+        height: 24 / 18,
         letterSpacing: 0,
         color: AppColors.textPrimary,
       );
 
-  // Numerals & Telemetry (Tabular figures enabled)
+  // Numerici e Telemetria
   static TextStyle get metricNumeralLg => GoogleFonts.spaceGrotesk(
-        fontSize: 38,
+        fontSize: 42,
         fontWeight: FontWeight.w700,
-        height: 42 / 38,
-        letterSpacing: -0.03 * 38,
+        height: 46 / 42,
+        letterSpacing: -0.03 * 42,
         color: AppColors.textPrimary,
         fontFeatures: const [FontFeature.tabularFigures()],
       );
 
   static TextStyle get metricNumeralMd => GoogleFonts.spaceGrotesk(
-        fontSize: 22,
+        fontSize: 24,
         fontWeight: FontWeight.w700,
-        height: 26 / 22,
-        letterSpacing: -0.02 * 22,
+        height: 28 / 24,
+        letterSpacing: -0.02 * 24,
         color: AppColors.textPrimary,
         fontFeatures: const [FontFeature.tabularFigures()],
       );
 
-  // Uppercase Index Tags
+  // Tag in maiuscolo ed Etichette
   static TextStyle get tagUppercase => GoogleFonts.spaceGrotesk(
-        fontSize: 11,
+        fontSize: 13,
         fontWeight: FontWeight.w700,
-        height: 14 / 11,
-        letterSpacing: 1.32, // 0.12em
+        height: 16 / 13,
+        letterSpacing: 1.1,
         color: AppColors.textSecondary,
       );
 
   static TextStyle get tabLabel => GoogleFonts.spaceGrotesk(
-        fontSize: 10,
+        fontSize: 11,
         fontWeight: FontWeight.w600,
-        height: 12 / 10,
-        letterSpacing: 1.0, // 0.10em
+        height: 14 / 11,
+        letterSpacing: 0.8,
       );
 
-  // Body text (Inter)
+  // Corpo del testo (Inter)
   static TextStyle get bodyLead => GoogleFonts.inter(
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
-        height: 26 / 16,
-        letterSpacing: -0.01 * 16,
+        height: 28 / 18,
+        letterSpacing: -0.01 * 18,
         color: AppColors.textPrimary,
       );
 
   static TextStyle get bodyDefault => GoogleFonts.inter(
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.w400,
-        height: 22 / 14,
+        height: 24 / 16,
         letterSpacing: 0,
         color: AppColors.textPrimary,
       );
 
   static TextStyle get bodyCompact => GoogleFonts.inter(
-        fontSize: 12,
+        fontSize: 14,
         fontWeight: FontWeight.w400,
-        height: 18 / 12,
-        letterSpacing: 0.12,
+        height: 20 / 14,
+        letterSpacing: 0.1,
         color: AppColors.textSecondary,
       );
 }

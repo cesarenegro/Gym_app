@@ -19,15 +19,15 @@ class CommunityScreen extends ConsumerWidget {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('COMMUNITY & FEED', style: AppTypography.tagUppercase.copyWith(fontSize: 9)),
-            Text('KINETIC FEED', style: AppTypography.headlineEditorialSm),
+            Text('COMMUNITY & FEED', style: AppTypography.tagUppercase.copyWith(fontSize: 11)),
+            Text('KINETIC FEED', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 18)),
           ],
         ),
       ),
       body: ListView.separated(
         padding: const EdgeInsets.all(20),
         itemCount: posts.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 16),
+        separatorBuilder: (_, __) => const SizedBox(height: 18),
         itemBuilder: (context, idx) {
           final post = posts[idx];
           return _buildPostCard(context, ref, post);
@@ -40,10 +40,10 @@ class CommunityScreen extends ConsumerWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.carbonSurface1,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(color: AppColors.hairline),
       ),
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(18),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -54,19 +54,19 @@ class CommunityScreen extends ConsumerWidget {
               Row(
                 children: [
                   CircleAvatar(
-                    radius: 18,
+                    radius: 20,
                     backgroundImage: NetworkImage(post.authorAvatar),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 12),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(post.authorName, style: AppTypography.headlineEditorialSm.copyWith(fontSize: 14)),
+                      Text(post.authorName, style: AppTypography.headlineEditorialSm.copyWith(fontSize: 16)),
                       Text(
                         post.authorRole.toUpperCase(),
                         style: AppTypography.tagUppercase.copyWith(
                           color: post.authorRole.contains('Coach') ? AppColors.volt : AppColors.textSecondary,
-                          fontSize: 9,
+                          fontSize: 11,
                         ),
                       ),
                     ],
@@ -100,26 +100,26 @@ class CommunityScreen extends ConsumerWidget {
               ),
             ],
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 14),
 
           // Content Text
-          Text(post.content, style: AppTypography.bodyDefault),
-          const SizedBox(height: 12),
+          Text(post.content, style: AppTypography.bodyDefault.copyWith(fontSize: 16, height: 1.4)),
+          const SizedBox(height: 14),
 
           // Optional Image
           if (post.imageUrl != null) ...[
             Container(
-              height: 200,
+              height: 220,
               width: double.infinity,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6),
+                borderRadius: BorderRadius.circular(8),
                 image: DecorationImage(
                   image: NetworkImage(post.imageUrl!),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 14),
           ],
 
           // Footer Actions (Like, Comment, Time)
@@ -134,7 +134,7 @@ class CommunityScreen extends ConsumerWidget {
                       children: [
                         Icon(
                           post.isLikedByMe ? Icons.favorite : Icons.favorite_border,
-                          size: 18,
+                          size: 20,
                           color: post.isLikedByMe ? AppColors.volt : AppColors.textSecondary,
                         ),
                         const SizedBox(width: 6),
@@ -142,24 +142,25 @@ class CommunityScreen extends ConsumerWidget {
                           '${post.likesCount}',
                           style: AppTypography.tagUppercase.copyWith(
                             color: post.isLikedByMe ? AppColors.volt : AppColors.textSecondary,
+                            fontSize: 12,
                           ),
                         ),
                       ],
                     ),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 24),
                   Row(
                     children: [
-                      const Icon(Icons.chat_bubble_outline, size: 16, color: AppColors.textSecondary),
+                      const Icon(Icons.chat_bubble_outline, size: 18, color: AppColors.textSecondary),
                       const SizedBox(width: 6),
-                      Text('${post.commentsCount}', style: AppTypography.tagUppercase.copyWith(color: AppColors.textSecondary)),
+                      Text('${post.commentsCount}', style: AppTypography.tagUppercase.copyWith(color: AppColors.textSecondary, fontSize: 12)),
                     ],
                   ),
                 ],
               ),
               Text(
-                '2H FA',
-                style: AppTypography.tagUppercase.copyWith(color: AppColors.textSecondary, fontSize: 9),
+                '2 ORE FA',
+                style: AppTypography.tagUppercase.copyWith(color: AppColors.textSecondary, fontSize: 11),
               ),
             ],
           ),

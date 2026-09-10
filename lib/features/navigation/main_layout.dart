@@ -33,16 +33,16 @@ class _MainLayoutState extends State<MainLayout> {
       backgroundColor: AppColors.obsidianCore,
       body: Stack(
         children: [
-          // Indexed Stack for fast navigation and persistent state
+          // Navigazione a schede persistente
           IndexedStack(
             index: _currentIndex,
             children: _screens,
           ),
 
-          // Floating AI Trigger Button (Positioned bottom right above tab bar)
+          // Pulsante Fluttuante GYM AI (Posizionato in basso a destra sopra la barra)
           Positioned(
             right: 20,
-            bottom: 84,
+            bottom: 90,
             child: FloatingAiPill(
               onTap: () {
                 showModalBottomSheet(
@@ -57,7 +57,7 @@ class _MainLayoutState extends State<MainLayout> {
         ],
       ),
 
-      // 5-Tab Navigation Bar conforming to Kinetic Obsidian specs
+      // Barra di Navigazione a 5 schede (Tutto in Italiano)
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
           color: AppColors.obsidianCore,
@@ -66,14 +66,14 @@ class _MainLayoutState extends State<MainLayout> {
         child: SafeArea(
           top: false,
           child: SizedBox(
-            height: 64,
+            height: 70,
             child: Row(
               children: [
                 _buildNavItem(0, Icons.home_outlined, Icons.home, 'HOME'),
-                _buildNavItem(1, Icons.fitness_center_outlined, Icons.fitness_center, 'TRAIN'),
-                _buildNavItem(2, Icons.calendar_month_outlined, Icons.calendar_month, 'BOOK'),
+                _buildNavItem(1, Icons.fitness_center_outlined, Icons.fitness_center, 'ALLENAMENTO'),
+                _buildNavItem(2, Icons.calendar_month_outlined, Icons.calendar_month, 'CORSI'),
                 _buildNavItem(3, Icons.people_outline, Icons.people, 'COMMUNITY'),
-                _buildNavItem(4, Icons.person_outline, Icons.person, 'PROFILE'),
+                _buildNavItem(4, Icons.person_outline, Icons.person, 'PROFILO'),
               ],
             ),
           ),
@@ -89,30 +89,30 @@ class _MainLayoutState extends State<MainLayout> {
         onTap: () => setState(() => _currentIndex = index),
         behavior: HitTestBehavior.opaque,
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 6),
+          padding: const EdgeInsets.symmetric(vertical: 8),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
                 isSelected ? selectedIcon : unselectedIcon,
-                size: 20,
+                size: 22,
                 color: isSelected ? AppColors.volt : AppColors.textSecondary,
               ),
-              const SizedBox(height: 3),
+              const SizedBox(height: 4),
               Text(
                 label,
                 style: AppTypography.tabLabel.copyWith(
                   color: isSelected ? AppColors.volt : AppColors.textSecondary,
                   fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-                  fontSize: 9,
+                  fontSize: 11,
                 ),
               ),
-              const SizedBox(height: 2),
-              // Active Indicator Dot
+              const SizedBox(height: 3),
+              // Indicatore di scheda attiva
               Container(
-                width: 3,
-                height: 3,
+                width: 4,
+                height: 4,
                 decoration: BoxDecoration(
                   color: isSelected ? AppColors.volt : Colors.transparent,
                   shape: BoxShape.circle,
