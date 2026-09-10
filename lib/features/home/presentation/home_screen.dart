@@ -369,16 +369,22 @@ class HomeScreen extends ConsumerWidget {
                       clipBehavior: Clip.antiAlias,
                       child: Stack(
                         children: [
-                          _buildImage(daily.imageUrl),
-                          Container(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.transparent,
-                                  AppColors.obsidianCore.withValues(alpha: 0.92),
-                                ],
+                          Positioned.fill(
+                            child: _buildImage(daily.imageUrl),
+                          ),
+                          Positioned.fill(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [
+                                    Colors.transparent,
+                                    Colors.black.withValues(alpha: 0.15),
+                                    Colors.black.withValues(alpha: 0.85),
+                                  ],
+                                  stops: const [0.0, 0.45, 1.0],
+                                ),
                               ),
                             ),
                           ),

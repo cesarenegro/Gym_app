@@ -135,8 +135,10 @@ class _DailiesCatalogScreenState extends ConsumerState<DailiesCatalogScreen> {
                                 end: Alignment.bottomCenter,
                                 colors: [
                                   Colors.transparent,
-                                  AppColors.obsidianCore.withValues(alpha: 0.95),
+                                  Colors.black.withValues(alpha: 0.15),
+                                  Colors.black.withValues(alpha: 0.85),
                                 ],
+                                stops: const [0.0, 0.45, 1.0],
                               ),
                             ),
                           ),
