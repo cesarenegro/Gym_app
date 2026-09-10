@@ -13,6 +13,25 @@ import '../../training/presentation/active_workout_focus_screen.dart';
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
+  Widget _buildImage(String path) {
+    if (path.startsWith('assets/')) {
+      return Image.asset(
+        path,
+        width: double.infinity,
+        height: double.infinity,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => Container(color: AppColors.carbonSurface2),
+      );
+    }
+    return Image.network(
+      path,
+      width: double.infinity,
+      height: double.infinity,
+      fit: BoxFit.cover,
+      errorBuilder: (_, __, ___) => Container(color: AppColors.carbonSurface2),
+    );
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final dailies = ref.watch(dailiesProvider);
@@ -174,12 +193,7 @@ class HomeScreen extends ConsumerWidget {
                   Container(
                     height: 290,
                     width: double.infinity,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
+                    child: _buildImage(workoutPlan.imageUrl.isNotEmpty ? workoutPlan.imageUrl : 'assets/images/workouts/W01.png'),
                   ),
                   Positioned.fill(
                     child: Container(
@@ -323,7 +337,7 @@ class HomeScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 28),
 
-            // 4. DAILIES HORIZONTAL RAIL
+            // 4. DAILIES HORIZONTAL RAIL (IMMAGINI DAILIES RIPRISTINATE CON _buildImage)
             SectionHeader(
               title: 'Notizie & Dailies',
               badgeText: '04 NUOVI',
@@ -356,13 +370,7 @@ class HomeScreen extends ConsumerWidget {
                       clipBehavior: Clip.antiAlias,
                       child: Stack(
                         children: [
-                          Image.network(
-                            daily.imageUrl,
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => Container(color: AppColors.carbonSurface2),
-                          ),
+                          _buildImage(daily.imageUrl),
                           Container(
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
@@ -430,9 +438,8 @@ class HomeScreen extends ConsumerWidget {
                         borderRadius: BorderRadius.circular(6),
                         border: Border.all(color: AppColors.hairline),
                       ),
-                      child: const Center(
-                        child: Icon(Icons.fitness_center, color: AppColors.volt, size: 24),
-                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: _buildImage(nextClass.imageUrl),
                     ),
                     const SizedBox(width: 14),
                     Expanded(

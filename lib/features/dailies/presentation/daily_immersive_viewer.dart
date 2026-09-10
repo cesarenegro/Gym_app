@@ -188,7 +188,7 @@ class DailyImmersiveViewer extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
-                              color: AppColors.obsidianCore,
+                              color: AppColors.obsidianCore.withValues(alpha: 0.5),
                               borderRadius: BorderRadius.circular(6),
                               border: Border.all(color: const Color(0xFFFFC76A), width: 1),
                             ),
@@ -212,14 +212,14 @@ class DailyImmersiveViewer extends StatelessWidget {
                           const SizedBox(height: 20),
                         ],
 
-                        // Ingredienti Box
+                        // Ingredienti Box (Opacity 0.5)
                         if (item.ingredients.isNotEmpty) ...[
                           Text('INGREDIENTI', style: AppTypography.tagUppercase.copyWith(fontSize: 12, color: AppColors.volt)),
                           const SizedBox(height: 10),
                           Container(
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: AppColors.carbonSurface1.withValues(alpha: 0.9),
+                              color: AppColors.carbonSurface1.withValues(alpha: 0.5),
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(color: AppColors.hairline),
                             ),
@@ -248,7 +248,7 @@ class DailyImmersiveViewer extends StatelessWidget {
                           const SizedBox(height: 20),
                         ],
 
-                        // Passaggi Preparazione
+                        // Passaggi Preparazione (Opacity 0.5)
                         if (item.steps.isNotEmpty) ...[
                           Text('PREPARAZIONE', style: AppTypography.tagUppercase.copyWith(fontSize: 12, color: AppColors.volt)),
                           const SizedBox(height: 10),
@@ -260,7 +260,7 @@ class DailyImmersiveViewer extends StatelessWidget {
                                 margin: const EdgeInsets.only(bottom: 10),
                                 padding: const EdgeInsets.all(16),
                                 decoration: BoxDecoration(
-                                  color: AppColors.carbonSurface1,
+                                  color: AppColors.carbonSurface1.withValues(alpha: 0.5),
                                   borderRadius: BorderRadius.circular(8),
                                   border: Border.all(color: AppColors.hairline),
                                 ),
