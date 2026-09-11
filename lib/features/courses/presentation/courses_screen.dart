@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../core/components/action_pill.dart';
 import '../../../core/state/gym_state_providers.dart';
@@ -35,18 +36,30 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
   @override
   Widget build(BuildContext context) {
     final allCourses = ref.watch(coursesProvider);
-    final filteredCourses = _selectedCategory == 'Tutti'
+    final filteredCourses = (_selectedCategory == 'Tutti' || _selectedCategory == 'Tutti i Livelli')
         ? allCourses
-        : allCourses.where((c) => c.category == _selectedCategory).toList();
+        : allCourses.where((c) {
+            final catLower = c.category.toLowerCase();
+            final filterLower = _selectedCategory.toLowerCase();
+            if (filterLower == 'base') {
+              return catLower.contains('base') || catLower.contains('tutti');
+            } else if (filterLower == 'intermedio') {
+              return catLower.contains('intermedio') || catLower.contains('tutti');
+            } else if (filterLower == 'avanzato') {
+              return catLower.contains('avanzato') || catLower.contains('intermedio') || catLower.contains('tutti');
+            }
+            return catLower.contains(filterLower);
+          }).toList();
 
     return Scaffold(
-      backgroundColor: AppColors.obsidianCore,
+      backgroundColor: context.appBg,
       appBar: AppBar(
+        backgroundColor: context.appBg.withValues(alpha: 0.92),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('PALINSESTO CORSI', style: AppTypography.tagUppercase.copyWith(fontSize: 11)),
-            Text('PRENOTAZIONE CORSI', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 18)),
+            Text('PALINSESTO CORSI', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: context.textSecondaryColor)),
+            Text('PRENOTAZIONE CORSI', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 18, color: context.textPrimaryColor)),
           ],
         ),
       ),
@@ -64,20 +77,23 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
               itemBuilder: (context, idx) {
                 final cat = _categories[idx];
                 final isSelected = cat == _selectedCategory;
+                final activeBg = context.isCoolTheme ? AppColors.coolAccent : AppColors.volt;
+                final activeText = context.isCoolTheme ? AppColors.coolOnAccent : AppColors.onVolt;
+
                 return GestureDetector(
                   onTap: () => setState(() => _selectedCategory = cat),
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                     decoration: BoxDecoration(
-                      color: isSelected ? AppColors.volt : AppColors.carbonSurface1,
+                      color: isSelected ? activeBg : context.cardBg,
                       borderRadius: BorderRadius.circular(6),
-                      border: Border.all(color: isSelected ? AppColors.volt : AppColors.hairline),
+                      border: Border.all(color: isSelected ? activeBg : context.hairlineColor),
                     ),
                     child: Center(
                       child: Text(
                         cat.toUpperCase(),
                         style: AppTypography.tagUppercase.copyWith(
-                          color: isSelected ? AppColors.onVolt : AppColors.textPrimary,
+                          color: isSelected ? activeText : context.textPrimaryColor,
                           fontSize: 11,
                           fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                         ),
@@ -109,9 +125,9 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
   Widget _buildCourseCard(CourseSession session) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.carbonSurface1,
+        color: context.cardBg,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: AppColors.hairline),
+        border: Border.all(color: context.hairlineColor),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -197,36 +213,36 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.schedule, size: 16, color: AppColors.textSecondary),
+                        Icon(Icons.schedule, size: 16, color: context.textSecondaryColor),
                         const SizedBox(width: 6),
-                        Text('${session.durationMinutes} min', style: AppTypography.bodyDefault),
+                        Text('${session.durationMinutes} min', style: AppTypography.bodyDefault.copyWith(color: context.textPrimaryColor)),
                       ],
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.person_outline, size: 16, color: AppColors.textSecondary),
+                        Icon(Icons.person_outline, size: 16, color: context.textSecondaryColor),
                         const SizedBox(width: 6),
-                        Text(session.trainerName, style: AppTypography.bodyDefault),
+                        Text(session.trainerName, style: AppTypography.bodyDefault.copyWith(color: context.textPrimaryColor)),
                       ],
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.room_outlined, size: 16, color: AppColors.textSecondary),
+                        Icon(Icons.room_outlined, size: 16, color: context.textSecondaryColor),
                         const SizedBox(width: 6),
-                        Text(session.room, style: AppTypography.bodyDefault),
+                        Text(session.room, style: AppTypography.bodyDefault.copyWith(color: context.textPrimaryColor)),
                       ],
                     ),
                   ],
                 ),
                 const SizedBox(height: 14),
-                Text(session.description, style: AppTypography.bodyDefault.copyWith(color: AppColors.textSecondary, height: 1.4)),
+                Text(session.description, style: AppTypography.bodyDefault.copyWith(color: context.textSecondaryColor, height: 1.4)),
                 const SizedBox(height: 16),
 
                 // Objectives
                 if (session.objectives.isNotEmpty) ...[
-                  Text('OBIETTIVI DEL CORSO', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: AppColors.volt)),
+                  Text('OBIETTIVI DEL CORSO', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt)),
                   const SizedBox(height: 6),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -235,8 +251,8 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                         padding: const EdgeInsets.symmetric(vertical: 2),
                         child: Row(
                           children: [
-                            const Text('✦ ', style: TextStyle(color: AppColors.volt, fontSize: 12)),
-                            Expanded(child: Text(obj, style: AppTypography.bodyDefault.copyWith(fontSize: 13))),
+                            Text('✦ ', style: TextStyle(color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt, fontSize: 12)),
+                            Expanded(child: Text(obj, style: AppTypography.bodyDefault.copyWith(fontSize: 13, color: context.textPrimaryColor))),
                           ],
                         ),
                       );
@@ -247,14 +263,14 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
 
                 // Lesson Structure Timeline
                 if (session.lessonStructure.isNotEmpty) ...[
-                  Text('STRUTTURA DELLA LEZIONE', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: AppColors.textSecondary)),
+                  Text('STRUTTURA DELLA LEZIONE', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: context.textSecondaryColor)),
                   const SizedBox(height: 8),
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
-                      color: AppColors.carbonSurface2,
+                      color: context.cardBg2,
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: AppColors.hairline),
+                      border: Border.all(color: context.hairlineColor),
                     ),
                     child: Column(
                       children: session.lessonStructure.map((step) {
@@ -267,11 +283,11 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                                 width: 50,
                                 padding: const EdgeInsets.symmetric(vertical: 2),
                                 decoration: BoxDecoration(
-                                  color: AppColors.obsidianCore,
+                                  color: context.appBg,
                                   borderRadius: BorderRadius.circular(4),
                                 ),
                                 child: Center(
-                                  child: Text('${step.minutes}m', style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 10)),
+                                  child: Text('${step.minutes}m', style: AppTypography.tagUppercase.copyWith(color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt, fontSize: 10)),
                                 ),
                               ),
                               const SizedBox(width: 10),
@@ -279,8 +295,8 @@ class _CoursesScreenState extends ConsumerState<CoursesScreen> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(step.name, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.bold, fontSize: 13)),
-                                    Text(step.description, style: AppTypography.bodyCompact.copyWith(fontSize: 12)),
+                                    Text(step.name, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.bold, fontSize: 13, color: context.textPrimaryColor)),
+                                    Text(step.description, style: AppTypography.bodyCompact.copyWith(fontSize: 12, color: context.textSecondaryColor)),
                                   ],
                                 ),
                               ),

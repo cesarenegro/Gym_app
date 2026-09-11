@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
+import '../theme/app_theme.dart';
 import '../theme/app_typography.dart';
 
 class TelemetryTile extends StatelessWidget {
@@ -22,12 +23,15 @@ class TelemetryTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final effectiveStatusColor = statusColor ??
+        (context.isCoolTheme ? AppColors.coolAccent : AppColors.volt);
+
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: AppColors.carbonSurface1,
+        color: context.cardBg,
         borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: AppColors.hairline, width: 1),
+        border: Border.all(color: context.hairlineColor, width: 1),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +45,7 @@ class TelemetryTile extends StatelessWidget {
                   label.toUpperCase(),
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.tagUppercase.copyWith(
-                    color: AppColors.textSecondary,
+                    color: context.textSecondaryColor,
                     fontSize: 9,
                   ),
                 ),
@@ -60,7 +64,7 @@ class TelemetryTile extends StatelessWidget {
                 Text(
                   value,
                   style: AppTypography.metricNumeralMd.copyWith(
-                    color: AppColors.textPrimary,
+                    color: context.textPrimaryColor,
                     fontSize: 20,
                   ),
                 ),
@@ -69,7 +73,7 @@ class TelemetryTile extends StatelessWidget {
                   Text(
                     unit!,
                     style: AppTypography.bodyCompact.copyWith(
-                      color: AppColors.textSecondary,
+                      color: context.textSecondaryColor,
                       fontSize: 11,
                     ),
                   ),
@@ -85,7 +89,7 @@ class TelemetryTile extends StatelessWidget {
               maxLines: 1,
               style: AppTypography.tagUppercase.copyWith(
                 fontSize: 9,
-                color: statusColor ?? AppColors.volt,
+                color: effectiveStatusColor,
               ),
             ),
           ],

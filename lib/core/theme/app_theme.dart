@@ -101,22 +101,23 @@ class AppTheme {
   static ThemeData get coolTheme {
     return ThemeData(
       useMaterial3: true,
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
       scaffoldBackgroundColor: AppColors.coolBackground, // #CBCBCB
       primaryColor: AppColors.coolAccent, // #5A5A5A
       canvasColor: AppColors.coolBackground,
-      cardColor: AppColors.coolAccent,
-      dividerColor: AppColors.coolHairline,
-      colorScheme: const ColorScheme.dark(
+      cardColor: AppColors.coolSurface1, // #E5E5E5 Card chiara
+      dividerColor: AppColors.coolHairline, // #D4D4D4
+      colorScheme: const ColorScheme.light(
         primary: AppColors.coolAccent,
-        onPrimary: AppColors.coolTextPrimary, // #F2F2F2
-        primaryContainer: AppColors.coolAccent,
+        onPrimary: AppColors.coolOnAccent, // #FFFFFF
+        primaryContainer: AppColors.coolSurface2,
         onPrimaryContainer: AppColors.coolTextPrimary,
-        surface: AppColors.coolAccent,
-        onSurface: AppColors.coolTextPrimary, // #F2F2F2
-        surfaceContainerHigh: AppColors.coolSurface2,
+        surface: AppColors.coolSurface1,
+        onSurface: AppColors.coolTextPrimary, // #2E1B0E Espresso scuro
+        onSurfaceVariant: AppColors.coolTextSecondary, // #503A2B Espresso
+        surfaceContainerHigh: AppColors.coolSurface2, // #F0F0F0
         error: AppColors.error,
-        onError: AppColors.coolTextPrimary,
+        onError: AppColors.coolOnAccent,
         outline: AppColors.coolHairline,
       ),
       appBarTheme: const AppBarTheme(
@@ -129,18 +130,18 @@ class AppTheme {
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: AppColors.coolBackground,
         selectedItemColor: AppColors.coolAccent,
-        unselectedItemColor: AppColors.coolTextDark,
+        unselectedItemColor: AppColors.coolTextSecondary,
         type: BottomNavigationBarType.fixed,
         elevation: 0,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.coolAccent,
-          foregroundColor: AppColors.coolTextPrimary,
+          foregroundColor: AppColors.coolOnAccent,
           elevation: 0,
           shape: const StadiumBorder(),
           textStyle: AppTypography.tagUppercase.copyWith(
-            color: AppColors.coolTextPrimary,
+            color: AppColors.coolOnAccent,
             fontWeight: FontWeight.w700,
           ),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
@@ -160,8 +161,8 @@ class AppTheme {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: AppColors.coolAccent,
-        hintStyle: AppTypography.bodyDefault.copyWith(color: AppColors.coolTextPrimary),
+        fillColor: AppColors.coolSurface1,
+        hintStyle: AppTypography.bodyDefault.copyWith(color: AppColors.coolTextSecondary),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(4),
           borderSide: const BorderSide(color: AppColors.coolHairline, width: 1),
@@ -178,4 +179,18 @@ class AppTheme {
       ),
     );
   }
+}
+
+/// Dynamic Theme Color Helper Extension
+extension AppThemeContext on BuildContext {
+  ThemeData get theme => Theme.of(this);
+  bool get isCoolTheme => Theme.of(this).scaffoldBackgroundColor.value == AppColors.coolBackground.value;
+  Color get appBg => Theme.of(this).scaffoldBackgroundColor;
+  Color get cardBg => Theme.of(this).cardColor;
+  Color get cardBg2 => Theme.of(this).colorScheme.surfaceContainerHigh;
+  Color get accentColor => Theme.of(this).colorScheme.primary;
+  Color get onAccentColor => Theme.of(this).colorScheme.onPrimary;
+  Color get textPrimaryColor => Theme.of(this).colorScheme.onSurface;
+  Color get textSecondaryColor => Theme.of(this).colorScheme.onSurfaceVariant;
+  Color get hairlineColor => Theme.of(this).dividerColor;
 }

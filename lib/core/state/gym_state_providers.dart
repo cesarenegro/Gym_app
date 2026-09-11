@@ -8,6 +8,7 @@ import '../../features/training/models/training_models.dart';
 import '../../features/nutrition/models/nutrition_models.dart';
 import '../../features/community/models/community_models.dart';
 import '../../features/marketplace/models/product_model.dart';
+import '../../features/profile/models/user_profile_model.dart';
 
 // --- DAILIES NOTIFIER ---
 class DailiesNotifier extends StateNotifier<List<DailyItem>> {
@@ -306,5 +307,38 @@ class ThemeModeNotifier extends StateNotifier<AppThemeMode> {
 
 final themeModeProvider = StateNotifierProvider<ThemeModeNotifier, AppThemeMode>((ref) {
   return ThemeModeNotifier();
+});
+
+// --- USER PROFILE PROVIDER ---
+class UserProfileNotifier extends StateNotifier<UserProfile> {
+  UserProfileNotifier() : super(const UserProfile());
+
+  void updateProfile({
+    String? fullName,
+    int? age,
+    int? heightCm,
+    double? weightKg,
+    String? fitnessLevel,
+    String? primaryGoal,
+    String? avatarPath,
+  }) {
+    state = state.copyWith(
+      fullName: fullName,
+      age: age,
+      heightCm: heightCm,
+      weightKg: weightKg,
+      fitnessLevel: fitnessLevel,
+      primaryGoal: primaryGoal,
+      avatarPath: avatarPath,
+    );
+  }
+
+  void setAvatarPath(String path) {
+    state = state.copyWith(avatarPath: path);
+  }
+}
+
+final userProfileProvider = StateNotifierProvider<UserProfileNotifier, UserProfile>((ref) {
+  return UserProfileNotifier();
 });
 

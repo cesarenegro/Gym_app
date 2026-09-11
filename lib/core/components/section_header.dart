@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
+import '../theme/app_theme.dart';
 import '../theme/app_typography.dart';
 
 class SectionHeader extends StatelessWidget {
@@ -33,6 +34,7 @@ class SectionHeader extends StatelessWidget {
                     style: AppTypography.headlineEditorialSm.copyWith(
                       fontSize: 15,
                       letterSpacing: -0.2,
+                      color: context.textPrimaryColor,
                     ),
                   ),
                 ),
@@ -41,13 +43,13 @@ class SectionHeader extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
-                      color: AppColors.surfaceContainerHigh,
+                      color: context.isCoolTheme ? AppColors.coolAccent : AppColors.surfaceContainerHigh,
                       borderRadius: BorderRadius.circular(999),
                     ),
                     child: Text(
                       badgeText!,
                       style: AppTypography.tagUppercase.copyWith(
-                        color: AppColors.volt,
+                        color: context.isCoolTheme ? AppColors.coolOnAccent : AppColors.volt,
                         fontSize: 9,
                       ),
                     ),
@@ -66,16 +68,16 @@ class SectionHeader extends StatelessWidget {
                   Text(
                     actionLabel!.toUpperCase(),
                     style: AppTypography.tagUppercase.copyWith(
-                      color: AppColors.textSecondary,
+                      color: context.textSecondaryColor,
                       fontSize: 10,
                       letterSpacing: 1.1,
                     ),
                   ),
                   const SizedBox(width: 2),
-                  const Icon(
+                  Icon(
                     Icons.chevron_right,
                     size: 14,
-                    color: AppColors.textSecondary,
+                    color: context.textSecondaryColor,
                   ),
                 ],
               ),
@@ -96,7 +98,7 @@ class HairlineDivider extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: marginVertical),
       height: 1,
-      color: AppColors.hairline,
+      color: context.hairlineColor,
     );
   }
 }

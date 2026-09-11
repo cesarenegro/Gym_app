@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../core/components/action_pill.dart';
-import '../../../core/components/section_header.dart';
 import '../../../core/components/telemetry_tile.dart';
+import '../../../core/components/section_header.dart';
 import '../../../core/state/gym_state_providers.dart';
+import '../../../core/utils/load_calculator.dart';
+import '../models/training_models.dart';
 import 'active_workout_focus_screen.dart';
 
 class TrainingScreen extends ConsumerWidget {
@@ -268,12 +271,19 @@ class TrainingScreen extends ConsumerWidget {
                     separatorBuilder: (_, __) => const SizedBox(height: 14),
                     itemBuilder: (context, index) {
                       final ex = activePlan.exercises[index];
+                      final userProfile = ref.watch(userProfileProvider);
+                      final recLoad = LoadCalculator.calculateRecommendedLoad(
+                        exerciseName: ex.name,
+                        profile: userProfile,
+                      );
+                      final activeColor = context.isCoolTheme ? AppColors.coolAccent : AppColors.volt;
+
                       return Container(
                         padding: const EdgeInsets.all(18),
                         decoration: BoxDecoration(
-                          color: AppColors.carbonSurface1,
+                          color: context.cardBg,
                           borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: AppColors.hairline),
+                          border: Border.all(color: context.hairlineColor),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -287,14 +297,14 @@ class TrainingScreen extends ConsumerWidget {
                                       width: 28,
                                       height: 28,
                                       decoration: BoxDecoration(
-                                        color: AppColors.carbonSurface2,
+                                        color: context.cardBg2,
                                         borderRadius: BorderRadius.circular(6),
                                       ),
                                       child: Center(
                                         child: Text(
                                           '${index + 1}',
                                           style: AppTypography.tagUppercase.copyWith(
-                                            color: AppColors.volt,
+                                            color: activeColor,
                                             fontWeight: FontWeight.bold,
                                             fontSize: 12,
                                           ),
@@ -302,26 +312,47 @@ class TrainingScreen extends ConsumerWidget {
                                       ),
                                     ),
                                     const SizedBox(width: 12),
-                                    Text(ex.name.toUpperCase(), style: AppTypography.headlineEditorialSm.copyWith(fontSize: 16)),
+                                    Text(ex.name.toUpperCase(), style: AppTypography.headlineEditorialSm.copyWith(fontSize: 16, color: context.textPrimaryColor)),
                                   ],
                                 ),
-                                Text('Recupero: ${ex.restSeconds}s', style: AppTypography.bodyDefault.copyWith(color: AppColors.textSecondary, fontSize: 12)),
+                                Text('Recupero: ${ex.restSeconds}s', style: AppTypography.bodyDefault.copyWith(color: context.textSecondaryColor, fontSize: 12)),
                               ],
                             ),
                             const SizedBox(height: 10),
-                            Text('DOSE: ${ex.targetSetsReps}', style: AppTypography.bodyDefault.copyWith(color: AppColors.volt, fontWeight: FontWeight.bold)),
+                            Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: activeColor.withValues(alpha: 0.15),
+                                    borderRadius: BorderRadius.circular(4),
+                                    border: Border.all(color: activeColor.withValues(alpha: 0.4)),
+                                  ),
+                                  child: Text(
+                                    'CARICO CONSIGLIATO: $recLoad',
+                                    style: AppTypography.tagUppercase.copyWith(
+                                      color: activeColor,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 11,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Text('(${ex.targetSetsReps})', style: AppTypography.bodyCompact.copyWith(color: context.textSecondaryColor, fontSize: 12)),
+                              ],
+                            ),
                             if (ex.instructions.isNotEmpty) ...[
-                              const SizedBox(height: 6),
-                              Text(ex.instructions, style: AppTypography.bodyDefault.copyWith(fontSize: 14, color: AppColors.textPrimary)),
+                              const SizedBox(height: 8),
+                              Text(ex.instructions, style: AppTypography.bodyDefault.copyWith(fontSize: 14, color: context.textPrimaryColor)),
                             ],
                             if (ex.easierOption.isNotEmpty) ...[
                               const SizedBox(height: 6),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text('Opzione più facile: ', style: TextStyle(color: AppColors.textSecondary, fontWeight: FontWeight.bold, fontSize: 13)),
+                                  Text('Opzione più facile: ', style: TextStyle(color: context.textSecondaryColor, fontWeight: FontWeight.bold, fontSize: 13)),
                                   Expanded(
-                                    child: Text(ex.easierOption, style: AppTypography.bodyCompact.copyWith(fontSize: 13)),
+                                    child: Text(ex.easierOption, style: AppTypography.bodyCompact.copyWith(fontSize: 13, color: context.textSecondaryColor)),
                                   ),
                                 ],
                               ),

@@ -1,6 +1,8 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../core/components/action_pill.dart';
 import '../../../core/components/telemetry_tile.dart';
@@ -10,6 +12,8 @@ import '../../dailies/models/daily_item.dart';
 import '../../dailies/presentation/daily_immersive_viewer.dart';
 import '../../dailies/presentation/dailies_catalog_screen.dart';
 import '../../training/presentation/active_workout_focus_screen.dart';
+import '../../courses/presentation/courses_screen.dart';
+import '../../nutrition/presentation/nutrition_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -39,13 +43,14 @@ class HomeScreen extends ConsumerWidget {
     final workoutPlan = ref.watch(trainingProvider);
     final courses = ref.watch(coursesProvider);
     final nutrition = ref.watch(nutritionProvider);
+    final userProfile = ref.watch(userProfileProvider);
 
     final nextClass = courses.isNotEmpty ? courses.first : null;
 
     return Scaffold(
-      backgroundColor: AppColors.obsidianCore,
+      backgroundColor: context.appBg,
       appBar: AppBar(
-        backgroundColor: AppColors.obsidianCore.withValues(alpha: 0.92),
+        backgroundColor: context.appBg.withValues(alpha: 0.92),
         titleSpacing: 20,
         title: Row(
           children: [
@@ -94,12 +99,23 @@ class HomeScreen extends ConsumerWidget {
             child: Stack(
               alignment: Alignment.topRight,
               children: [
-                const CircleAvatar(
-                  radius: 20,
-                  backgroundColor: AppColors.carbonSurface2,
-                  backgroundImage: NetworkImage(
-                    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: context.cardBg2,
+                    border: Border.all(color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt, width: 1.5),
                   ),
+                  clipBehavior: Clip.antiAlias,
+                  child: (userProfile.avatarPath != null &&
+                          userProfile.avatarPath!.isNotEmpty &&
+                          File(userProfile.avatarPath!).existsSync())
+                      ? Image.file(File(userProfile.avatarPath!), fit: BoxFit.cover)
+                      : Image.network(
+                          'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
+                          fit: BoxFit.cover,
+                        ),
                 ),
                 Positioned(
                   top: 0,
@@ -108,9 +124,9 @@ class HomeScreen extends ConsumerWidget {
                     width: 10,
                     height: 10,
                     decoration: BoxDecoration(
-                      color: AppColors.volt,
+                      color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt,
                       shape: BoxShape.circle,
-                      border: Border.all(color: AppColors.obsidianCore, width: 2),
+                      border: Border.all(color: context.appBg, width: 2),
                     ),
                   ),
                 ),
@@ -202,11 +218,17 @@ class HomeScreen extends ConsumerWidget {
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: [
-                            AppColors.obsidianCore.withValues(alpha: 0.3),
-                            AppColors.obsidianCore.withValues(alpha: 0.7),
-                            AppColors.obsidianCore.withValues(alpha: 0.98),
-                          ],
+                          colors: context.isCoolTheme
+                              ? [
+                                  context.appBg.withValues(alpha: 0.15),
+                                  context.appBg.withValues(alpha: 0.55),
+                                  context.appBg.withValues(alpha: 0.95),
+                                ]
+                              : [
+                                  AppColors.obsidianCore.withValues(alpha: 0.3),
+                                  AppColors.obsidianCore.withValues(alpha: 0.7),
+                                  AppColors.obsidianCore.withValues(alpha: 0.98),
+                                ],
                         ),
                       ),
                     ),
@@ -282,13 +304,13 @@ class HomeScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 28),
 
-            // 3. RENDIMENTO SETTIMANALE
+            // 3. RENDIMENTO SETTIMANALE (#88A0B8)
             Container(
               padding: const EdgeInsets.all(18),
               decoration: BoxDecoration(
-                color: AppColors.carbonSurface1,
+                color: const Color(0xFF88A0B8),
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: AppColors.hairline),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
               ),
               child: Column(
                 children: [
@@ -299,23 +321,33 @@ class HomeScreen extends ConsumerWidget {
                         child: Text(
                           'RENDIMENTO SETTIMANALE',
                           overflow: TextOverflow.ellipsis,
-                          style: AppTypography.tagUppercase.copyWith(fontSize: 11),
+                          style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: Colors.white),
                         ),
                       ),
                       const SizedBox(width: 8),
-                      Text('3 DI 4 SESSIONI', style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 11, fontWeight: FontWeight.bold)),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Text(
+                          '3 DI 4 SESSIONI',
+                          style: AppTypography.tagUppercase.copyWith(color: const Color(0xFF2E1B0E), fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(height: 14),
                   Row(
                     children: [
-                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: AppColors.volt, borderRadius: BorderRadius.circular(4)))),
+                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)))),
                       const SizedBox(width: 6),
-                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: AppColors.volt, borderRadius: BorderRadius.circular(4)))),
+                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)))),
                       const SizedBox(width: 6),
-                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: AppColors.volt, borderRadius: BorderRadius.circular(4)))),
+                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)))),
                       const SizedBox(width: 6),
-                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: AppColors.surfaceContainerHighest, borderRadius: BorderRadius.circular(4)))),
+                      Expanded(child: Container(height: 8, decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.35), borderRadius: BorderRadius.circular(4)))),
                     ],
                   ),
                   const SizedBox(height: 14),
@@ -325,12 +357,12 @@ class HomeScreen extends ConsumerWidget {
                       Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Icon(Icons.local_fire_department, size: 16, color: AppColors.volt),
+                          const Icon(Icons.local_fire_department, size: 16, color: Colors.white),
                           const SizedBox(width: 6),
-                          Text('1.840 kcal bruciate', style: AppTypography.bodyDefault.copyWith(color: AppColors.textPrimary, fontSize: 13)),
+                          Text('1.840 kcal bruciate', style: AppTypography.bodyDefault.copyWith(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w600)),
                         ],
                       ),
-                      Text('Prossimo: Sab 09:30', style: AppTypography.bodyCompact.copyWith(fontSize: 13)),
+                      Text('Prossimo: Sab 09:30', style: AppTypography.bodyCompact.copyWith(fontSize: 13, color: Colors.white.withValues(alpha: 0.9))),
                     ],
                   ),
                 ],
@@ -425,13 +457,22 @@ class HomeScreen extends ConsumerWidget {
 
             // 5. PROSSIMA LEZIONE SCHEDULATA
             if (nextClass != null) ...[
-              SectionHeader(title: 'Prossima Lezione', actionLabel: 'Vedi Tutte'),
+              SectionHeader(
+                title: 'Prossima Lezione',
+                actionLabel: 'Vedi Tutte',
+                onAction: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const CoursesScreen()),
+                  );
+                },
+              ),
               Container(
                 padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
-                  color: AppColors.carbonSurface1,
+                  color: context.cardBg,
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: AppColors.hairline),
+                  border: Border.all(color: context.hairlineColor),
                 ),
                 child: Row(
                   children: [
@@ -439,9 +480,9 @@ class HomeScreen extends ConsumerWidget {
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: AppColors.carbonSurface2,
+                        color: context.cardBg2,
                         borderRadius: BorderRadius.circular(6),
-                        border: Border.all(color: AppColors.hairline),
+                        border: Border.all(color: context.hairlineColor),
                       ),
                       clipBehavior: Clip.antiAlias,
                       child: _buildImage(nextClass.imageUrl),
@@ -451,24 +492,28 @@ class HomeScreen extends ConsumerWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(nextClass.courseName.toUpperCase(), style: AppTypography.headlineEditorialSm.copyWith(fontSize: 16)),
+                          Text(nextClass.courseName.toUpperCase(), style: AppTypography.headlineEditorialSm.copyWith(fontSize: 16, color: context.textPrimaryColor)),
                           const SizedBox(height: 3),
-                          Text('Oggi · ${nextClass.durationMinutes}m · ${nextClass.trainerName}', style: AppTypography.bodyDefault),
+                          Text('Oggi · ${nextClass.durationMinutes}m · ${nextClass.trainerName}', style: AppTypography.bodyDefault.copyWith(color: context.textSecondaryColor)),
                           const SizedBox(height: 3),
-                          Text('${nextClass.spotsRemaining} posti · ${nextClass.room}', style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 11)),
+                          Text('${nextClass.spotsRemaining} posti · ${nextClass.room}', style: AppTypography.tagUppercase.copyWith(color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt, fontSize: 11)),
                         ],
                       ),
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: nextClass.isBookedByUser ? AppColors.surfaceContainerHigh : AppColors.volt,
+                        color: nextClass.isBookedByUser
+                            ? context.cardBg2
+                            : (context.isCoolTheme ? AppColors.coolAccent : AppColors.volt),
                         borderRadius: BorderRadius.circular(999),
                       ),
                       child: Text(
                         nextClass.isBookedByUser ? 'PRENOTATO' : 'PRENOTA',
                         style: AppTypography.tagUppercase.copyWith(
-                          color: nextClass.isBookedByUser ? AppColors.volt : AppColors.onVolt,
+                          color: nextClass.isBookedByUser
+                              ? (context.isCoolTheme ? AppColors.coolAccent : AppColors.volt)
+                              : (context.isCoolTheme ? AppColors.coolOnAccent : AppColors.onVolt),
                           fontWeight: FontWeight.w700,
                           fontSize: 11,
                         ),
@@ -481,7 +526,16 @@ class HomeScreen extends ConsumerWidget {
             ],
 
             // 6. SNAPSHOT NUTRIZIONE
-            SectionHeader(title: 'Nutrizione Oggi', actionLabel: 'Dettagli'),
+            SectionHeader(
+              title: 'Nutrizione Oggi',
+              actionLabel: 'Dettagli',
+              onAction: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const NutritionScreen()),
+                );
+              },
+            ),
             Row(
               children: [
                 Expanded(

@@ -26,15 +26,15 @@ abstract class AppColors {
   static const Color textSecondary = Color(0xFF8E8E93); // Slate / metadata / units
   static const Color textVariant = Color(0xFFC5C9AC);
 
-  // --- COOL THEME (BACKGROUND #CBCBCB, ACCENT #5A5A5A, TESTI #F2F2F2) ---
+  // --- COOL THEME (CHIARO: BACKGROUND #CBCBCB, CARDS #E5E5E5, ACCENT #5A5A5A, TESTO #2E1B0E) ---
   static const Color coolBackground = Color(0xFFCBCBCB);
-  static const Color coolSurface1 = Color(0xFFB8B8B8);
-  static const Color coolSurface2 = Color(0xFFAFAFAF);
+  static const Color coolSurface1 = Color(0xFFE5E5E5);
+  static const Color coolSurface2 = Color(0xFFF0F0F0);
   static const Color coolAccent = Color(0xFF5A5A5A);
-  static const Color coolOnAccent = Color(0xFFF2F2F2);
-  static const Color coolTextPrimary = Color(0xFFF2F2F2);
-  static const Color coolTextDark = Color(0xFF2C2C2C);
-  static const Color coolHairline = Color(0xFF9E9E9E);
+  static const Color coolOnAccent = Color(0xFFFFFFFF);
+  static const Color coolTextPrimary = Color(0xFF2E1B0E);
+  static const Color coolTextSecondary = Color(0xFF503A2B);
+  static const Color coolHairline = Color(0xFFD4D4D4);
 
   // Status & Utility
   static const Color success = Color(0xFF30D158);

@@ -1,5 +1,7 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_typography.dart';
@@ -7,6 +9,8 @@ import '../../../core/components/telemetry_tile.dart';
 import '../../../core/components/section_header.dart';
 import '../../../core/components/action_pill.dart';
 import '../../../core/state/gym_state_providers.dart';
+import '../models/user_profile_model.dart';
+import 'onboarding_biometric_modal.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -54,8 +58,8 @@ class ProfileScreen extends ConsumerWidget {
               _buildThemeOption(
                 ctx,
                 ref,
-                title: 'COOL (Tema Grigio Metallico)',
-                subtitle: 'Sfondo #CBCBCB · Accent #5A5A5A · Testi #F2F2F2',
+                title: 'COOL (Tema Chiaro Grigio & Espresso)',
+                subtitle: 'Sfondo #CBCBCB · Card #E5E5E5 · Accent #5A5A5A · Testo #2E1B0E',
                 mode: AppThemeMode.cool,
                 isSelected: currentMode == AppThemeMode.cool,
                 previewBg: const Color(0xFFCBCBCB),
@@ -85,10 +89,10 @@ class ProfileScreen extends ConsumerWidget {
         Navigator.of(context).pop();
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            backgroundColor: AppColors.carbonSurface2,
+            backgroundColor: context.cardBg2,
             content: Text(
               'Tema impostato su ${mode == AppThemeMode.cool ? "COOL (#CBCBCB)" : "OBSIDIAN"}',
-              style: AppTypography.bodyDefault.copyWith(color: AppColors.volt),
+              style: AppTypography.bodyDefault.copyWith(color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt),
             ),
           ),
         );
@@ -96,9 +100,12 @@ class ProfileScreen extends ConsumerWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: isSelected ? AppColors.carbonSurface2 : AppColors.obsidianCore,
+          color: isSelected ? context.cardBg2 : context.cardBg,
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: isSelected ? AppColors.volt : AppColors.hairline, width: isSelected ? 2 : 1),
+          border: Border.all(
+            color: isSelected ? (context.isCoolTheme ? AppColors.coolAccent : AppColors.volt) : context.hairlineColor,
+            width: isSelected ? 1.5 : 1,
+          ),
         ),
         child: Row(
           children: [
@@ -108,7 +115,7 @@ class ProfileScreen extends ConsumerWidget {
               decoration: BoxDecoration(
                 color: previewBg,
                 shape: BoxShape.circle,
-                border: Border.all(color: AppColors.hairline),
+                border: Border.all(color: context.hairlineColor),
               ),
               child: Center(
                 child: Container(
@@ -126,30 +133,67 @@ class ProfileScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.bold, fontSize: 15)),
+                  Text(title, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.bold, fontSize: 15, color: context.textPrimaryColor)),
                   const SizedBox(height: 2),
-                  Text(subtitle, style: AppTypography.bodyCompact.copyWith(fontSize: 12)),
+                  Text(subtitle, style: AppTypography.bodyCompact.copyWith(fontSize: 12, color: context.textSecondaryColor)),
                 ],
               ),
             ),
-            if (isSelected) const Icon(Icons.check_circle, color: AppColors.volt, size: 22),
+            if (isSelected) Icon(Icons.check_circle, color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt, size: 22),
           ],
         ),
       ),
     );
   }
 
+  Future<void> _pickAvatar(BuildContext context, WidgetRef ref) async {
+    try {
+      final picker = ImagePicker();
+      final XFile? image = await picker.pickImage(source: ImageSource.gallery, imageQuality: 85);
+      if (image != null) {
+        ref.read(userProfileProvider.notifier).setAvatarPath(image.path);
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Foto profilo aggiornata dalla galleria!')),
+          );
+        }
+      }
+    } catch (e) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Impossibile aprire la galleria: $e')),
+        );
+      }
+    }
+  }
+
+  Widget _buildAvatarWidget(String? avatarPath) {
+    if (avatarPath != null && avatarPath.isNotEmpty && File(avatarPath).existsSync()) {
+      return Image.file(File(avatarPath), fit: BoxFit.cover, width: 72, height: 72);
+    }
+    return Image.network(
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
+      fit: BoxFit.cover,
+      width: 72,
+      height: 72,
+    );
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentThemeMode = ref.watch(themeModeProvider);
+    final userProfile = ref.watch(userProfileProvider);
+    final activeColor = context.isCoolTheme ? AppColors.coolAccent : AppColors.volt;
 
     return Scaffold(
+      backgroundColor: context.appBg,
       appBar: AppBar(
+        backgroundColor: context.appBg.withValues(alpha: 0.92),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('ATLETA & ACCOUNT', style: AppTypography.tagUppercase.copyWith(fontSize: 11)),
-            Text('PROFILO', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 18)),
+            Text('ATLETA & ACCOUNT', style: AppTypography.tagUppercase.copyWith(fontSize: 11, color: context.textSecondaryColor)),
+            Text('PROFILO', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 18, color: context.textPrimaryColor)),
           ],
         ),
       ),
@@ -158,19 +202,49 @@ class ProfileScreen extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Profile Card
+            // Profile Card with Interactive Avatar Picker
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Theme.of(context).cardColor,
+                color: context.cardBg,
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Theme.of(context).dividerColor),
+                border: Border.all(color: context.hairlineColor),
               ),
               child: Row(
                 children: [
-                  const CircleAvatar(
-                    radius: 36,
-                    backgroundImage: NetworkImage('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'),
+                  GestureDetector(
+                    onTap: () => _pickAvatar(context, ref),
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: 72,
+                          height: 72,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: activeColor, width: 2),
+                          ),
+                          clipBehavior: Clip.antiAlias,
+                          child: _buildAvatarWidget(userProfile.avatarPath),
+                        ),
+                        Positioned(
+                          bottom: 0,
+                          right: 0,
+                          child: Container(
+                            padding: const EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              color: activeColor,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: context.appBg, width: 1.5),
+                            ),
+                            child: Icon(
+                              Icons.camera_alt,
+                              size: 14,
+                              color: context.isCoolTheme ? AppColors.coolOnAccent : AppColors.onVolt,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(width: 16),
                   Expanded(
@@ -179,20 +253,54 @@ class ProfileScreen extends ConsumerWidget {
                       children: [
                         Row(
                           children: [
-                            Text('CESARE NEGRO', style: AppTypography.headlineEditorialSm.copyWith(fontSize: 20)),
+                            Text(userProfile.fullName, style: AppTypography.headlineEditorialSm.copyWith(fontSize: 20, color: context.textPrimaryColor)),
                             const SizedBox(width: 8),
-                            const Icon(Icons.verified, size: 18, color: AppColors.volt),
+                            Icon(Icons.verified, size: 18, color: activeColor),
                           ],
                         ),
                         const SizedBox(height: 4),
-                        Text('SOCIO BLACK ELITE', style: AppTypography.tagUppercase.copyWith(color: AppColors.volt, fontSize: 12)),
+                        Text(userProfile.membershipLevel, style: AppTypography.tagUppercase.copyWith(color: activeColor, fontSize: 12)),
                         const SizedBox(height: 4),
-                        Text('ID: #KN-88291 · KINETIC CLUB MILANO', style: AppTypography.bodyDefault.copyWith(color: AppColors.textSecondary)),
+                        Text('ID: #KN-88291 · KINETIC CLUB MILANO', style: AppTypography.bodyDefault.copyWith(color: context.textSecondaryColor)),
                       ],
                     ),
                   ),
                 ],
               ),
+            ),
+            const SizedBox(height: 24),
+
+            // Dati Biometrici Atleta & Ricalcolo Carichi
+            SectionHeader(
+              title: 'Profilo Biometrico & Carichi',
+              actionLabel: 'Modifica Dati',
+              onAction: () {
+                showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true,
+                  backgroundColor: Colors.transparent,
+                  builder: (_) => const OnboardingBiometricModal(),
+                );
+              },
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: TelemetryTile(
+                    label: 'PESO & ALTEZZA',
+                    value: '${userProfile.weightKg.toStringAsFixed(0)}kg / ${userProfile.heightCm}cm',
+                    statusText: '${userProfile.age} ANNI',
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: TelemetryTile(
+                    label: 'LIVELLO & IMC',
+                    value: userProfile.fitnessLevel.toUpperCase(),
+                    statusText: 'IMC ${userProfile.bmi.toStringAsFixed(1)} · ${userProfile.bmiCategory}',
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 24),
 
@@ -223,16 +331,17 @@ class ProfileScreen extends ConsumerWidget {
             // Settings & Actions Menu
             SectionHeader(title: 'Impostazioni & Tema'),
             _buildMenuItem(
+              context,
               Icons.palette_outlined,
               'Tema dell App',
               currentThemeMode == AppThemeMode.cool ? 'Tema Attivo: COOL (#CBCBCB)' : 'Tema Attivo: KINETIC OBSIDIAN (Default)',
               onTap: () => _showThemeSelector(context, ref, currentThemeMode),
             ),
-            _buildMenuItem(Icons.credit_card_outlined, 'Metodi di Pagamento & Fatture', 'Mastercard •••• 4242'),
-            _buildMenuItem(Icons.calendar_today_outlined, 'Storico Prenotazioni & Presenze', '24 sessioni chiuse'),
-            _buildMenuItem(Icons.fitness_center_outlined, 'Storico Massimali & Progressioni', 'Ultimo log: Oggi'),
-            _buildMenuItem(Icons.privacy_tip_outlined, 'Privacy & Consensi GDPR', 'Verificato EU'),
-            _buildMenuItem(Icons.support_agent_outlined, 'Assistenza Reception & Regolamento', 'Aperto fino alle 22:30'),
+            _buildMenuItem(context, Icons.credit_card_outlined, 'Metodi di Pagamento & Fatture', 'Mastercard •••• 4242'),
+            _buildMenuItem(context, Icons.calendar_today_outlined, 'Storico Prenotazioni & Presenze', '24 sessioni chiuse'),
+            _buildMenuItem(context, Icons.fitness_center_outlined, 'Storico Massimali & Progressioni', 'Ultimo log: Oggi'),
+            _buildMenuItem(context, Icons.privacy_tip_outlined, 'Privacy & Consensi GDPR', 'Verificato EU'),
+            _buildMenuItem(context, Icons.support_agent_outlined, 'Assistenza Reception & Regolamento', 'Aperto fino alle 22:30'),
             const SizedBox(height: 28),
 
             ActionPill(
@@ -251,32 +360,32 @@ class ProfileScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildMenuItem(IconData icon, String title, String subtitle, {VoidCallback? onTap}) {
+  Widget _buildMenuItem(BuildContext context, IconData icon, String title, String subtitle, {VoidCallback? onTap}) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
         margin: const EdgeInsets.only(bottom: 12),
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
-          color: AppColors.carbonSurface1,
+          color: context.cardBg,
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: AppColors.hairline),
+          border: Border.all(color: context.hairlineColor),
         ),
         child: Row(
           children: [
-            Icon(icon, size: 22, color: AppColors.volt),
+            Icon(icon, size: 22, color: context.isCoolTheme ? AppColors.coolAccent : AppColors.volt),
             const SizedBox(width: 16),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.w600, fontSize: 16)),
+                  Text(title, style: AppTypography.bodyDefault.copyWith(fontWeight: FontWeight.w600, fontSize: 16, color: context.textPrimaryColor)),
                   const SizedBox(height: 3),
-                  Text(subtitle, style: AppTypography.bodyCompact.copyWith(fontSize: 14)),
+                  Text(subtitle, style: AppTypography.bodyCompact.copyWith(fontSize: 14, color: context.textSecondaryColor)),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right, size: 20, color: AppColors.textSecondary),
+            Icon(Icons.chevron_right, size: 20, color: context.textSecondaryColor),
           ],
         ),
       ),

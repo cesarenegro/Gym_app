@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/components/floating_ai_pill.dart';
 import '../home/presentation/home_screen.dart';
@@ -29,8 +30,10 @@ class _MainLayoutState extends State<MainLayout> {
 
   @override
   Widget build(BuildContext context) {
+    final activeColor = context.isCoolTheme ? AppColors.coolAccent : AppColors.volt;
+
     return Scaffold(
-      backgroundColor: AppColors.obsidianCore,
+      backgroundColor: context.appBg,
       body: Stack(
         children: [
           // Navigazione a schede persistente
@@ -59,9 +62,9 @@ class _MainLayoutState extends State<MainLayout> {
 
       // Barra di Navigazione a 5 schede (Tutto in Italiano)
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          color: AppColors.obsidianCore,
-          border: Border(top: BorderSide(color: AppColors.hairline, width: 1)),
+        decoration: BoxDecoration(
+          color: context.appBg,
+          border: Border(top: BorderSide(color: context.hairlineColor, width: 1)),
         ),
         child: SafeArea(
           top: false,
@@ -69,11 +72,11 @@ class _MainLayoutState extends State<MainLayout> {
             height: 70,
             child: Row(
               children: [
-                _buildNavItem(0, Icons.home_outlined, Icons.home, 'HOME'),
-                _buildNavItem(1, Icons.fitness_center_outlined, Icons.fitness_center, 'ALLENAMENTO'),
-                _buildNavItem(2, Icons.calendar_month_outlined, Icons.calendar_month, 'CORSI'),
-                _buildNavItem(3, Icons.people_outline, Icons.people, 'COMMUNITY'),
-                _buildNavItem(4, Icons.person_outline, Icons.person, 'PROFILO'),
+                _buildNavItem(0, Icons.home_outlined, Icons.home, 'HOME', activeColor),
+                _buildNavItem(1, Icons.fitness_center_outlined, Icons.fitness_center, 'ALLENAMENTO', activeColor),
+                _buildNavItem(2, Icons.calendar_month_outlined, Icons.calendar_month, 'CORSI', activeColor),
+                _buildNavItem(3, Icons.people_outline, Icons.people, 'COMMUNITY', activeColor),
+                _buildNavItem(4, Icons.person_outline, Icons.person, 'PROFILO', activeColor),
               ],
             ),
           ),
@@ -82,7 +85,7 @@ class _MainLayoutState extends State<MainLayout> {
     );
   }
 
-  Widget _buildNavItem(int index, IconData unselectedIcon, IconData selectedIcon, String label) {
+  Widget _buildNavItem(int index, IconData unselectedIcon, IconData selectedIcon, String label, Color activeColor) {
     final isSelected = _currentIndex == index;
     return Expanded(
       child: GestureDetector(
@@ -97,13 +100,13 @@ class _MainLayoutState extends State<MainLayout> {
               Icon(
                 isSelected ? selectedIcon : unselectedIcon,
                 size: 22,
-                color: isSelected ? AppColors.volt : AppColors.textSecondary,
+                color: isSelected ? activeColor : context.textSecondaryColor,
               ),
               const SizedBox(height: 4),
               Text(
                 label,
                 style: AppTypography.tabLabel.copyWith(
-                  color: isSelected ? AppColors.volt : AppColors.textSecondary,
+                  color: isSelected ? activeColor : context.textSecondaryColor,
                   fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                   fontSize: 11,
                 ),
@@ -114,7 +117,7 @@ class _MainLayoutState extends State<MainLayout> {
                 width: 4,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: isSelected ? AppColors.volt : Colors.transparent,
+                  color: isSelected ? activeColor : Colors.transparent,
                   shape: BoxShape.circle,
                 ),
               ),
